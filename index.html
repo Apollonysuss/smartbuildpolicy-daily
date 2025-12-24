@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>智能建造政策内参</title>
     <style>
-        /* --- 基础样式调整：字体更小更精致 --- */
+        /* 基础设置：字体小而精致 */
         body { 
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
-            max-width: 700px; /* 宽度稍微收窄一点，更聚气 */
+            max-width: 700px; 
             margin: 0 auto; 
             padding: 20px 15px;
-            background: #f7f9fc; /* 背景色稍微淡一点 */
+            background: #f7f9fc; 
             color: #333;
-            font-size: 14px; /* 基准字体调小 */
+            font-size: 14px; 
         }
         
         .header { 
@@ -25,12 +25,12 @@
         .header h1 { color: #2c3e50; margin: 0 0 8px 0; font-size: 1.6em; }
         .header p { color: #999; font-size: 0.9em; margin: 0; }
         
-        /* --- 卡片样式：更紧凑 --- */
+        /* 卡片设计 */
         .card { 
             background: white; 
             border-radius: 8px; 
-            padding: 16px; /* 内边距减小 */
-            margin-bottom: 12px; /* 卡片间距减小 */
+            padding: 16px; 
+            margin-bottom: 12px; 
             box-shadow: 0 2px 5px rgba(0,0,0,0.03); 
             border: 1px solid #f0f2f5;
             transition: all 0.2s;
@@ -40,11 +40,11 @@
             transform: translateY(-1px);
         }
         
-        /* --- 元数据：日期和来源 --- */
+        /* 元数据 */
         .meta { 
             display: flex; 
             align-items: center; 
-            font-size: 0.8em; /* 字体更小 */
+            font-size: 0.8em; 
             color: #aaa; 
             margin-bottom: 8px; 
         }
@@ -57,7 +57,7 @@
             font-size: 0.85em;
         }
         
-        /* --- 标题：字号减小，但依然突出 --- */
+        /* 标题链接 */
         .title { 
             font-size: 1.1em; 
             font-weight: 600; 
@@ -69,7 +69,7 @@
         }
         .title:hover { color: #1a73e8; }
         
-        /* --- AI 摘要框：更精致 --- */
+        /* 摘要框 */
         .summary { 
             background: #fbfbfc; 
             padding: 12px; 
@@ -79,11 +79,10 @@
             line-height: 1.6; 
             border-left: 3px solid #d0e2f7;
         }
-        .summary b { color: #1a73e8; font-size: 0.9em;}
         
         .loading { text-align: center; color: #ccc; padding: 40px; font-size: 0.9em; }
 
-        /* --- 新增：翻书页码控制器 --- */
+        /* 翻页按钮 */
         .pagination {
             display: flex;
             justify-content: center;
@@ -122,7 +121,7 @@
     </div>
 
     <div id="list">
-        <div class="loading">正在加载最新数据...</div>
+        <div class="loading">正在加载数据...</div>
     </div>
 
     <div class="pagination" id="pagination" style="display: none;">
@@ -132,10 +131,68 @@
     </div>
 
     <script>
-        // --- 全局变量 ---
-        let allData = [];       // 存放所有数据
-        let currentPage = 1;    // 当前在第几页
-        const itemsPerPage = 6; // 每页显示几条 (你可以改这里)
+        let allData = [];       
+        let currentPage = 1;    
+        const itemsPerPage = 6; 
 
-        // 加载数据
-        fetch('data.json?t=' + new Date().getTime())
+        fetch('data.json?t=' + new Date().getTime()) 
+            .then(res => res.json())
+            .then(data => {
+                if(data.length === 0) {
+                    document.getElementById('list').innerHTML = '<div class="loading">暂无数据，请运行 GitHub Actions</div>';
+                    return;
+                }
+
+                // 排序：最新的在最前面 (b - a)
+                data.sort((a, b) => new Date(b.date) - new Date(a.date));
+                allData = data;
+
+                document.getElementById('pagination').style.display = 'flex';
+                renderPage(currentPage);
+            })
+            .catch(err => {
+                document.getElementById('list').innerHTML = '<div class="loading">⚠️ 请等待 GitHub 首次抓取完成</div>';
+            });
+
+        function renderPage(page) {
+            const listContainer = document.getElementById('list');
+            listContainer.innerHTML = ''; 
+
+            const start = (page - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageData = allData.slice(start, end);
+
+            pageData.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'card';
+                div.innerHTML = `
+                    <div class="meta">
+                        <span class="date">${item.date}</span>
+                        <span class="source-tag">${item.source}</span>
+                    </div>
+                    <a href="${item.link}" target="_blank" class="title">${item.title}</a>
+                    <div class="summary">
+                        <b>AI 摘要：</b>${item.summary || "暂无摘要"}
+                    </div>
+                `;
+                listContainer.appendChild(div);
+            });
+
+            updatePaginationControls();
+            window.scrollTo(0, 0);
+        }
+
+        function updatePaginationControls() {
+            const totalPages = Math.ceil(allData.length / itemsPerPage);
+            document.getElementById('pageInfo').innerText = `第 ${currentPage} / ${totalPages} 页`;
+            document.getElementById('prevBtn').disabled = (currentPage === 1);
+            document.getElementById('nextBtn').disabled = (currentPage === totalPages || totalPages === 0);
+        }
+
+        function changePage(direction) {
+            currentPage += direction;
+            renderPage(currentPage);
+        }
+    </script>
+</body>
+</html>
