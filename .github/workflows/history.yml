@@ -1,13 +1,15 @@
-name: 手动挖掘历史
+name: 每日抓取
 
 on:
-  workflow_dispatch: # 手动触发开关
+  schedule:
+    - cron: '0 0 * * *' # 每天北京时间早上8点
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  history-job:
+  daily-job:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -15,14 +17,20 @@ jobs:
       with:
         python-version: '3.9'
     - run: pip install requests
-    - name: 运行历史挖掘
+    
+    - name: 运行每日抓取
       env:
         DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-      run: python get_history.py
-    - name: 保存结果
+      run: python scraper.py
+    
+    - name: 保存数据
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add data.json
-        git commit -m "History update" || echo "无新数据"
+        git commit -m "Daily update" || echo "无新数据"
+        
+        # ⚠️ 防冲突关键步骤
+        git pull --rebase
+        
         git push
