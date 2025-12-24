@@ -2,38 +2,38 @@ name: 每日抓取
 
 on:
   schedule:
-    - cron: '0 0 * * *' # 每天北京时间早上 8 点
-  workflow_dispatch: # 允许手动点按钮运行
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
-# --- 👇 新增的权限配置 👇 ---
 permissions:
   contents: write
-# -------------------------
 
 jobs:
   build:
     runs-on: ubuntu-latest
     
     steps:
-    - name: 下载代码仓库
+    - name: 下载代码
       uses: actions/checkout@v2
       
-    - name: 安装 Python 环境
+    - name: 安装 Python
       uses: actions/setup-python@v2
       with:
         python-version: '3.9'
         
-    - name: 安装依赖库
+    - name: 安装依赖
       run: pip install requests beautifulsoup4
       
     - name: 运行抓取脚本
+      # 👇 这一步很关键！把 GitHub 里的密码传给 Python 脚本
+      env:
+        DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
       run: python scraper.py
       
-    - name: 提交并保存新数据
+    - name: 提交保存
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        # 下面这行加了个检测：如果有变动才提交，没变动就不报错
         git add data.json
-        git diff-index --quiet HEAD || git commit -m "Auto update data"
+        git diff-index --quiet HEAD || git commit -m "Auto update"
         git push
