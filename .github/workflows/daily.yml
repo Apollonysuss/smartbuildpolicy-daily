@@ -1,0 +1,34 @@
+name: 每日抓取
+
+on:
+  schedule:
+    # 每天北京时间早上 8 点运行 (UTC时间 0 点)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # 允许手动点按钮运行测试
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 下载代码仓库
+      uses: actions/checkout@v2
+      
+    - name: 安装 Python 环境
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'
+        
+    - name: 安装依赖库
+      run: pip install requests beautifulsoup4
+      
+    - name: 运行抓取脚本
+      run: python scraper.py
+      
+    - name: 提交并保存新数据
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add data.json
+        git commit -m "Auto update data" || exit 0
+        git push
