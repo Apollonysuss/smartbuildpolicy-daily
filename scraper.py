@@ -20,6 +20,7 @@ def fetch_google_news():
             title = item.find('title').text
             link = item.find('link').text
             try:
+                # 尝试解析时间
                 dt = datetime.datetime.strptime(item.find('pubDate').text[:16], '%a, %d %b %Y')
                 date_str = dt.strftime('%Y-%m-%d')
             except:
@@ -39,7 +40,7 @@ def fetch_google_news():
 def call_ai_summary(text):
     if not API_KEY: return "未配置 API Key"
     
-    # DeepSeek 官方 API 地址 (你充值了就用这个)
+    # DeepSeek 官方 API
     url = "https://api.deepseek.com/chat/completions"
     
     payload = {
@@ -84,16 +85,15 @@ def job():
             
         print(f"正在分析: {item['title'][:10]}...")
         item['summary'] = call_ai_summary(item['title'])
-        # 新新闻插到最前面
         final_data.insert(0, item)
         count += 1
         
-        # 每日更新限制前5条，防止超时
+        # 每日更新限制前5条
         if count >= 5: break
 
     # 4. 保存
     with open('data.json', 'w', encoding='utf-8') as f:
-        json.dump(final_data[:80], f, ensure_ascii=False, indent=2) # 保留最新的80条
+        json.dump(final_data[:80], f, ensure_ascii=False, indent=2)
     print(f"✅ 今日更新完成，新增 {count} 条。")
 
 if __name__ == "__main__":
