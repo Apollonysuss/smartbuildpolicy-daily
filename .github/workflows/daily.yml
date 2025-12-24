@@ -2,8 +2,8 @@ name: 每日抓取
 
 on:
   schedule:
-    - cron: '0 0 * * *' # 每天北京时间早上 8 点
-  workflow_dispatch: # 允许手动点按钮
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -22,8 +22,8 @@ jobs:
         python-version: '3.9'
         
     - name: 安装依赖
-      # 👇 注意这里：我们加了 feedparser，它是专门解决日期和链接问题的神器
-      run: pip install requests feedparser
+      # 回归最基础的 requests 和 beautifulsoup4，这两个最稳
+      run: pip install requests beautifulsoup4 lxml
       
     - name: 运行抓取脚本
       env:
@@ -35,5 +35,6 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add data.json
-        git diff-index --quiet HEAD || git commit -m "Auto update"
+        # 只要有文件变化就提交，防止报错
+        git commit -m "Auto update" || echo "无变化，跳过提交"
         git push
