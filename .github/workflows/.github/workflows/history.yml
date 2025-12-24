@@ -1,0 +1,32 @@
+name: 手动挖掘历史
+
+on:
+  workflow_dispatch: # 👈 这个配置保证了它绝不自动运行，必须手动点
+
+permissions:
+  contents: write
+
+jobs:
+  digging:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v2
+      
+    - name: 安装环境
+      run: pip install requests
+      
+    - name: 开始挖掘
+      env:
+        # 这里直接读取你在网页设置里填的 Key
+        DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      run: python get_history.py
+      
+    - name: 保存结果
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add data.json
+        git commit -m "Update history" || echo "无新内容"
+        git push
