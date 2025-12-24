@@ -1,46 +1,73 @@
+import requests
 import json
 import datetime
 import os
-import random
+import time
 
-# 模拟：这是我们的“AI大脑”，用来生成摘要
-# 在真实场景中，这里会替换成 requests.get(url) 去抓取网页正文，然后发给 ChatGPT
-def generate_summary(title):
-    # 模拟生成的“智能摘要”
-    templates = [
-        "【核心提要】该政策重点强调了智能建造技术的落地应用，明确了相关企业的补贴标准，建议关注后续的申报细则。",
-        "【政策利好】文件指出将加大对建筑机器人的采购支持力度，对于率先采用BIM技术的项目给予绿色通道审批。",
-        "【行业风向】住建部最新指示，要求各地在2025年前完成智能建造试点项目验收，相关标准将进一步统一。"
-    ]
-    return random.choice(templates)
+# --- 配置区域 ---
+# 既然已经配置了 Secret，这里会自动读取
+API_KEY = os.environ.get("DEEPSEEK_API_KEY") 
 
-def job():
-    print("🤖 机器人正在启动...")
-    print("1. 正在扫描全网政策...")
+# 模拟数据源 (为了演示流程，这里依然产生模拟数据)
+# 实际使用中，你需要把这里换成真实的爬虫逻辑(requests.get...)
+def fetch_latest_news():
     today = datetime.date.today().strftime("%Y-%m-%d")
-    
-    # 模拟抓取到的新数据
-    # 注意：这里新增了一个 'summary' (摘要) 字段
-    new_data = [
+    # 模拟今天新出的两条新闻
+    return [
         {
-            "id": str(random.randint(1000, 9999)),
-            "title": f"住房和城乡建设部关于推进智能建造试点的通知 ({today})",
+            "title": "住房城乡建设部关于印发智能建造试点城市经验做法清单的通知",
             "date": today,
-            "source": "住建部官网",
-            "link": "https://www.mohurd.gov.cn", # 原文链接
-            "summary": "【核心摘要】住建部今日发布通知，遴选出24个智能建造试点城市。文件明确了试点目标，要求在3年内建立完善的政策体系。重点：对试点项目将在土地出让、规划审批等方面给予政策倾斜。建议相关企业尽快对接地方主管部门。"
+            "link": "https://www.mohurd.gov.cn/gongkai/fdzdgknr/tzgg/202412/20241220_775823.html", 
+            "source": "住建部"
         },
         {
-            "id": str(random.randint(1000, 9999)),
-            "title": "关于发布《建筑机器人应用技术标准》的公告",
+            "title": "广东省建筑业“十四五”发展规划：全面推广智能建造",
             "date": today,
-            "source": "中国建筑业协会",
-            "link": "#",
-            "summary": "【标准解读】该标准规范了混凝土、砌筑等12类建筑机器人的作业流程。关键点：首次明确了人机协作的安全距离标准，为建筑机器人的大规模商用提供了法规依据。"
+            "link": "http://zfcxjs.gd.gov.cn/", 
+            "source": "广东住建厅"
         }
     ]
 
-    # 读取旧数据
+# --- 核心功能：调用真 AI 生成摘要 ---
+def call_ai_summary(text):
+    if not API_KEY:
+        return "⚠️ 未配置 API Key，无法生成智能摘要。"
+    
+    print(f"正在请求 AI 总结: {text[:10]}...")
+    
+    url = "https://api.deepseek.com/chat/completions"
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {API_KEY}"
+    }
+    
+    # 告诉 AI 你的身份和任务
+    payload = {
+        "model": "deepseek-chat",
+        "messages": [
+            {"role": "system", "content": "你是一个建筑行业政策分析师。请用一句话简要概括这条政策的核心利好或影响，不超过50个字，语气专业。"},
+            {"role": "user", "content": f"政策标题：{text}"}
+        ],
+        "stream": False
+    }
+
+    try:
+        response = requests.post(url, headers=headers, json=payload)
+        result = response.json()
+        # 提取 AI 回复的内容
+        summary = result['choices'][0]['message']['content']
+        return summary
+    except Exception as e:
+        print(f"AI 调用失败: {e}")
+        return "AI 暂时开小差了..."
+
+def job():
+    print("🚀 开始运行...")
+
+    # 1. 获取新数据
+    new_items = fetch_latest_news()
+
+    # 2. 读取旧数据
     if os.path.exists('data.json'):
         with open('data.json', 'r', encoding='utf-8') as f:
             try:
@@ -50,17 +77,30 @@ def job():
     else:
         old_data = []
 
-    # 合并数据
-    final_data = new_data + old_data
-    # 保持最新的 20 条
-    final_data = final_data[:20]
-
-    # 保存
-    with open('data.json', 'w', encoding='utf-8') as f:
-        json.dump(final_data, f, ensure_ascii=False, indent=2)
+    # 3. 【去重关键步骤】
+    # 我们用一个集合来记录已有的标题，防止重复
+    existing_titles = set(item['title'] for item in old_data)
     
-    print("2. 智能摘要生成完毕")
-    print("3. 数据已更新")
+    final_data = old_data # 先把旧的放进去
+
+    for item in new_items:
+        if item['title'] in existing_titles:
+            print(f"重复跳过: {item['title']}")
+            continue # 如果标题存在，直接跳过
+        
+        # 4. 如果是新政策，才调用 AI
+        # (这样可以省钱，只对新内容消耗 Token)
+        print(f"发现新政策: {item['title']}")
+        item['summary'] = call_ai_summary(item['title'])
+        
+        # 把新的插到最前面
+        final_data.insert(0, item)
+
+    # 5. 保存（最多保留50条）
+    with open('data.json', 'w', encoding='utf-8') as f:
+        json.dump(final_data[:50], f, ensure_ascii=False, indent=2)
+    
+    print("✅ 更新完成！")
 
 if __name__ == "__main__":
     job()
