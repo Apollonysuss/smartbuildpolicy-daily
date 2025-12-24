@@ -1,42 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>智能建造政策日报</title>
+    <title>智能建造政策内参</title>
     <style>
-        body { font-family: sans-serif; max-width: 600px; margin: 20px auto; padding: 20px; background: #f9f9f9; }
-        .card { background: white; padding: 15px; margin-bottom: 10px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .date { color: #888; font-size: 0.8em; }
-        a { text-decoration: none; color: #333; font-weight: bold; font-size: 1.1em; }
-        a:hover { color: #007bff; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background-color: #f0f2f5; 
+            color: #333;
+        }
+        .header { text-align: center; margin-bottom: 30px; }
+        .header h1 { color: #1a73e8; margin-bottom: 5px; }
+        .header p { color: #666; font-size: 0.9em; }
+
+        .card { 
+            background: white; 
+            margin-bottom: 15px; 
+            border-radius: 12px; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06); 
+            overflow: hidden; /* 关键：隐藏溢出内容 */
+            transition: all 0.3s ease;
+        }
+        
+        /* 标题栏 (总是显示) */
+        .card-header {
+            padding: 20px;
+            cursor: pointer;
+            position: relative;
+        }
+        .card-header:hover { background-color: #f8f9fa; }
+
+        .meta { font-size: 12px; color: #999; margin-bottom: 8px; display: flex; align-items: center; }
+        .tag { background: #e8f0fe; color: #1a73e8; padding: 2px 8px; border-radius: 4px; margin-right: 10px; font-weight: bold; }
+        
+        .title { 
+            font-size: 18px; 
+            font-weight: 600; 
+            line-height: 1.4;
+            margin: 0;
+        }
+        
+        /* 展开箭头 */
+        .arrow {
+            position: absolute; right: 20px; top: 50%; transform: translateY(-50%);
+            color: #ccc; transition: transform 0.3s;
+        }
+
+        /* 摘要区域 (默认隐藏) */
+        .card-body {
+            display: none; /* 默认不显示 */
+            padding: 0 20px 20px 20px;
+            border-top: 1px solid #eee;
+            background-color: #fafafa;
+        }
+
+        .summary-box {
+            background-color: #fff;
+            border-left: 4px solid #1a73e8;
+            padding: 15px;
+            margin-top: 15px;
+            color: #555;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        .original-link {
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #1a73e8;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* 展开状态的样式 */
+        .card.expanded .card-body { display: block; animation: slideDown 0.3s ease-out; }
+        .card.expanded .arrow { transform: translateY(-50%) rotate(180deg); }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
     </style>
 </head>
 <body>
-    <h1>🤖 智能建造政策自动日报</h1>
-    <p id="status">正在加载最新数据...</p>
+
+    <div class="header">
+        <h1>🚀 智能建造政策内参</h1>
+        <p>AI 自动归纳 · 每日 08:00 更新</p>
+    </div>
+
+    <div id="status" style="text-align:center; color:#999; margin-bottom:20px;">正在加载...</div>
     <div id="list"></div>
 
     <script>
-        // 直接读取同目录下的 json 文件
         fetch('data.json')
             .then(response => response.json())
             .then(data => {
-                document.getElementById('status').innerText = '每天早上8点自动更新';
+                document.getElementById('status').style.display = 'none';
                 const list = document.getElementById('list');
+                
                 data.forEach(item => {
-                    const div = document.createElement('div');
-                    div.className = 'card';
-                    div.innerHTML = `
-                        <div class="date">${item.date} · ${item.source}</div>
-                        <div style="margin-top:5px;"><a href="${item.link}" target="_blank">${item.title}</a></div>
+                    // 创建卡片
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    
+                    // 核心逻辑：点击 card-header 时，给 card 加上或去掉 'expanded' 类名
+                    card.innerHTML = `
+                        <div class="card-header" onclick="toggleCard(this)">
+                            <div class="meta">
+                                <span class="tag">${item.source}</span>
+                                <span>${item.date}</span>
+                            </div>
+                            <h3 class="title">${item.title}</h3>
+                            <div class="arrow">▼</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="summary-box">
+                                <strong>💡 智能归纳：</strong><br>
+                                ${item.summary || "暂无摘要，请点击下方查看原文。"}
+                            </div>
+                            <a href="${item.link}" target="_blank" class="original-link">阅读政策原文 &rarr;</a>
+                        </div>
                     `;
-                    list.appendChild(div);
+                    list.appendChild(card);
                 });
             })
             .catch(err => {
-                document.getElementById('status').innerText = '暂无数据，等待机器人首次运行...';
+                document.getElementById('status').innerText = '⚠️ 数据加载失败，请检查 Actions 是否运行成功';
             });
+
+        // 切换展开/收起的函数
+        function toggleCard(headerElement) {
+            const card = headerElement.parentElement;
+            card.classList.toggle('expanded');
+        }
     </script>
 </body>
 </html>
