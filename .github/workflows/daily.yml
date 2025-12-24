@@ -2,38 +2,29 @@ name: 每日抓取
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0 * * *' # 每天北京时间早上8点
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  daily-job:
     runs-on: ubuntu-latest
-    
     steps:
-    - name: 下载代码
-      uses: actions/checkout@v2
-      
-    - name: 安装 Python
-      uses: actions/setup-python@v2
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
       with:
         python-version: '3.9'
-        
-    - name: 安装依赖
-      # 只安装 requests，最简单最稳
-      run: pip install requests
-      
-    - name: 运行抓取脚本
+    - run: pip install requests
+    - name: 运行每日抓取
       env:
         DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
       run: python scraper.py
-      
-    - name: 提交保存
+    - name: 保存数据
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add data.json
-        git commit -m "Auto update" || echo "没有新数据，跳过提交"
+        git commit -m "Daily update" || echo "无新数据"
         git push
