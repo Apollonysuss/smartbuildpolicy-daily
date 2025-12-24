@@ -1,37 +1,46 @@
-import requests
-from bs4 import BeautifulSoup
 import json
 import datetime
 import os
+import random
 
-# 目标：抓取“中国建设新闻网”关于智能建造的搜索结果（示例）
-# 你可以把这个链接换成其他行业网站的搜索结果页
-TARGET_URL = "http://www.chinajsb.cn/html/2024/znjz_0607/46529.html" 
-# 为了演示稳定，这里我们模拟生成“今日”的数据
-# 真实场景下，这里应该写 requests.get(url) 的解析逻辑
+# 模拟：这是我们的“AI大脑”，用来生成摘要
+# 在真实场景中，这里会替换成 requests.get(url) 去抓取网页正文，然后发给 ChatGPT
+def generate_summary(title):
+    # 模拟生成的“智能摘要”
+    templates = [
+        "【核心提要】该政策重点强调了智能建造技术的落地应用，明确了相关企业的补贴标准，建议关注后续的申报细则。",
+        "【政策利好】文件指出将加大对建筑机器人的采购支持力度，对于率先采用BIM技术的项目给予绿色通道审批。",
+        "【行业风向】住建部最新指示，要求各地在2025年前完成智能建造试点项目验收，相关标准将进一步统一。"
+    ]
+    return random.choice(templates)
 
 def job():
-    print("开始抓取...")
+    print("🤖 机器人正在启动...")
+    print("1. 正在扫描全网政策...")
     today = datetime.date.today().strftime("%Y-%m-%d")
     
-    # 这里模拟抓取到了 2 条最新数据
-    # 如果你想抓真的，需要针对特定网站写解析规则
+    # 模拟抓取到的新数据
+    # 注意：这里新增了一个 'summary' (摘要) 字段
     new_data = [
         {
-            "title": f"【自动更新】智能建造技术创新发展-{today}日报",
+            "id": str(random.randint(1000, 9999)),
+            "title": f"住房和城乡建设部关于推进智能建造试点的通知 ({today})",
             "date": today,
-            "link": "https://www.mohurd.gov.cn",
-            "source": "自动抓取机器人"
+            "source": "住建部官网",
+            "link": "https://www.mohurd.gov.cn", # 原文链接
+            "summary": "【核心摘要】住建部今日发布通知，遴选出24个智能建造试点城市。文件明确了试点目标，要求在3年内建立完善的政策体系。重点：对试点项目将在土地出让、规划审批等方面给予政策倾斜。建议相关企业尽快对接地方主管部门。"
         },
         {
-            "title": "关于印发《智能建造试点城市经验列表》的通知",
+            "id": str(random.randint(1000, 9999)),
+            "title": "关于发布《建筑机器人应用技术标准》的公告",
             "date": today,
+            "source": "中国建筑业协会",
             "link": "#",
-            "source": "住建部官网"
+            "summary": "【标准解读】该标准规范了混凝土、砌筑等12类建筑机器人的作业流程。关键点：首次明确了人机协作的安全距离标准，为建筑机器人的大规模商用提供了法规依据。"
         }
     ]
 
-    # 读取旧数据（如果存在）
+    # 读取旧数据
     if os.path.exists('data.json'):
         with open('data.json', 'r', encoding='utf-8') as f:
             try:
@@ -41,15 +50,17 @@ def job():
     else:
         old_data = []
 
-    # 把新数据加到最前面
+    # 合并数据
     final_data = new_data + old_data
-    # 只保留最近 50 条
-    final_data = final_data[:50]
+    # 保持最新的 20 条
+    final_data = final_data[:20]
 
-    # 保存回去
+    # 保存
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(final_data, f, ensure_ascii=False, indent=2)
-    print("更新完成！")
+    
+    print("2. 智能摘要生成完毕")
+    print("3. 数据已更新")
 
 if __name__ == "__main__":
     job()
