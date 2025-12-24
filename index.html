@@ -5,140 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>智能建造政策内参</title>
     <style>
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
-            max-width: 800px; 
-            margin: 0 auto; 
-            padding: 20px; 
-            background-color: #f0f2f5; 
-            color: #333;
-        }
+        body { font-family: -apple-system, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #f4f6f9; }
         .header { text-align: center; margin-bottom: 30px; }
-        .header h1 { color: #1a73e8; margin-bottom: 5px; }
-        .header p { color: #666; font-size: 0.9em; }
-
-        .card { 
-            background: white; 
-            margin-bottom: 15px; 
-            border-radius: 12px; 
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06); 
-            overflow: hidden; /* 关键：隐藏溢出内容 */
-            transition: all 0.3s ease;
-        }
+        .header h1 { color: #2c3e50; }
+        .header p { color: #7f8c8d; font-size: 0.9em; }
         
-        /* 标题栏 (总是显示) */
-        .card-header {
-            padding: 20px;
-            cursor: pointer;
-            position: relative;
-        }
-        .card-header:hover { background-color: #f8f9fa; }
-
-        .meta { font-size: 12px; color: #999; margin-bottom: 8px; display: flex; align-items: center; }
-        .tag { background: #e8f0fe; color: #1a73e8; padding: 2px 8px; border-radius: 4px; margin-right: 10px; font-weight: bold; }
+        .card { background: white; border-radius: 10px; padding: 20px; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: 0.3s; }
+        .card:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
         
-        .title { 
-            font-size: 18px; 
-            font-weight: 600; 
-            line-height: 1.4;
-            margin: 0;
-        }
+        .meta { display: flex; justify-content: space-between; font-size: 0.85em; color: #95a5a6; margin-bottom: 8px; }
+        .source-tag { background: #eefffa; color: #00b894; padding: 2px 6px; border-radius: 4px; }
         
-        /* 展开箭头 */
-        .arrow {
-            position: absolute; right: 20px; top: 50%; transform: translateY(-50%);
-            color: #ccc; transition: transform 0.3s;
-        }
-
-        /* 摘要区域 (默认隐藏) */
-        .card-body {
-            display: none; /* 默认不显示 */
-            padding: 0 20px 20px 20px;
-            border-top: 1px solid #eee;
-            background-color: #fafafa;
-        }
-
-        .summary-box {
-            background-color: #fff;
-            border-left: 4px solid #1a73e8;
-            padding: 15px;
-            margin-top: 15px;
-            color: #555;
-            line-height: 1.6;
-            font-size: 15px;
-        }
-
-        .original-link {
-            display: inline-block;
-            margin-top: 15px;
-            font-size: 14px;
-            color: #1a73e8;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        /* 展开状态的样式 */
-        .card.expanded .card-body { display: block; animation: slideDown 0.3s ease-out; }
-        .card.expanded .arrow { transform: translateY(-50%) rotate(180deg); }
-
-        @keyframes slideDown {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+        .title { font-size: 1.1em; font-weight: bold; color: #2d3436; margin-bottom: 10px; cursor: pointer; }
+        .title a { text-decoration: none; color: inherit; }
+        .title a:hover { color: #0984e3; }
+        
+        .summary { background: #f8f9fa; padding: 12px; border-left: 4px solid #0984e3; border-radius: 4px; font-size: 0.95em; color: #636e72; line-height: 1.6; margin-top: 10px; }
+        
+        .loading { text-align: center; color: #b2bec3; padding: 50px; }
     </style>
 </head>
 <body>
-
     <div class="header">
-        <h1>🚀 智能建造政策内参</h1>
-        <p>AI 自动归纳 · 每日 08:00 更新</p>
+        <h1>🏗️ 智能建造政策内参</h1>
+        <p>AI 驱动 · 每日更新 · 历史回溯</p>
     </div>
-
-    <div id="status" style="text-align:center; color:#999; margin-bottom:20px;">正在加载...</div>
-    <div id="list"></div>
+    <div id="list"><div class="loading">正在加载数据...</div></div>
 
     <script>
-        fetch('data.json')
-            .then(response => response.json())
+        fetch('data.json?t=' + new Date().getTime()) // 加时间戳防止缓存
+            .then(res => res.json())
             .then(data => {
-                document.getElementById('status').style.display = 'none';
                 const list = document.getElementById('list');
-                
+                list.innerHTML = '';
+                if(data.length === 0) {
+                    list.innerHTML = '<div class="loading">暂无数据，请运行 GitHub Actions</div>';
+                    return;
+                }
                 data.forEach(item => {
-                    // 创建卡片
-                    const card = document.createElement('div');
-                    card.className = 'card';
-                    
-                    // 核心逻辑：点击 card-header 时，给 card 加上或去掉 'expanded' 类名
-                    card.innerHTML = `
-                        <div class="card-header" onclick="toggleCard(this)">
-                            <div class="meta">
-                                <span class="tag">${item.source}</span>
-                                <span>${item.date}</span>
-                            </div>
-                            <h3 class="title">${item.title}</h3>
-                            <div class="arrow">▼</div>
+                    const div = document.createElement('div');
+                    div.className = 'card';
+                    div.innerHTML = `
+                        <div class="meta">
+                            <span class="source-tag">${item.source}</span>
+                            <span>${item.date}</span>
                         </div>
-                        <div class="card-body">
-                            <div class="summary-box">
-                                <strong>💡 智能归纳：</strong><br>
-                                ${item.summary || "暂无摘要，请点击下方查看原文。"}
-                            </div>
-                            <a href="${item.link}" target="_blank" class="original-link">阅读政策原文 &rarr;</a>
-                        </div>
+                        <div class="title" onclick="window.open('${item.link}')">${item.title}</div>
+                        <div class="summary">💡 <b>AI 解读：</b>${item.summary || "生成中..."}</div>
                     `;
-                    list.appendChild(card);
+                    list.appendChild(div);
                 });
             })
             .catch(err => {
-                document.getElementById('status').innerText = '⚠️ 数据加载失败，请检查 Actions 是否运行成功';
+                document.getElementById('list').innerHTML = '<div class="loading">数据读取失败</div>';
             });
-
-        // 切换展开/收起的函数
-        function toggleCard(headerElement) {
-            const card = headerElement.parentElement;
-            card.classList.toggle('expanded');
-        }
     </script>
 </body>
 </html>
