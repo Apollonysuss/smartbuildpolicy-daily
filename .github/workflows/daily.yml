@@ -2,8 +2,8 @@ name: 每日抓取
 
 on:
   schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
+    - cron: '0 0 * * *' # 每天北京时间早上 8 点
+  workflow_dispatch: # 允许手动点按钮
 
 permissions:
   contents: write
@@ -22,10 +22,10 @@ jobs:
         python-version: '3.9'
         
     - name: 安装依赖
-      run: pip install requests beautifulsoup4
+      # 👇 注意这里：我们加了 feedparser，它是专门解决日期和链接问题的神器
+      run: pip install requests feedparser
       
     - name: 运行抓取脚本
-      # 👇 这一步很关键！把 GitHub 里的密码传给 Python 脚本
       env:
         DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
       run: python scraper.py
