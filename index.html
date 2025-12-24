@@ -5,81 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>智能建造政策内参</title>
     <style>
+        /* --- 基础样式调整：字体更小更精致 --- */
         body { 
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
-            max-width: 800px; 
+            max-width: 700px; /* 宽度稍微收窄一点，更聚气 */
             margin: 0 auto; 
-            padding: 20px; 
-            background: #f4f6f9; 
+            padding: 20px 15px;
+            background: #f7f9fc; /* 背景色稍微淡一点 */
             color: #333;
+            font-size: 14px; /* 基准字体调小 */
         }
         
         .header { 
             text-align: center; 
-            margin-bottom: 40px; 
-            padding-bottom: 20px;
-            border-bottom: 1px solid #e1e4e8;
+            margin-bottom: 25px; 
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
         }
-        .header h1 { color: #2c3e50; margin: 0 0 10px 0; }
-        .header p { color: #7f8c8d; font-size: 0.9em; margin: 0; }
+        .header h1 { color: #2c3e50; margin: 0 0 8px 0; font-size: 1.6em; }
+        .header p { color: #999; font-size: 0.9em; margin: 0; }
         
-        /* 卡片样式 */
+        /* --- 卡片样式：更紧凑 --- */
         .card { 
             background: white; 
-            border-radius: 12px; 
-            padding: 24px; 
-            margin-bottom: 20px; 
-            box-shadow: 0 4px 6px rgba(0,0,0,0.02); 
-            border: 1px solid #edf2f7;
-            transition: transform 0.2s, box-shadow 0.2s; 
+            border-radius: 8px; 
+            padding: 16px; /* 内边距减小 */
+            margin-bottom: 12px; /* 卡片间距减小 */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03); 
+            border: 1px solid #f0f2f5;
+            transition: all 0.2s;
         }
         .card:hover { 
-            transform: translateY(-2px); 
-            box-shadow: 0 10px 15px rgba(0,0,0,0.05); 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transform: translateY(-1px);
         }
         
-        /* 顶部元数据（日期和来源） */
+        /* --- 元数据：日期和来源 --- */
         .meta { 
             display: flex; 
             align-items: center; 
-            font-size: 0.85em; 
-            color: #95a5a6; 
-            margin-bottom: 12px; 
+            font-size: 0.8em; /* 字体更小 */
+            color: #aaa; 
+            margin-bottom: 8px; 
         }
-        .date { margin-right: 15px; font-weight: 500; color: #636e72; }
+        .date { margin-right: 12px; font-weight: 500; }
         .source-tag { 
-            background: #e3f2fd; 
-            color: #0984e3; 
-            padding: 3px 8px; 
-            border-radius: 4px; 
-            font-size: 0.9em;
+            background: #eef6fc; 
+            color: #1a73e8; 
+            padding: 2px 6px; 
+            border-radius: 3px; 
+            font-size: 0.85em;
         }
         
-        /* 标题 */
+        /* --- 标题：字号减小，但依然突出 --- */
         .title { 
-            font-size: 1.25em; 
-            font-weight: 700; 
-            color: #2d3436; 
-            margin-bottom: 15px; 
+            font-size: 1.1em; 
+            font-weight: 600; 
+            color: #2c3e50; 
+            margin-bottom: 10px; 
             line-height: 1.4;
-            cursor: pointer; 
             text-decoration: none;
             display: block;
         }
-        .title:hover { color: #0984e3; }
+        .title:hover { color: #1a73e8; }
         
-        /* AI 摘要框 */
+        /* --- AI 摘要框：更精致 --- */
         .summary { 
-            background: #fafafa; 
-            padding: 16px; 
-            border-radius: 8px; 
-            font-size: 0.95em; 
-            color: #555; 
-            line-height: 1.7; 
-            border-left: 4px solid #0984e3; /* 蓝色左边框装饰 */
+            background: #fbfbfc; 
+            padding: 12px; 
+            border-radius: 6px; 
+            font-size: 0.9em; 
+            color: #666; 
+            line-height: 1.6; 
+            border-left: 3px solid #d0e2f7;
         }
+        .summary b { color: #1a73e8; font-size: 0.9em;}
         
-        .loading { text-align: center; color: #b2bec3; padding: 60px; }
+        .loading { text-align: center; color: #ccc; padding: 40px; font-size: 0.9em; }
+
+        /* --- 新增：翻书页码控制器 --- */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            gap: 15px;
+            font-size: 0.9em;
+            color: #666;
+        }
+        .page-btn {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 6px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #555;
+        }
+        .page-btn:hover:not(:disabled) {
+            background: #1a73e8;
+            color: white;
+            border-color: #1a73e8;
+        }
+        .page-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            background: #f5f5f5;
+        }
     </style>
 </head>
 <body>
@@ -93,44 +125,17 @@
         <div class="loading">正在加载最新数据...</div>
     </div>
 
+    <div class="pagination" id="pagination" style="display: none;">
+        <button class="page-btn" id="prevBtn" onclick="changePage(-1)">← 上一页</button>
+        <span id="pageInfo">第 1 页</span>
+        <button class="page-btn" id="nextBtn" onclick="changePage(1)">下一页 →</button>
+    </div>
+
     <script>
-        // 加时间戳 ?t=... 是为了防止浏览器缓存旧数据，强制每次读取最新的
-        fetch('data.json?t=' + new Date().getTime()) 
-            .then(res => res.json())
-            .then(data => {
-                const list = document.getElementById('list');
-                list.innerHTML = '';
-                
-                if(data.length === 0) {
-                    list.innerHTML = '<div class="loading">暂无数据，请运行 GitHub Actions</div>';
-                    return;
-                }
+        // --- 全局变量 ---
+        let allData = [];       // 存放所有数据
+        let currentPage = 1;    // 当前在第几页
+        const itemsPerPage = 6; // 每页显示几条 (你可以改这里)
 
-                // --- 核心排序逻辑 ---
-                // b.date - a.date 表示：日期大的（新的）排在前面
-                data.sort((a, b) => new Date(b.date) - new Date(a.date));
-
-                data.forEach(item => {
-                    const div = document.createElement('div');
-                    div.className = 'card';
-                    div.innerHTML = `
-                        <div class="meta">
-                            <span class="date">📅 ${item.date}</span>
-                            <span class="source-tag">${item.source}</span>
-                        </div>
-                        <a href="${item.link}" target="_blank" class="title">${item.title}</a>
-                        <div class="summary">
-                            <b>💡 AI 划重点：</b><br>
-                            ${item.summary || "正在生成摘要..."}
-                        </div>
-                    `;
-                    list.appendChild(div);
-                });
-            })
-            .catch(err => {
-                console.error(err);
-                document.getElementById('list').innerHTML = '<div class="loading">⚠️ 数据读取失败，请检查 data.json 是否存在</div>';
-            });
-    </script>
-</body>
-</html>
+        // 加载数据
+        fetch('data.json?t=' + new Date().getTime())
