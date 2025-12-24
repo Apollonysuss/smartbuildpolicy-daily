@@ -2,9 +2,13 @@ name: 每日抓取
 
 on:
   schedule:
-    # 每天北京时间早上 8 点运行 (UTC时间 0 点)
-    - cron: '0 0 * * *'
-  workflow_dispatch: # 允许手动点按钮运行测试
+    - cron: '0 0 * * *' # 每天北京时间早上 8 点
+  workflow_dispatch: # 允许手动点按钮运行
+
+# --- 👇 新增的权限配置 👇 ---
+permissions:
+  contents: write
+# -------------------------
 
 jobs:
   build:
@@ -29,6 +33,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        # 下面这行加了个检测：如果有变动才提交，没变动就不报错
         git add data.json
-        git commit -m "Auto update data" || exit 0
+        git diff-index --quiet HEAD || git commit -m "Auto update data"
         git push
