@@ -22,8 +22,8 @@ jobs:
         python-version: '3.9'
         
     - name: 安装依赖
-      # 回归最基础的 requests 和 beautifulsoup4，这两个最稳
-      run: pip install requests beautifulsoup4 lxml
+      # 只安装 requests，最简单最稳
+      run: pip install requests
       
     - name: 运行抓取脚本
       env:
@@ -35,6 +35,5 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add data.json
-        # 只要有文件变化就提交，防止报错
-        git commit -m "Auto update" || echo "无变化，跳过提交"
+        git commit -m "Auto update" || echo "没有新数据，跳过提交"
         git push
