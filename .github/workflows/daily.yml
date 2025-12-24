@@ -17,14 +17,20 @@ jobs:
       with:
         python-version: '3.9'
     - run: pip install requests
+    
     - name: 运行每日抓取
       env:
         DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
       run: python scraper.py
+    
     - name: 保存数据
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add data.json
         git commit -m "Daily update" || echo "无新数据"
+        
+        # ⚠️ 防冲突关键步骤
+        git pull --rebase
+        
         git push
