@@ -9,6 +9,8 @@ import xml.etree.ElementTree as ET
 import requests
 
 API_KEY = os.environ.get("DEEPSEEK_API_KEY")
+DAILY_LIMIT = 30
+MAX_RECORDS = 1000
 
 SEARCH_QUERIES = [
     ("智能建造", "行业动态"),
@@ -147,7 +149,7 @@ def fetch_google_news():
         except Exception as e:
             print(f"抓取失败 [{query}]: {e}")
             continue
-        for node in root.findall("./channel/item")[:12]:
+        for node in root.findall("./channel/item")[:20]:
             raw_title = node.findtext("title", default="")
             link = node.findtext("link", default="")
             if not raw_title or not link or link in seen:
@@ -184,13 +186,13 @@ def job():
         item["updated_at"] = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
         final_data.insert(0, item)
         count += 1
-        if count >= 8:
+        if count >= DAILY_LIMIT:
             break
         time.sleep(0.8)
     final_data = sorted(final_data, key=lambda x: (x.get("date", ""), x.get("lead_score", 0)), reverse=True)
     with open("data.json", "w", encoding="utf-8") as f:
-        json.dump(final_data[:120], f, ensure_ascii=False, indent=2)
-    print(f"今日更新完成，新增 {count} 条商业线索。")
+        json.dump(final_data[:MAX_RECORDS], f, ensure_ascii=False, indent=2)
+    print(f"今日更新完成，新增 {count} 条商业线索，当前最多留存 {MAX_RECORDS} 条。")
 
 
 if __name__ == "__main__":
