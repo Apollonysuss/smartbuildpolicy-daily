@@ -2,7 +2,7 @@ name: 每日抓取
 
 on:
   schedule:
-    - cron: '0 0 * * *' # 每天北京时间早上8点
+    - cron: '0 15 * * *' # 每天北京时间晚上11点
   workflow_dispatch:
 
 permissions:
@@ -30,7 +30,7 @@ jobs:
         git add data.json
         git commit -m "Daily update" || echo "无新数据"
         
-        # ⚠️ 防冲突关键步骤
+        # 防冲突关键步骤
         git pull --rebase
         
         git push
