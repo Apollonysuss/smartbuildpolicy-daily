@@ -123,6 +123,10 @@
       color: #fff;
     }
 
+    .nav button.active {
+      outline: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
     .nav .count {
       color: #99b0b1;
       font-size: 12px;
@@ -721,21 +725,21 @@
       <div class="sidebar-section">
         <div class="sidebar-title">工作视图</div>
         <nav class="nav" aria-label="工作视图">
-          <button class="active" type="button">区域机会 <span class="count" id="navTotal">0</span></button>
-          <button type="button">政府单位 <span class="count" id="navGov">0</span></button>
-          <button type="button">项目机会 <span class="count" id="navProject">0</span></button>
-          <button type="button">公司动态 <span class="count" id="navCompany">0</span></button>
-          <button type="button">今日简报 <span class="count" id="navBrief">0</span></button>
+          <button class="active" type="button" data-view="all">区域机会 <span class="count" id="navTotal">0</span></button>
+          <button type="button" data-view="government">政府单位 <span class="count" id="navGov">0</span></button>
+          <button type="button" data-view="project">项目机会 <span class="count" id="navProject">0</span></button>
+          <button type="button" data-view="company">公司动态 <span class="count" id="navCompany">0</span></button>
+          <button type="button" data-view="brief">今日简报 <span class="count" id="navBrief">0</span></button>
         </nav>
       </div>
 
       <div class="sidebar-section">
         <div class="sidebar-title">销售状态</div>
         <nav class="nav" aria-label="销售状态">
-          <button type="button">未分配 <span class="count" id="navUnassigned">0</span></button>
-          <button type="button">待跟进 <span class="count" id="navPending">0</span></button>
-          <button type="button">跟进中 <span class="count" id="navActive">0</span></button>
-          <button type="button">需补链 <span class="count" id="navNeedsLink">0</span></button>
+          <button type="button" data-stage="未分配">未分配 <span class="count" id="navUnassigned">0</span></button>
+          <button type="button" data-stage="待跟进">待跟进 <span class="count" id="navPending">0</span></button>
+          <button type="button" data-stage="跟进中">跟进中 <span class="count" id="navActive">0</span></button>
+          <button type="button" data-stage="需补链">需补链 <span class="count" id="navNeedsLink">0</span></button>
         </nav>
       </div>
 
@@ -1069,6 +1073,8 @@
       score: 0,
       owner: "",
       query: "",
+      view: "all",
+      stage: "",
       selectedId: leads[0].id
     };
 
@@ -1095,7 +1101,8 @@
       leadList: document.getElementById("leadList"),
       detailPanel: document.getElementById("detailPanel"),
       briefList: document.getElementById("briefList"),
-      resultCount: document.getElementById("resultCount")
+      resultCount: document.getElementById("resultCount"),
+      sidebarButtons: [...document.querySelectorAll("[data-view], [data-stage]")]
     };
 
     function uniq(values) {
@@ -1160,6 +1167,23 @@
         state.owner = el.owner.value;
         render();
       });
+
+      el.sidebarButtons.forEach(button => {
+        button.addEventListener("click", () => {
+          const view = button.getAttribute("data-view");
+          const stage = button.getAttribute("data-stage");
+          if (view) {
+            state.view = view;
+            state.stage = "";
+          }
+          if (stage) {
+            state.stage = stage;
+            state.view = "all";
+          }
+          syncSidebarActive();
+          render();
+        });
+      });
     }
 
     function filteredLeads() {
@@ -1181,6 +1205,11 @@
           && (!state.type || item.type === state.type)
           && (!state.score || item.score >= state.score)
           && (!state.owner || item.owner === state.owner)
+          && (!state.stage || item.stage === state.stage || (state.stage === "需补链" && !item.reachable))
+          && (state.view !== "government" || item.type === "政府单位")
+          && (state.view !== "project" || item.type === "项目")
+          && (state.view !== "company" || item.type === "公司")
+          && (state.view !== "brief" || item.score >= 4)
           && (!state.query || haystack.includes(state.query));
       }).sort((a, b) => b.score - a.score || a.name.localeCompare(b.name, "zh-CN"));
     }
@@ -1203,6 +1232,15 @@
       el.navPending.textContent = leads.filter(item => item.stage === "待跟进").length;
       el.navActive.textContent = leads.filter(item => item.stage === "跟进中").length;
       el.navNeedsLink.textContent = leads.filter(item => !item.reachable).length;
+    }
+
+    function syncSidebarActive() {
+      el.sidebarButtons.forEach(button => {
+        const view = button.getAttribute("data-view");
+        const stage = button.getAttribute("data-stage");
+        const active = (view && state.view === view) || (stage && state.stage === stage);
+        button.classList.toggle("active", active);
+      });
     }
 
     function renderRegions() {
@@ -1543,12 +1581,14 @@
           leads = normalizeRemoteData(data);
           state.selectedId = leads[0] ? leads[0].id : "";
           initFilters();
+          syncSidebarActive();
           render();
         })
         .catch(() => {
           leads = sampleLeads;
           state.selectedId = leads[0].id;
           initFilters();
+          syncSidebarActive();
           render();
         });
     }
