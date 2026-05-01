@@ -1315,6 +1315,7 @@
       const reachable = item.source_access === "domestic_direct"
         || item.link_status === "原文可直达"
         || (link && !link.includes("news.google.com"));
+      const primaryAction = item.original_link ? "打开原文" : "搜索原文";
       const needsReview = item.source_access === "google_rss"
         || item.link_status === "需搜索核查"
         || !item.original_link;
@@ -1336,6 +1337,7 @@
         source: item.source || "行业资讯",
         link,
         search,
+        primaryAction,
         reachable,
         needsReview,
         timeline: [
@@ -1466,7 +1468,7 @@
           <p class="lead-summary">${escapeHtml(item.signal)}</p>
           <div class="next-action"><strong>下一步：</strong>${escapeHtml(item.action)}</div>
           <div class="card-actions">
-            <a class="mini-btn" href="${escapeAttr(item.link)}" target="_blank" rel="noopener">打开原文</a>
+            <a class="mini-btn" href="${escapeAttr(item.link)}" target="_blank" rel="noopener">${escapeHtml(item.primaryAction || "打开原文")}</a>
             <a class="mini-btn" href="${escapeAttr(item.search)}" target="_blank" rel="noopener">搜索标题</a>
             <button class="mini-btn" type="button" data-copy="${escapeAttr(item.id)}">复制话术</button>
           </div>

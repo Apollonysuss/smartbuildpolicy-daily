@@ -63,6 +63,83 @@ DOMESTIC_SEARCH_SOURCES = [
     },
 ]
 
+ORG_WEBSITE_SOURCES = [
+    {
+        "name": "中国建筑集团",
+        "url": "https://www.cscec.com/xwzx_new/gsyw_new/",
+        "category": "企业",
+        "group": "央国企官网",
+    },
+    {
+        "name": "上海建工",
+        "url": "https://www.scg.com.cn/scg_zxzx/qydt/",
+        "category": "企业",
+        "group": "建工企业官网",
+    },
+    {
+        "name": "北京建工",
+        "url": "https://www.bcegc.com/xwzx/qydt/",
+        "category": "企业",
+        "group": "建工企业官网",
+    },
+    {
+        "name": "中国施工企业管理协会",
+        "url": "https://www.cacem.com.cn/",
+        "category": "行业动态",
+        "group": "协会官网",
+    },
+    {
+        "name": "中国建筑业协会",
+        "url": "https://www.zgjzy.org.cn/",
+        "category": "行业动态",
+        "group": "协会官网",
+    },
+]
+
+WECHAT_MONITOR_ACCOUNTS = [
+    {"name": "中国建设报", "priority": "P0", "type": "政策/行业"},
+    {"name": "中国建设报智慧城市", "priority": "P0", "type": "政策/行业"},
+    {"name": "安居北京", "priority": "P0", "type": "地方住建"},
+    {"name": "中国施工企业管理协会", "priority": "P0", "type": "协会"},
+    {"name": "中国建筑业协会", "priority": "P0", "type": "协会"},
+    {"name": "建筑时报", "priority": "P0", "type": "行业媒体"},
+    {"name": "中国建筑", "priority": "P0", "type": "央国企"},
+    {"name": "中建科技", "priority": "P0", "type": "央国企"},
+    {"name": "中建智能", "priority": "P0", "type": "央国企"},
+    {"name": "中国交建", "priority": "P0", "type": "央国企"},
+    {"name": "上海住房城乡建设管理", "priority": "P1", "type": "地方住建"},
+    {"name": "江苏住建", "priority": "P1", "type": "地方住建"},
+    {"name": "浙江建设", "priority": "P1", "type": "地方住建"},
+    {"name": "广东建设信息", "priority": "P1", "type": "地方住建"},
+    {"name": "深圳住建", "priority": "P1", "type": "地方住建"},
+    {"name": "武汉住建", "priority": "P1", "type": "地方住建"},
+    {"name": "湖北住建", "priority": "P1", "type": "地方住建"},
+    {"name": "湖南住建", "priority": "P1", "type": "地方住建"},
+    {"name": "四川建设发布", "priority": "P1", "type": "地方住建"},
+    {"name": "重庆住建", "priority": "P1", "type": "地方住建"},
+    {"name": "中建三局", "priority": "P1", "type": "建工客户"},
+    {"name": "中建八局", "priority": "P1", "type": "建工客户"},
+    {"name": "上海建工", "priority": "P1", "type": "建工客户"},
+    {"name": "北京建工", "priority": "P1", "type": "建工客户"},
+    {"name": "博智林", "priority": "P1", "type": "竞对"},
+    {"name": "博匠机器人", "priority": "P1", "type": "竞对"},
+    {"name": "领鹊科技", "priority": "P1", "type": "竞对"},
+    {"name": "德睿途", "priority": "P1", "type": "竞对"},
+    {"name": "建科智能", "priority": "P1", "type": "竞对"},
+    {"name": "河狸智造", "priority": "P1", "type": "竞对"},
+    {"name": "方石科技", "priority": "P1", "type": "竞对"},
+    {"name": "丰坦科技", "priority": "P1", "type": "竞对"},
+    {"name": "南京湃特纳", "priority": "P1", "type": "竞对"},
+]
+
+WECHAT_MONITOR_TERMS = [
+    "智能建造",
+    "建筑机器人",
+    "智慧工地",
+    "好房子",
+    "新型建筑工业化",
+]
+
 REGION_KEYWORDS = [
     "北京", "上海", "深圳", "广州", "江苏", "浙江", "广东", "重庆", "四川",
     "湖北", "湖南", "河南", "山东", "安徽", "陕西", "雄安", "南京", "苏州",
@@ -157,6 +234,30 @@ def source_search_link(source, title):
     return baidu_search_link(title)
 
 
+def load_wechat_accounts():
+    accounts_json = os.environ.get("WECHAT_ACCOUNTS_JSON", "")
+    if accounts_json:
+        try:
+            accounts = json.loads(accounts_json)
+            if isinstance(accounts, list):
+                return [
+                    account for account in accounts
+                    if account.get("app_id") and account.get("app_secret")
+                ]
+        except Exception as e:
+            print(f"微信公众号账号配置解析失败: {e}")
+
+    app_id = os.environ.get("WECHAT_APP_ID")
+    app_secret = os.environ.get("WECHAT_APP_SECRET")
+    if app_id and app_secret:
+        return [{
+            "name": os.environ.get("WECHAT_ACCOUNT_NAME", "微信公众号"),
+            "app_id": app_id,
+            "app_secret": app_secret,
+        }]
+    return []
+
+
 def detect_sales_region(region):
     for group, names in REGION_GROUPS.items():
         if any(name in region for name in names):
@@ -214,6 +315,70 @@ def extract_html_links(content, base_url):
         if url and title:
             links.append((title, url))
     return links
+
+
+def extract_page_title(content):
+    patterns = [
+        r'<meta[^>]+property=["\']og:title["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:title["\']',
+        r"<title>(.*?)</title>",
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, content, re.I | re.S)
+        if match:
+            return clean_title(match.group(1))
+    return ""
+
+
+def parse_sogou_date(value):
+    text = clean_title(value)
+    if not text:
+        return today_str()
+    today = datetime.date.today()
+    if "小时前" in text or "分钟前" in text or "今天" in text:
+        return today.strftime("%Y-%m-%d")
+    if "昨天" in text:
+        return (today - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
+    match = re.search(r"(\d{4})[-/.年](\d{1,2})[-/.月](\d{1,2})", text)
+    if match:
+        year, month, day = match.groups()
+        return f"{int(year):04d}-{int(month):02d}-{int(day):02d}"
+    match = re.search(r"(\d{1,2})[-/.月](\d{1,2})", text)
+    if match:
+        month, day = match.groups()
+        return f"{today.year}-{int(month):02d}-{int(day):02d}"
+    return today.strftime("%Y-%m-%d")
+
+
+def sogou_wechat_url(account, term):
+    query = f'{account} {term}'
+    return "https://weixin.sogou.com/weixin?type=2&query=" + urllib.parse.quote_plus(query)
+
+
+def extract_sogou_wechat_articles(content, base_url):
+    articles = []
+    blocks = re.findall(r'<li[^>]*id=["\']sogou_vr_11002601_box_\d+["\'][^>]*>(.*?)</li>', content, re.I | re.S)
+    if not blocks:
+        blocks = re.findall(r'<div[^>]+class=["\'][^"\']*txt-box[^"\']*["\'][^>]*>(.*?)</div>', content, re.I | re.S)
+
+    for block in blocks:
+        link_match = re.search(r'<a[^>]+href=["\']([^"\']+)["\'][^>]*>(.*?)</a>', block, re.I | re.S)
+        if not link_match:
+            continue
+        link = normalize_link(link_match.group(1), base_url)
+        title = clean_title(link_match.group(2))
+        if "mp.weixin.qq.com" not in link or not title:
+            continue
+
+        account_match = re.search(r'<a[^>]+class=["\'][^"\']*account[^"\']*["\'][^>]*>(.*?)</a>', block, re.I | re.S)
+        date_match = re.search(r'<span[^>]+class=["\'][^"\']*s2[^"\']*["\'][^>]*>(.*?)</span>', block, re.I | re.S)
+        articles.append({
+            "title": title,
+            "link": link,
+            "account": clean_title(account_match.group(1)) if account_match else "",
+            "date": parse_sogou_date(date_match.group(1)) if date_match else today_str(),
+        })
+    return articles
 
 
 def fetch_html(url, headers):
@@ -282,6 +447,179 @@ def fetch_domestic_searches(headers):
     return items
 
 
+def fetch_org_websites(headers):
+    items = []
+    for source in ORG_WEBSITE_SOURCES:
+        try:
+            content = fetch_html(source["url"], headers)
+        except Exception as e:
+            print(f"机构官网抓取失败 [{source['name']}]: {e}")
+            continue
+
+        for title, link in extract_html_links(content, source["url"]):
+            if not is_relevant(title):
+                continue
+            item = make_item(
+                title=title,
+                link=link,
+                source=source["name"],
+                category=source["category"],
+                keyword=source["group"],
+                channel=source["group"],
+            )
+            if item:
+                items.append(item)
+            if len(items) >= DAILY_LIMIT:
+                return items
+        time.sleep(0.5)
+    return items
+
+
+def fetch_wechat_access_token(account):
+    url = "https://api.weixin.qq.com/cgi-bin/token"
+    params = {
+        "grant_type": "client_credential",
+        "appid": account["app_id"],
+        "secret": account["app_secret"],
+    }
+    resp = requests.get(url, params=params, timeout=20)
+    resp.raise_for_status()
+    data = resp.json()
+    token = data.get("access_token")
+    if not token:
+        raise RuntimeError(data.get("errmsg") or "未返回 access_token")
+    return token
+
+
+def parse_wechat_news_item(news, account_name, fallback_time=None):
+    title = clean_title(news.get("title", ""))
+    url = news.get("url") or news.get("content_source_url") or ""
+    if not title or not url:
+        return None
+    item = make_item(
+        title=title,
+        link=url,
+        source=account_name,
+        category=detect_category(title, "行业动态"),
+        keyword="微信公众号",
+        channel="微信公众号文章",
+    )
+    if item:
+        digest = clean_title(news.get("digest", ""))
+        if digest:
+            item["summary"] = digest
+        if fallback_time:
+            item["date"] = datetime.datetime.fromtimestamp(fallback_time).strftime("%Y-%m-%d")
+    return item
+
+
+def fetch_wechat_freepublish(token, account_name):
+    items = []
+    url = "https://api.weixin.qq.com/cgi-bin/freepublish/batchget"
+    for offset in range(0, 40, 20):
+        try:
+            resp = requests.post(
+                f"{url}?access_token={token}",
+                json={"offset": offset, "count": 20, "no_content": 1},
+                timeout=20,
+            )
+            resp.raise_for_status()
+            data = resp.json()
+        except Exception as e:
+            print(f"微信公众号已发布文章抓取失败 [{account_name}]: {e}")
+            continue
+
+        for record in data.get("item", []):
+            content = record.get("content", {})
+            for news in content.get("news_item", []):
+                item = parse_wechat_news_item(news, account_name, record.get("publish_time") or record.get("update_time"))
+                if item and is_relevant(item["title"]):
+                    items.append(item)
+        if data.get("item_count", 0) < 20:
+            break
+    return items
+
+
+def fetch_wechat_materials(token, account_name):
+    items = []
+    url = "https://api.weixin.qq.com/cgi-bin/material/batchget_material"
+    for offset in range(0, 40, 20):
+        try:
+            resp = requests.post(
+                f"{url}?access_token={token}",
+                json={"type": "news", "offset": offset, "count": 20},
+                timeout=20,
+            )
+            resp.raise_for_status()
+            data = resp.json()
+        except Exception as e:
+            print(f"微信公众号素材抓取失败 [{account_name}]: {e}")
+            continue
+
+        for record in data.get("item", []):
+            content = record.get("content", {})
+            for news in content.get("news_item", []):
+                item = parse_wechat_news_item(news, account_name, record.get("update_time"))
+                if item and is_relevant(item["title"]):
+                    items.append(item)
+        if data.get("item_count", 0) < 20:
+            break
+    return items
+
+
+def fetch_wechat_articles(headers):
+    items = []
+    accounts = load_wechat_accounts()
+    for account in accounts:
+        account_name = account.get("name", "微信公众号")
+        try:
+            token = fetch_wechat_access_token(account)
+        except Exception as e:
+            print(f"微信公众号 access_token 获取失败 [{account_name}]: {e}")
+            continue
+
+        items.extend(fetch_wechat_freepublish(token, account_name))
+        items.extend(fetch_wechat_materials(token, account_name))
+        time.sleep(0.5)
+
+    seen = {item["link"] for item in items}
+    for account in WECHAT_MONITOR_ACCOUNTS:
+        for term in WECHAT_MONITOR_TERMS:
+            search_url = sogou_wechat_url(account["name"], term)
+            try:
+                content = fetch_html(search_url, headers)
+            except Exception as e:
+                print(f"微信公众号号池搜索失败 [{account['name']} {term}]: {e}")
+                continue
+
+            if "请输入验证码" in content or "antispider" in content.lower():
+                print(f"微信公众号号池搜索触发验证码 [{account['name']} {term}]")
+                continue
+
+            for article in extract_sogou_wechat_articles(content, search_url)[:3]:
+                if article["link"] in seen or not is_relevant(article["title"]):
+                    continue
+                seen.add(article["link"])
+                source_name = article["account"] or account["name"]
+                item = make_item(
+                    title=article["title"],
+                    link=article["link"],
+                    source=source_name,
+                    category=detect_category(article["title"], "行业动态"),
+                    date=article["date"],
+                    keyword=f"{account['name']} {term}",
+                    channel=f"微信公众号号池/{account['type']}",
+                )
+                if item:
+                    item["wechat_account"] = account["name"]
+                    item["wechat_priority"] = account["priority"]
+                    items.append(item)
+                if len(items) >= DAILY_LIMIT:
+                    return items
+            time.sleep(0.8)
+    return items
+
+
 def normalize_google_link(link):
     return {
         "link": link,
@@ -298,7 +636,12 @@ def fetch_google_news():
     seen_links = set()
     headers = {"User-Agent": "Mozilla/5.0"}
 
-    domestic_items = fetch_domestic_lists(headers) + fetch_domestic_searches(headers)
+    domestic_items = (
+        fetch_domestic_lists(headers)
+        + fetch_domestic_searches(headers)
+        + fetch_org_websites(headers)
+        + fetch_wechat_articles(headers)
+    )
     for item in domestic_items:
         key = item.get("original_link") or item.get("link") or item["title"]
         if key in seen_links:
@@ -327,13 +670,14 @@ def fetch_google_news():
                 continue
             seen_links.add(link)
             title, source = split_title_source(raw_title)
+            search_link = baidu_search_link(title)
             links = normalize_google_link(link)
             items.append({
                 "title": title,
-                "link": links["link"],
+                "link": search_link,
                 "original_link": links["original_link"],
                 "google_link": links["google_link"],
-                "search_link": baidu_search_link(title),
+                "search_link": search_link,
                 "date": parse_date(node.findtext("pubDate", default="")),
                 "source": source,
                 "keyword": config["query"],
