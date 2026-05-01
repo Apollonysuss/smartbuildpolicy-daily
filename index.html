@@ -3,32 +3,1477 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>智能建造商业情报雷达</title>
+  <title>蔚建区域机会雷达</title>
   <style>
-    :root{--bg:#f4f6f8;--card:#fff;--ink:#1f2933;--muted:#687385;--line:#dbe1e8;--accent:#146c72;--hot:#b42318;--soft:#e4f2f1;--hotsoft:#fee4df}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}.shell{width:min(1180px,calc(100% - 32px));margin:0 auto;padding:24px 0 40px}.top{display:flex;justify-content:space-between;gap:18px;align-items:flex-end;border-bottom:1px solid var(--line);padding:8px 0 18px}h1{margin:0;font-size:28px;letter-spacing:0}.sub,.time,.meta,.small{color:var(--muted)}.sub{margin-top:6px}.time{white-space:nowrap;font-size:13px}.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0}.metric,.card,.side{background:var(--card);border:1px solid var(--line);border-radius:8px}.metric{padding:14px}.metric b{display:block;margin-top:6px;font-size:26px}.toolbar{display:grid;grid-template-columns:1.5fr repeat(4,minmax(112px,.5fr));gap:10px;margin-bottom:16px}input,select,button{font:inherit}input,select{width:100%;min-height:42px;border:1px solid var(--line);border-radius:8px;background:white;color:var(--ink);padding:10px 12px}.layout{display:grid;grid-template-columns:minmax(0,1fr)310px;gap:16px;align-items:start}.maincol{display:grid;gap:12px}.list{display:grid;gap:12px}.card{padding:16px}.head{display:flex;justify-content:space-between;gap:14px}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px;font-size:12px}.tag{display:inline-flex;align-items:center;min-height:22px;padding:2px 8px;border-radius:999px;background:#eef1f5;color:#394150;font-size:12px}.good{background:var(--soft);color:var(--accent)}.hot{background:var(--hotsoft);color:var(--hot)}.title{display:block;color:var(--ink);font-size:17px;font-weight:720;line-height:1.45;text-decoration:none}.title:hover{color:var(--accent)}.score{min-width:74px;text-align:right}.score b{display:block;color:var(--accent);font-size:25px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}.insight{background:#f8fafb;border:1px solid #edf1f4;border-radius:8px;padding:10px}.insight strong{display:block;color:#3d4754;font-size:12px;margin-bottom:4px}.entities{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}.pager{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:46px;padding:10px 0;border-top:1px solid var(--line);color:var(--muted)}.pager-actions{display:flex;gap:8px;flex-wrap:wrap}.pager button{min-height:34px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);padding:6px 12px;cursor:pointer}.pager button:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}.pager button:disabled{cursor:not-allowed;opacity:.45}.side{position:sticky;top:16px;padding:14px}.side h2{margin:0 0 10px;font-size:16px}.rank{border-top:1px solid var(--line);padding-top:10px;margin-top:10px}.rank:first-of-type{border-top:0;margin-top:0;padding-top:0}.rank a{color:var(--ink);font-weight:650;text-decoration:none}.empty{background:white;border:1px solid var(--line);border-radius:8px;padding:28px;text-align:center;color:var(--muted)}@media(max-width:940px){.toolbar{grid-template-columns:1fr 1fr}.toolbar input{grid-column:1/-1}}@media(max-width:860px){.top{align-items:flex-start;flex-direction:column}.metrics{grid-template-columns:repeat(2,1fr)}.layout,.grid{grid-template-columns:1fr}.side{position:static}}@media(max-width:520px){.shell{width:calc(100% - 22px);padding-top:14px}h1{font-size:23px}.metrics,.toolbar{grid-template-columns:1fr}.head{flex-direction:column}.score{text-align:left}.pager{align-items:flex-start;flex-direction:column}.pager-actions{width:100%;display:grid;grid-template-columns:repeat(2,1fr)}.pager button{width:100%}}
+    :root {
+      --bg: #f5f7f8;
+      --panel: #ffffff;
+      --panel-2: #f9fbfb;
+      --ink: #172026;
+      --muted: #68737d;
+      --line: #dbe2e6;
+      --brand: #0f6b63;
+      --brand-dark: #0a4f49;
+      --brand-soft: #dff1ee;
+      --blue: #245c9a;
+      --blue-soft: #e4eef9;
+      --amber: #936316;
+      --amber-soft: #fff1d5;
+      --red: #a23b32;
+      --red-soft: #fde8e4;
+      --green: #20734d;
+      --green-soft: #e2f3e9;
+      --shadow: 0 14px 42px rgba(20, 31, 38, 0.09);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    button,
+    input,
+    select {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .app {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 248px minmax(0, 1fr);
+    }
+
+    .sidebar {
+      background: #14252a;
+      color: #eef6f5;
+      padding: 20px 16px;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .brand {
+      padding: 4px 6px 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: #e9f6f3;
+      color: var(--brand-dark);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .brand h1 {
+      font-size: 19px;
+      line-height: 1.25;
+      margin: 0;
+      letter-spacing: 0;
+    }
+
+    .brand p {
+      margin: 6px 0 0;
+      color: #aebfc0;
+      font-size: 12px;
+    }
+
+    .nav {
+      display: grid;
+      gap: 6px;
+    }
+
+    .nav button {
+      width: 100%;
+      border: 0;
+      border-radius: 8px;
+      background: transparent;
+      color: #cddadb;
+      min-height: 40px;
+      text-align: left;
+      padding: 9px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav button.active,
+    .nav button:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+
+    .nav .count {
+      color: #99b0b1;
+      font-size: 12px;
+    }
+
+    .sidebar-section {
+      display: grid;
+      gap: 10px;
+    }
+
+    .sidebar-title {
+      color: #94aaac;
+      font-size: 12px;
+      padding: 0 8px;
+    }
+
+    .owner-card {
+      margin-top: auto;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 8px;
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .owner-card strong {
+      display: block;
+      font-size: 13px;
+    }
+
+    .owner-card span {
+      display: block;
+      color: #aec1c2;
+      font-size: 12px;
+      margin-top: 3px;
+    }
+
+    .main {
+      min-width: 0;
+      padding: 22px 24px 32px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .page-title h2 {
+      margin: 0;
+      font-size: 26px;
+      letter-spacing: 0;
+      line-height: 1.2;
+    }
+
+    .page-title p {
+      color: var(--muted);
+      margin: 6px 0 0;
+    }
+
+    .top-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+
+    .btn {
+      min-height: 38px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--ink);
+      padding: 8px 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      white-space: nowrap;
+    }
+
+    .btn.primary {
+      background: var(--brand);
+      border-color: var(--brand);
+      color: #fff;
+    }
+
+    .btn:hover {
+      border-color: #b7c3c8;
+    }
+
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .kpi {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      min-height: 96px;
+    }
+
+    .kpi-label {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .kpi-value {
+      margin-top: 8px;
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .kpi-note {
+      margin-top: 9px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .filters {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      display: grid;
+      grid-template-columns: minmax(220px, 1.2fr) repeat(4, minmax(130px, 0.7fr));
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .control {
+      min-height: 40px;
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+      padding: 8px 10px;
+    }
+
+    .workspace {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 352px;
+      gap: 14px;
+      align-items: start;
+    }
+
+    .region-board,
+    .opportunity-list,
+    .detail-panel,
+    .briefing {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .region-board {
+      margin-bottom: 14px;
+      padding: 14px;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .section-head h3 {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .section-head span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .region-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .region-tile {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel-2);
+      padding: 11px;
+      min-height: 96px;
+      text-align: left;
+      display: grid;
+      gap: 8px;
+    }
+
+    .region-tile.active {
+      border-color: var(--brand);
+      background: var(--brand-soft);
+    }
+
+    .region-name {
+      font-weight: 760;
+    }
+
+    .heat {
+      height: 8px;
+      border-radius: 999px;
+      background: #e4ebee;
+      overflow: hidden;
+    }
+
+    .heat i {
+      display: block;
+      height: 100%;
+      background: var(--brand);
+      border-radius: inherit;
+    }
+
+    .region-meta {
+      color: var(--muted);
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .opportunity-list {
+      overflow: hidden;
+    }
+
+    .list-head {
+      padding: 14px 14px 0;
+    }
+
+    .cards {
+      display: grid;
+      gap: 10px;
+      padding: 0 14px 14px;
+    }
+
+    .lead-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 14px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .lead-card.selected {
+      border-color: var(--brand);
+      box-shadow: 0 0 0 2px rgba(15, 107, 99, 0.1);
+    }
+
+    .lead-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .lead-title {
+      border: 0;
+      background: transparent;
+      padding: 0;
+      color: var(--ink);
+      font-weight: 780;
+      font-size: 16px;
+      line-height: 1.35;
+      text-align: left;
+    }
+
+    .lead-title:hover {
+      color: var(--brand);
+    }
+
+    .score {
+      min-width: 56px;
+      height: 56px;
+      border-radius: 8px;
+      background: var(--brand-soft);
+      color: var(--brand-dark);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 22px;
+    }
+
+    .meta-row,
+    .tag-row,
+    .card-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      align-items: center;
+    }
+
+    .meta-row {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #edf2f4;
+      color: #42505a;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .tag.gov {
+      background: var(--blue-soft);
+      color: var(--blue);
+    }
+
+    .tag.project {
+      background: var(--green-soft);
+      color: var(--green);
+    }
+
+    .tag.company {
+      background: var(--amber-soft);
+      color: var(--amber);
+    }
+
+    .tag.hot {
+      background: var(--red-soft);
+      color: var(--red);
+    }
+
+    .lead-summary {
+      color: #39444c;
+      margin: 0;
+    }
+
+    .next-action {
+      border-left: 3px solid var(--brand);
+      background: #f4faf8;
+      padding: 9px 10px;
+      color: #26343a;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .mini-btn {
+      min-height: 32px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+      padding: 6px 9px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+    }
+
+    .mini-btn:hover {
+      border-color: #aebbc1;
+    }
+
+    .side-stack {
+      display: grid;
+      gap: 14px;
+      position: sticky;
+      top: 14px;
+    }
+
+    .detail-panel,
+    .briefing {
+      padding: 14px;
+    }
+
+    .detail-title {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.3;
+    }
+
+    .detail-sub {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
+    .detail-block {
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      margin-top: 12px;
+    }
+
+    .detail-block h4 {
+      margin: 0 0 7px;
+      font-size: 13px;
+      color: #334047;
+    }
+
+    .detail-block p {
+      margin: 0;
+      color: #3d4950;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 9px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 74px minmax(0, 1fr);
+      gap: 8px;
+      color: #3b464c;
+      font-size: 12px;
+    }
+
+    .timeline-item time {
+      color: var(--muted);
+    }
+
+    .owner-row {
+      display: grid;
+      gap: 8px;
+    }
+
+    .owner-chip {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 9px;
+      background: var(--panel-2);
+    }
+
+    .owner-chip strong,
+    .owner-chip span {
+      display: block;
+    }
+
+    .owner-chip span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .brief-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .brief-item {
+      padding-top: 10px;
+      border-top: 1px solid var(--line);
+    }
+
+    .brief-item:first-child {
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    .brief-item strong {
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .brief-item span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .empty {
+      padding: 28px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 1180px) {
+      .app {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        height: auto;
+        position: static;
+      }
+
+      .workspace {
+        grid-template-columns: 1fr;
+      }
+
+      .side-stack {
+        position: static;
+      }
+
+      .region-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 760px) {
+      .main {
+        padding: 16px 12px 24px;
+      }
+
+      .topbar,
+      .lead-top {
+        flex-direction: column;
+      }
+
+      .top-actions {
+        justify-content: flex-start;
+      }
+
+      .kpis,
+      .filters,
+      .region-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .score {
+        min-width: 48px;
+        width: 48px;
+        height: 48px;
+      }
+    }
   </style>
 </head>
 <body>
-  <main class="shell">
-    <header class="top"><div><h1>智能建造商业情报雷达</h1><div class="sub">政策、招采、项目与企业动态的市场机会看板</div></div><div class="time" id="time">数据加载中</div></header>
-    <section class="metrics" id="metrics"></section>
-    <section class="toolbar"><input id="q" type="search" placeholder="搜索标题、地区、企业或机会关键词"><select id="cat"><option value="">全部类型</option></select><select id="region"><option value="">全部地区</option></select><select id="score"><option value="0">全部价值</option><option value="5">5分高价值</option><option value="4">4分以上</option><option value="3">3分以上</option></select><select id="pageSize"><option value="20">每页20条</option><option value="40">每页40条</option><option value="80">每页80条</option></select></section>
-    <section class="layout"><div class="maincol"><div class="list" id="list"><div class="empty">正在加载数据...</div></div><nav class="pager" id="pager" aria-label="线索列表分页"></nav></div><aside class="side"><h2>高价值线索</h2><div id="rank"></div></aside></section>
-  </main>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">蔚</div>
+        <h1>蔚建区域机会雷达</h1>
+        <p>面向区域销售的智能建造机会工作台</p>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-title">工作视图</div>
+        <nav class="nav" aria-label="工作视图">
+          <button class="active" type="button">区域机会 <span class="count" id="navTotal">0</span></button>
+          <button type="button">政府单位 <span class="count" id="navGov">0</span></button>
+          <button type="button">项目机会 <span class="count" id="navProject">0</span></button>
+          <button type="button">公司动态 <span class="count" id="navCompany">0</span></button>
+          <button type="button">今日简报 <span class="count" id="navBrief">0</span></button>
+        </nav>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-title">销售状态</div>
+        <nav class="nav" aria-label="销售状态">
+          <button type="button">未分配 <span class="count" id="navUnassigned">0</span></button>
+          <button type="button">待跟进 <span class="count" id="navPending">0</span></button>
+          <button type="button">跟进中 <span class="count" id="navActive">0</span></button>
+          <button type="button">需补链 <span class="count" id="navNeedsLink">0</span></button>
+        </nav>
+      </div>
+
+      <div class="owner-card">
+        <strong>今日建议</strong>
+        <span>优先看华南、华东、西南，政策和项目同时升温。</span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="page-title">
+          <h2>区域销售机会总览</h2>
+          <p>按地区聚合政策、招采、项目和公司信号，把情报变成可跟进对象。</p>
+        </div>
+        <div class="top-actions">
+          <button class="btn" type="button">复制今日简报</button>
+          <button class="btn primary" type="button">导出区域线索</button>
+        </div>
+      </header>
+
+      <section class="kpis" aria-label="关键指标">
+        <div class="kpi">
+          <div class="kpi-label">全国机会对象</div>
+          <div class="kpi-value" id="kpiTotal">0</div>
+          <div class="kpi-note">政府、项目、公司合计</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">高价值线索</div>
+          <div class="kpi-value" id="kpiHigh">0</div>
+          <div class="kpi-note">4分及以上，建议本周跟进</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">招采/采购信号</div>
+          <div class="kpi-value" id="kpiTender">0</div>
+          <div class="kpi-note">优先核查预算和联系人</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">原文可直达</div>
+          <div class="kpi-value" id="kpiReachable">0%</div>
+          <div class="kpi-note">国内官网/招采源优先补链</div>
+        </div>
+      </section>
+
+      <section class="filters" aria-label="筛选">
+        <input class="control" id="searchInput" type="search" placeholder="搜索地区、单位、项目、场景">
+        <select class="control" id="regionFilter">
+          <option value="">全部区域</option>
+        </select>
+        <select class="control" id="typeFilter">
+          <option value="">全部对象</option>
+        </select>
+        <select class="control" id="scoreFilter">
+          <option value="0">全部价值</option>
+          <option value="5">5分</option>
+          <option value="4">4分以上</option>
+          <option value="3">3分以上</option>
+        </select>
+        <select class="control" id="ownerFilter">
+          <option value="">全部负责人</option>
+        </select>
+      </section>
+
+      <section class="workspace">
+        <div>
+          <section class="region-board">
+            <div class="section-head">
+              <h3>区域热度</h3>
+              <span>点击区域快速过滤</span>
+            </div>
+            <div class="region-grid" id="regionGrid"></div>
+          </section>
+
+          <section class="opportunity-list">
+            <div class="list-head section-head">
+              <h3>机会对象</h3>
+              <span id="resultCount">0 条</span>
+            </div>
+            <div class="cards" id="leadList"></div>
+          </section>
+        </div>
+
+        <aside class="side-stack">
+          <section class="detail-panel" id="detailPanel"></section>
+          <section class="briefing">
+            <div class="section-head">
+              <h3>今日区域简报</h3>
+              <span>销售可直接转发</span>
+            </div>
+            <div class="brief-list" id="briefList"></div>
+          </section>
+        </aside>
+      </section>
+    </main>
+  </div>
+
   <script>
-    let all=[],shown=[],page=1,pageSize=20;const $=id=>document.getElementById(id);const regions=["北京","上海","深圳","广州","江苏","浙江","广东","重庆","四川","湖北","湖南","河南","山东","安徽","陕西","雄安","南京","苏州","杭州","成都","武汉","郑州","长沙","合肥","西安","厦门","云南"];
-    fetch('data.json?t='+Date.now()).then(r=>r.json()).then(d=>{all=normalize(d).sort((a,b)=>new Date(b.date)-new Date(a.date)||b.lead_score-a.lead_score);setup();filter()}).catch(()=>{$('list').innerHTML='<div class="empty">数据暂未就绪，请等待 GitHub Actions 完成抓取。</div>';$('pager').innerHTML=''});
-    ['q','cat','region','score'].forEach(id=>$(id).addEventListener('input',()=>{page=1;filter()}));$('pageSize').addEventListener('change',()=>{pageSize=Number($('pageSize').value||20);page=1;render()});
-    function normalize(data){return(Array.isArray(data)?data:[]).map(x=>{const c=x.category||inferCat(x.title||'');const s=Number(x.lead_score||inferScore(x.title||'',c));return{title:x.title||'未命名信息',link:x.link||'#',date:x.date||'',source:x.source||'行业资讯',summary:x.summary||'暂无摘要',keyword:x.keyword||'智能建造',category:c,region:x.region||inferRegion(x.title||''),entities:Array.isArray(x.entities)?x.entities:[],business_value:x.business_value||businessValue(x.title||'',c),lead_score:Math.max(1,Math.min(5,s)),lead_reason:x.lead_reason||leadReason(c),suggested_action:x.suggested_action||action(c),urgency:x.urgency||(/[招中]标|采购|公示|征求意见|申报/.test(x.title||'')?'高':'中')}})}
-    function inferCat(t){if(/招标|中标|采购|成交|入围|公示/.test(t))return'招采';if(/政策|通知|意见|规划|试点|住建|标准|征求意见/.test(t))return'政策';if(/项目|工程|开工|建设|示范|园区|投资/.test(t))return'项目';if(/集团|公司|股份|科技|建工|中建|中铁|中交/.test(t))return'企业';if(/大会|峰会|论坛|博览会|交流会|年会/.test(t))return'会议';return'行业动态'}function inferRegion(t){return regions.find(r=>t.includes(r))||'全国'}function inferScore(t,c){let s=['政策','招采'].includes(c)?4:3;if(/招标|中标|采购|入围|试点|示范|专项|规划|投资|征求意见/.test(t))s++;return Math.min(s,5)}
-    function businessValue(t,c){if(c==='招采')return'可能对应明确采购需求，适合核查预算、业主和供应商切入点。';if(c==='政策')return'可能带来试点、补贴、标准宣贯或地方项目机会。';if(c==='项目')return'可能包含业主、总包和智能化施工应用场景。';return'可作为智能建造、智慧工地、建筑机器人或数字化施工市场信号。'}function leadReason(c){return c+'信号明确，可能带来项目、试点、合作或销售跟进机会。'}function action(c){return c==='招采'?'核查招采主体、预算金额、采购需求和联系人。':c==='政策'?'跟进政策细则、试点申报窗口和承接单位。':c==='项目'?'识别项目业主、总包单位和智能化应用场景。':'打开原文核查主体、场景和后续商业动作。'}
-    function setup(){fill('cat',[...new Set(all.map(x=>x.category))]);fill('region',[...new Set(all.map(x=>x.region))])}function fill(id,vals){vals.filter(Boolean).sort().forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;$(id).appendChild(o)})}
-    function filter(){const q=$('q').value.trim().toLowerCase(),c=$('cat').value,r=$('region').value,s=Number($('score').value||0);shown=all.filter(x=>{const h=[x.title,x.source,x.region,x.category,x.business_value,x.lead_reason,x.suggested_action,x.entities.join(' ')].join(' ').toLowerCase();return(!q||h.includes(q))&&(!c||x.category===c)&&(!r||x.region===r)&&(!s||x.lead_score>=s)});render()}function pages(){return Math.max(1,Math.ceil(shown.length/pageSize))}function setPage(n){page=Math.min(Math.max(1,n),pages());renderLeads();renderPager()}window.setPage=setPage;
-    function render(){page=Math.min(page,pages());const high=shown.filter(x=>x.lead_score>=4).length,pol=shown.filter(x=>x.category==='政策').length,bid=shown.filter(x=>x.category==='招采').length;$('metrics').innerHTML=metric('当前线索',shown.length)+metric('高价值',high)+metric('政策信号',pol)+metric('招采机会',bid);$('time').textContent='最新日期：'+(all[0]?.date||'暂无数据');renderLeads();renderPager();renderRank()}
-    function renderLeads(){if(!shown.length){$('list').innerHTML='<div class="empty">没有匹配的线索。</div>';return}const start=(page-1)*pageSize;$('list').innerHTML=shown.slice(start,start+pageSize).map(card).join('')}
-    function renderPager(){if(!shown.length){$('pager').innerHTML='';return}const total=pages(),start=(page-1)*pageSize+1,end=Math.min(shown.length,page*pageSize);$('pager').innerHTML='<div>显示 '+start+'-'+end+' / '+shown.length+' 条 · 第 '+page+' / '+total+' 页</div><div class="pager-actions"><button type="button" onclick="setPage(1)" '+(page===1?'disabled':'')+'>首页</button><button type="button" onclick="setPage(page-1)" '+(page===1?'disabled':'')+'>上一页</button><button type="button" onclick="setPage(page+1)" '+(page===total?'disabled':'')+'>下一页</button><button type="button" onclick="setPage('+total+')" '+(page===total?'disabled':'')+'>末页</button></div>'}
-    function renderRank(){const top=[...shown].sort((a,b)=>b.lead_score-a.lead_score||new Date(b.date)-new Date(a.date)).slice(0,6);$('rank').innerHTML=top.map(x=>'<div class="rank"><a href="'+esc(x.link)+'" target="_blank" rel="noopener">'+esc(x.title)+'</a><div class="small">'+esc(x.region)+' · '+esc(x.category)+' · '+x.lead_score+'分</div></div>').join('')||'<div class="empty">暂无高价值线索。</div>'}
-    function metric(k,v){return'<div class="metric"><span class="small">'+k+'</span><b>'+v+'</b></div>'}function card(x){return'<article class="card"><div class="head"><div><div class="meta"><span>'+esc(x.date)+'</span><span>'+esc(x.source)+'</span><span class="tag good">'+esc(x.category)+'</span><span class="tag">'+esc(x.region)+'</span><span class="tag '+(x.urgency==='高'?'hot':'')+'">紧急度 '+esc(x.urgency)+'</span></div><a class="title" href="'+esc(x.link)+'" target="_blank" rel="noopener">'+esc(x.title)+'</a></div><div class="score"><b>'+x.lead_score+'</b><span class="small">线索价值</span></div></div><div class="grid">'+ins('事实摘要',x.summary)+ins('商业价值',x.business_value)+ins('评分原因',x.lead_reason)+ins('建议动作',x.suggested_action)+'</div>'+entities(x.entities)+'</article>'}function ins(k,v){return'<div class="insight"><strong>'+k+'</strong>'+esc(v||'待补充')+'</div>'}function entities(e){return e.length?'<div class="entities">'+e.slice(0,8).map(n=>'<span class="tag">'+esc(n)+'</span>').join('')+'</div>':''}function esc(v){return String(v||'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#039;')}
+    const sampleLeads = [
+      {
+        id: "sz-gov-01",
+        name: "深圳市住房和建设局",
+        type: "政府单位",
+        region: "华南",
+        city: "深圳",
+        owner: "华南销售一组",
+        score: 5,
+        stage: "待跟进",
+        signal: "智能建造试点城市政策持续推进，关联智慧工地、建筑机器人和BIM场景。",
+        why: "政策牵引强，后续会影响试点工程、示范项目和采购方向。",
+        action: "核查住建局近期通知、试点工程名单和公共资源交易平台公告，优先寻找承建单位。",
+        objects: ["住建局", "试点城市", "智慧工地"],
+        tags: ["政策", "试点", "高价值"],
+        source: "深圳市政府 / 住建局",
+        link: "https://www.sz.gov.cn/",
+        search: "https://www.baidu.com/s?wd=%E6%B7%B1%E5%9C%B3%20%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%20%E8%AF%95%E7%82%B9",
+        reachable: true,
+        timeline: [
+          ["04-30", "智能建造相关政策和项目动态出现"],
+          ["04-25", "智慧工地、数智建造关键词升温"],
+          ["04-12", "重点片区项目有数字化施工报道"]
+        ],
+        pitch: "看到深圳近期持续推进智能建造和智慧工地相关工作，蔚建可以从项目数字化管控、场景落地和示范工程复盘切入。"
+      },
+      {
+        id: "sz-project-01",
+        name: "深圳湾超级总部基地",
+        type: "项目",
+        region: "华南",
+        city: "深圳",
+        owner: "华南销售一组",
+        score: 5,
+        stage: "跟进中",
+        signal: "数智建造赋能总部基地建设，项目体量大、标杆属性强。",
+        why: "大型标杆项目容易带动智能建造平台、现场管控、机器人和BIM协同需求。",
+        action: "识别业主、总包、分包和科技实施方，整理蔚建在大型项目中的可展示案例。",
+        objects: ["项目业主", "总包单位", "智慧工地"],
+        tags: ["项目", "标杆", "数智建造"],
+        source: "21财经",
+        link: "https://www.21jingji.com/",
+        search: "https://www.baidu.com/s?wd=%E6%B7%B1%E5%9C%B3%E6%B9%BE%E8%B6%85%E7%BA%A7%E6%80%BB%E9%83%A8%20%E6%95%B0%E6%99%BA%E5%BB%BA%E9%80%A0",
+        reachable: true,
+        timeline: [
+          ["04-30", "媒体报道数智建造赋能项目建设"],
+          ["04-18", "片区工程建设动态密集"],
+          ["03-29", "相关企业参与区域建设"]
+        ],
+        pitch: "这个项目适合用标杆案例方式切入，重点讲施工过程数字化、质量安全和多方协同。"
+      },
+      {
+        id: "sc-gov-01",
+        name: "四川省住建厅城市更新重点实验室",
+        type: "政府单位",
+        region: "西南",
+        city: "成都",
+        owner: "西南销售组",
+        score: 4,
+        stage: "待跟进",
+        signal: "城市更新重点实验室成立，可能带来课题、示范项目和技术合作入口。",
+        why: "实验室类平台通常会连接政府、院校、设计院和项目业主，是生态合作入口。",
+        action: "跟进实验室牵头单位、合作单位和首批研究方向，判断蔚建能否参与场景共创。",
+        objects: ["住建厅", "实验室", "城市更新"],
+        tags: ["政策", "城市更新", "合作"],
+        source: "川观新闻",
+        link: "https://www.sc.gov.cn/",
+        search: "https://www.baidu.com/s?wd=%E5%9B%9B%E5%B7%9D%20%E5%9F%8E%E5%B8%82%E6%9B%B4%E6%96%B0%20%E9%87%8D%E7%82%B9%E5%AE%9E%E9%AA%8C%E5%AE%A4%20%E4%BD%8F%E5%BB%BA%E5%8E%85",
+        reachable: true,
+        timeline: [
+          ["04-24", "城市更新重点实验室成立"],
+          ["04-10", "四川城市更新政策动态增加"],
+          ["03-18", "地方示范项目公开报道"]
+        ],
+        pitch: "可从城市更新数字底座、施工过程监管和示范场景联合申报切入。"
+      },
+      {
+        id: "js-company-01",
+        name: "苏州城投与建工生态单位",
+        type: "公司",
+        region: "华东",
+        city: "苏州",
+        owner: "华东销售二组",
+        score: 4,
+        stage: "未分配",
+        signal: "长三角城市更新、智慧工地和产业园建设持续释放项目需求。",
+        why: "城投和建工体系掌握项目落地，适合从区域项目组合和平台化管理切入。",
+        action: "梳理苏州近期中标公告、城投项目清单和总包单位，优先找正在建设的产业园/公建项目。",
+        objects: ["城投公司", "建工集团", "产业园"],
+        tags: ["公司", "项目群", "华东"],
+        source: "公共资源交易平台",
+        link: "https://www.ggzy.gov.cn/",
+        search: "https://www.baidu.com/s?wd=%E8%8B%8F%E5%B7%9E%20%E6%99%BA%E6%85%A7%E5%B7%A5%E5%9C%B0%20%E4%B8%AD%E6%A0%87",
+        reachable: true,
+        timeline: [
+          ["04-28", "区域建设项目公告出现智慧工地关键词"],
+          ["04-12", "产业园和公建项目招采活跃"],
+          ["03-30", "城投体系项目更新"]
+        ],
+        pitch: "适合打组合项目管理和区域平台价值，不只盯单个工地。"
+      },
+      {
+        id: "hn-gov-01",
+        name: "长沙智能建造 158 工程",
+        type: "政府单位",
+        region: "华中",
+        city: "长沙",
+        owner: "华中销售组",
+        score: 4,
+        stage: "待跟进",
+        signal: "长沙智能建造 158 工程持续有平台建设与数字化赋能报道。",
+        why: "地方专项工程具备明确政策抓手，可能沉淀多个平台、项目和承建单位。",
+        action: "按八大平台拆解责任单位，整理蔚建可覆盖的场景并匹配当地建工/平台企业。",
+        objects: ["住建部门", "平台公司", "建工单位"],
+        tags: ["政策", "平台", "数字化"],
+        source: "华声在线",
+        link: "https://www.hunan.gov.cn/",
+        search: "https://www.baidu.com/s?wd=%E9%95%BF%E6%B2%99%20%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%20158%E5%B7%A5%E7%A8%8B",
+        reachable: true,
+        timeline: [
+          ["04-25", "培训和人才相关信号出现"],
+          ["03-22", "平台建设报道持续"],
+          ["02-11", "专项工程相关政策复盘"]
+        ],
+        pitch: "可从平台建设、项目示范和人员培训三个入口分别准备拜访材料。"
+      },
+      {
+        id: "bj-project-01",
+        name: "北京城市副中心智能建造样板",
+        type: "项目",
+        region: "华北",
+        city: "北京",
+        owner: "华北销售组",
+        score: 4,
+        stage: "待跟进",
+        signal: "副中心样板项目强调像造汽车一样建房子，适合智能建造生态合作。",
+        why: "城市副中心项目标杆性强，适合争取示范应用和生态伙伴关系。",
+        action: "跟进副中心建设平台、项目公司、总包单位和产业联盟活动。",
+        objects: ["项目公司", "总包单位", "产业联盟"],
+        tags: ["项目", "示范", "华北"],
+        source: "北京市人民政府",
+        link: "https://www.beijing.gov.cn/",
+        search: "https://www.baidu.com/s?wd=%E5%8C%97%E4%BA%AC%20%E5%9F%8E%E5%B8%82%E5%89%AF%E4%B8%AD%E5%BF%83%20%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0",
+        reachable: true,
+        timeline: [
+          ["04-18", "副中心建设报道提及智能建造生态"],
+          ["03-08", "示范样板相关信息更新"],
+          ["01-21", "产业活动释放合作信号"]
+        ],
+        pitch: "建议以生态合作和示范项目方式切入，避免只卖单点工具。"
+      },
+      {
+        id: "cq-gov-01",
+        name: "重庆现代建筑产业集群",
+        type: "政府单位",
+        region: "西南",
+        city: "重庆",
+        owner: "西南销售组",
+        score: 4,
+        stage: "未分配",
+        signal: "重庆推动建筑业智慧化转型，现代建筑产业集群目标明确。",
+        why: "产业集群政策会带来企业培育、试点示范、平台和项目机会。",
+        action: "查找重庆住建委、经信部门和产业园区的项目申报及招采窗口。",
+        objects: ["住建委", "产业园区", "建工企业"],
+        tags: ["政策", "产业集群", "西南"],
+        source: "重庆市人民政府",
+        link: "https://www.cq.gov.cn/",
+        search: "https://www.baidu.com/s?wd=%E9%87%8D%E5%BA%86%20%E5%BB%BA%E7%AD%91%E4%B8%9A%20%E6%99%BA%E6%85%A7%E5%8C%96%20%E8%BD%AC%E5%9E%8B",
+        reachable: true,
+        timeline: [
+          ["04-20", "现代建筑产业集群政策信号出现"],
+          ["03-28", "智慧化转型相关报道"],
+          ["02-13", "本地企业培育政策更新"]
+        ],
+        pitch: "可围绕产业集群中的骨干企业培育和示范项目落地做联合方案。"
+      },
+      {
+        id: "sh-company-01",
+        name: "上海建工机器人应用场景",
+        type: "公司",
+        region: "华东",
+        city: "上海",
+        owner: "华东销售一组",
+        score: 3,
+        stage: "跟进中",
+        signal: "上海建工持续展示机器人和无人施工创新样板。",
+        why: "头部建工企业具备示范价值，但合作门槛较高，适合中长期经营。",
+        action: "跟踪其机器人应用场景、技术合作伙伴和集团数字化部门活动。",
+        objects: ["建工集团", "机器人", "无人施工"],
+        tags: ["公司", "技术", "标杆"],
+        source: "上海国资委",
+        link: "https://www.shanghai.gov.cn/",
+        search: "https://www.baidu.com/s?wd=%E4%B8%8A%E6%B5%B7%E5%BB%BA%E5%B7%A5%20%E6%9C%BA%E5%99%A8%E4%BA%BA%20%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0",
+        reachable: true,
+        timeline: [
+          ["04-21", "集团技术创新报道出现"],
+          ["03-17", "机器人应用场景传播"],
+          ["02-08", "数字化转型活动更新"]
+        ],
+        pitch: "建议以学习交流和联合场景验证切入，先建立技术层关系。"
+      },
+      {
+        id: "gx-project-01",
+        name: "广西智慧工地监管平台",
+        type: "项目",
+        region: "华南",
+        city: "南宁",
+        owner: "华南销售二组",
+        score: 3,
+        stage: "未分配",
+        signal: "地方智慧工地监管需求稳定，平台类机会适合长期跟踪。",
+        why: "监管平台可能连接多项目数据，后续有运维、扩容和数据治理需求。",
+        action: "检索广西公共资源交易平台和住建厅公告，确认是否有平台升级或运维采购。",
+        objects: ["住建厅", "监管平台", "施工企业"],
+        tags: ["招采", "平台", "监管"],
+        source: "Google RSS 转搜索",
+        link: "https://www.ggzy.gov.cn/",
+        search: "https://www.baidu.com/s?wd=%E5%B9%BF%E8%A5%BF%20%E6%99%BA%E6%85%A7%E5%B7%A5%E5%9C%B0%20%E7%9B%91%E7%AE%A1%E5%B9%B3%E5%8F%B0%20%E6%8B%9B%E6%A0%87",
+        reachable: false,
+        timeline: [
+          ["04-19", "搜索发现监管平台相关信息"],
+          ["03-06", "地方项目公告含智慧工地关键词"],
+          ["01-30", "住建领域监管平台运维需求出现"]
+        ],
+        pitch: "先确认原始公告和预算，再判断是否适合平台升级或集成合作。"
+      }
+    ];
+
+    let leads = sampleLeads;
+
+    const state = {
+      region: "",
+      type: "",
+      score: 0,
+      owner: "",
+      query: "",
+      selectedId: leads[0].id
+    };
+
+    const el = {
+      kpiTotal: document.getElementById("kpiTotal"),
+      kpiHigh: document.getElementById("kpiHigh"),
+      kpiTender: document.getElementById("kpiTender"),
+      kpiReachable: document.getElementById("kpiReachable"),
+      navTotal: document.getElementById("navTotal"),
+      navGov: document.getElementById("navGov"),
+      navProject: document.getElementById("navProject"),
+      navCompany: document.getElementById("navCompany"),
+      navBrief: document.getElementById("navBrief"),
+      navUnassigned: document.getElementById("navUnassigned"),
+      navPending: document.getElementById("navPending"),
+      navActive: document.getElementById("navActive"),
+      navNeedsLink: document.getElementById("navNeedsLink"),
+      search: document.getElementById("searchInput"),
+      region: document.getElementById("regionFilter"),
+      type: document.getElementById("typeFilter"),
+      score: document.getElementById("scoreFilter"),
+      owner: document.getElementById("ownerFilter"),
+      regionGrid: document.getElementById("regionGrid"),
+      leadList: document.getElementById("leadList"),
+      detailPanel: document.getElementById("detailPanel"),
+      briefList: document.getElementById("briefList"),
+      resultCount: document.getElementById("resultCount")
+    };
+
+    function uniq(values) {
+      return [...new Set(values)].filter(Boolean).sort();
+    }
+
+    function initFilters() {
+      resetSelect(el.region, "全部区域");
+      resetSelect(el.type, "全部对象");
+      resetSelect(el.score, "全部价值", [
+        ["5", "5分"],
+        ["4", "4分以上"],
+        ["3", "3分以上"]
+      ]);
+      resetSelect(el.owner, "全部负责人");
+      fillSelect(el.region, uniq(leads.map(item => item.region)));
+      fillSelect(el.type, uniq(leads.map(item => item.type)));
+      fillSelect(el.owner, uniq(leads.map(item => item.owner)));
+    }
+
+    function resetSelect(select, label, extraOptions = []) {
+      select.innerHTML = "";
+      const first = document.createElement("option");
+      first.value = select === el.score ? "0" : "";
+      first.textContent = label;
+      select.appendChild(first);
+      extraOptions.forEach(([value, text]) => {
+        const option = document.createElement("option");
+        option.value = value;
+        option.textContent = text;
+        select.appendChild(option);
+      });
+    }
+
+    function fillSelect(select, values) {
+      values.forEach(value => {
+        const option = document.createElement("option");
+        option.value = value;
+        option.textContent = value;
+        select.appendChild(option);
+      });
+    }
+
+    function bindEvents() {
+      el.search.addEventListener("input", () => {
+        state.query = el.search.value.trim().toLowerCase();
+        render();
+      });
+      el.region.addEventListener("change", () => {
+        state.region = el.region.value;
+        render();
+      });
+      el.type.addEventListener("change", () => {
+        state.type = el.type.value;
+        render();
+      });
+      el.score.addEventListener("change", () => {
+        state.score = Number(el.score.value || 0);
+        render();
+      });
+      el.owner.addEventListener("change", () => {
+        state.owner = el.owner.value;
+        render();
+      });
+    }
+
+    function filteredLeads() {
+      return leads.filter(item => {
+        const haystack = [
+          item.name,
+          item.type,
+          item.region,
+          item.city,
+          item.owner,
+          item.signal,
+          item.why,
+          item.action,
+          item.objects.join(" "),
+          item.tags.join(" ")
+        ].join(" ").toLowerCase();
+
+        return (!state.region || item.region === state.region)
+          && (!state.type || item.type === state.type)
+          && (!state.score || item.score >= state.score)
+          && (!state.owner || item.owner === state.owner)
+          && (!state.query || haystack.includes(state.query));
+      }).sort((a, b) => b.score - a.score || a.name.localeCompare(b.name, "zh-CN"));
+    }
+
+    function renderKpis(items) {
+      const high = items.filter(item => item.score >= 4).length;
+      const tender = items.filter(item => item.tags.includes("招采")).length;
+      const reachable = items.length ? Math.round(items.filter(item => item.reachable).length / items.length * 100) : 0;
+
+      el.kpiTotal.textContent = items.length;
+      el.kpiHigh.textContent = high;
+      el.kpiTender.textContent = tender;
+      el.kpiReachable.textContent = `${reachable}%`;
+      el.navTotal.textContent = leads.length;
+      el.navGov.textContent = leads.filter(item => item.type === "政府单位").length;
+      el.navProject.textContent = leads.filter(item => item.type === "项目").length;
+      el.navCompany.textContent = leads.filter(item => item.type === "公司").length;
+      el.navBrief.textContent = leads.filter(item => item.score >= 4).length;
+      el.navUnassigned.textContent = leads.filter(item => item.stage === "未分配").length;
+      el.navPending.textContent = leads.filter(item => item.stage === "待跟进").length;
+      el.navActive.textContent = leads.filter(item => item.stage === "跟进中").length;
+      el.navNeedsLink.textContent = leads.filter(item => !item.reachable).length;
+    }
+
+    function renderRegions() {
+      const counts = leads.reduce((acc, item) => {
+        acc[item.region] = acc[item.region] || { total: 0, high: 0 };
+        acc[item.region].total += 1;
+        if (item.score >= 4) acc[item.region].high += 1;
+        return acc;
+      }, {});
+      if (!Object.keys(counts).length) {
+        el.regionGrid.innerHTML = '<div class="empty">暂无区域数据。</div>';
+        return;
+      }
+      const max = Math.max(...Object.values(counts).map(item => item.total));
+
+      el.regionGrid.innerHTML = Object.entries(counts).map(([region, data]) => `
+        <button class="region-tile ${state.region === region ? "active" : ""}" type="button" data-region="${escapeAttr(region)}">
+          <div class="region-name">${escapeHtml(region)}</div>
+          <div class="heat"><i style="width:${Math.max(18, data.total / max * 100)}%"></i></div>
+          <div class="region-meta"><span>${data.total} 条机会</span><span>${data.high} 高价值</span></div>
+        </button>
+      `).join("");
+
+      [...el.regionGrid.querySelectorAll("[data-region]")].forEach(button => {
+        button.addEventListener("click", () => {
+          const region = button.getAttribute("data-region");
+          state.region = state.region === region ? "" : region;
+          el.region.value = state.region;
+          render();
+        });
+      });
+    }
+
+    function normalizeRemoteData(data) {
+      const rows = Array.isArray(data) ? data : [];
+      const normalized = rows.map((item, index) => fromDataItem(item, index)).filter(Boolean);
+      return normalized.length ? normalized : sampleLeads;
+    }
+
+    function fromDataItem(item, index) {
+      const title = item.title || "未命名机会";
+      const category = item.category || inferCategory(title);
+      const city = item.region || inferCity(title);
+      const salesRegion = item.sales_region || inferSalesRegion(city);
+      const score = Math.max(1, Math.min(5, Number(item.lead_score || inferScore(title, category))));
+      const type = inferObjectType(category, title);
+      const link = item.original_link || item.link || "#";
+      const search = item.search_link || baiduSearch(title);
+      const reachable = item.source_access === "domestic_direct"
+        || item.link_status === "原文可直达"
+        || (link && !link.includes("news.google.com"));
+
+      return {
+        id: item.id || `lead-${index}-${hashCode(title)}`,
+        name: title,
+        type,
+        region: salesRegion,
+        city,
+        owner: item.owner || inferOwner(salesRegion),
+        score,
+        stage: score >= 4 ? "待跟进" : "未分配",
+        signal: item.summary || item.business_value || title,
+        why: item.lead_reason || item.business_value || "该信号与智能建造、智慧工地或建筑数字化相关，值得销售进一步核查。",
+        action: item.suggested_action || "核查原文主体、项目阶段、招采窗口和相关承建单位。",
+        objects: normalizeEntities(item.entities, type, city),
+        tags: normalizeTags(category, item.source_channel, reachable, score),
+        source: item.source || "行业资讯",
+        link,
+        search,
+        reachable,
+        timeline: [
+          [formatShortDate(item.date), item.summary || title],
+          ["核查", reachable ? "优先打开原文确认主体和项目阶段" : "Google RSS 或聚合源需用国内搜索补链"],
+          ["跟进", item.suggested_action || "补齐业主、总包、预算和联系人"]
+        ],
+        pitch: makePitch(title, city, category, item.business_value)
+      };
+    }
+
+    function normalizeEntities(entities, type, city) {
+      const base = Array.isArray(entities) ? entities.filter(Boolean).slice(0, 4) : [];
+      if (base.length) return base;
+      if (type === "政府单位") return ["住建部门", "主管单位", city];
+      if (type === "项目") return ["项目业主", "总包单位", "智能建造场景"];
+      if (type === "公司") return ["企业主体", "数字化部门", "项目团队"];
+      return ["线索主体", "区域销售", "市场团队"];
+    }
+
+    function normalizeTags(category, channel, reachable, score) {
+      const tags = [category || "行业动态"];
+      if (channel) tags.push(channel);
+      tags.push(reachable ? "国内可打开" : "需补链");
+      if (score >= 4) tags.push("高价值");
+      return [...new Set(tags)];
+    }
+
+    function inferCategory(title) {
+      if (/招标|中标|采购|成交|入围|合同/.test(title)) return "招采";
+      if (/政策|通知|意见|规划|试点|住建|标准|方案/.test(title)) return "政策";
+      if (/项目|工程|开工|建设|示范|园区|基地/.test(title)) return "项目";
+      if (/集团|公司|股份|科技|建工|中建|中铁|中交/.test(title)) return "企业";
+      if (/大会|峰会|论坛|博览会|交流会|会议/.test(title)) return "会议";
+      return "行业动态";
+    }
+
+    function inferObjectType(category, title) {
+      if (category === "政策" || /住建|政府|厅|局|委/.test(title)) return "政府单位";
+      if (category === "招采" || category === "项目" || /项目|工程|基地|园区|招标|中标/.test(title)) return "项目";
+      if (category === "企业" || /集团|公司|股份|科技|建工|中建|中铁|中交/.test(title)) return "公司";
+      return "线索";
+    }
+
+    function inferCity(title) {
+      const cities = ["北京", "上海", "深圳", "广州", "江苏", "浙江", "广东", "重庆", "四川", "湖北", "湖南", "河南", "山东", "安徽", "陕西", "雄安", "南京", "苏州", "杭州", "成都", "武汉", "郑州", "长沙", "合肥", "西安", "厦门"];
+      return cities.find(city => title.includes(city)) || "全国";
+    }
+
+    function inferSalesRegion(city) {
+      if (/北京|天津|河北|雄安/.test(city)) return "华北";
+      if (/上海|江苏|浙江|安徽|山东|南京|苏州|杭州|合肥/.test(city)) return "华东";
+      if (/广东|深圳|广州|厦门|福建|广西|海南/.test(city)) return "华南";
+      if (/湖北|湖南|河南|武汉|长沙|郑州/.test(city)) return "华中";
+      if (/四川|重庆|成都|贵州|云南/.test(city)) return "西南";
+      if (/陕西|西安|甘肃|宁夏|新疆|青海/.test(city)) return "西北";
+      return "全国";
+    }
+
+    function inferOwner(region) {
+      const owners = {
+        "华北": "华北销售组",
+        "华东": "华东销售组",
+        "华南": "华南销售组",
+        "华中": "华中销售组",
+        "西南": "西南销售组",
+        "西北": "西北销售组"
+      };
+      return owners[region] || "市场线索池";
+    }
+
+    function inferScore(title, category) {
+      let score = ["政策", "招采"].includes(category) ? 4 : 3;
+      if (/招标|中标|采购|入围|试点|示范|专项|规划|项目/.test(title)) score += 1;
+      return Math.min(score, 5);
+    }
+
+    function formatShortDate(value) {
+      if (!value) return "最近";
+      const parts = String(value).split("-");
+      return parts.length >= 3 ? `${parts[1]}-${parts[2]}` : value;
+    }
+
+    function baiduSearch(title) {
+      return "https://www.baidu.com/s?wd=" + encodeURIComponent(title);
+    }
+
+    function makePitch(title, city, category, businessValue) {
+      return `看到${city}近期出现“${title}”相关${category}信号，蔚建可以从${businessValue || "智能建造、智慧工地和项目数字化落地"}切入，先确认主管单位、项目主体和后续招采窗口。`;
+    }
+
+    function hashCode(value) {
+      let hash = 0;
+      for (let i = 0; i < value.length; i += 1) {
+        hash = ((hash << 5) - hash) + value.charCodeAt(i);
+        hash |= 0;
+      }
+      return Math.abs(hash);
+    }
+
+    function renderLeads(items) {
+      el.resultCount.textContent = `${items.length} 条`;
+      if (!items.length) {
+        el.leadList.innerHTML = '<div class="empty">没有匹配的区域机会。</div>';
+        renderDetail(null);
+        return;
+      }
+
+      if (!items.some(item => item.id === state.selectedId)) {
+        state.selectedId = items[0].id;
+      }
+
+      el.leadList.innerHTML = items.map(item => `
+        <article class="lead-card ${item.id === state.selectedId ? "selected" : ""}">
+          <div class="lead-top">
+            <div>
+              <button class="lead-title" type="button" data-select="${escapeAttr(item.id)}">${escapeHtml(item.name)}</button>
+              <div class="meta-row">${escapeHtml(item.city)} · ${escapeHtml(item.owner)} · ${escapeHtml(item.stage)} · ${item.reachable ? "原文可直达" : "需搜索核查"}</div>
+            </div>
+            <div class="score">${item.score}</div>
+          </div>
+          <div class="tag-row">
+            <span class="tag ${typeClass(item.type)}">${escapeHtml(item.type)}</span>
+            <span class="tag">${escapeHtml(item.region)}</span>
+            ${item.tags.map(tag => `<span class="tag ${tag === "高价值" ? "hot" : ""}">${escapeHtml(tag)}</span>`).join("")}
+          </div>
+          <p class="lead-summary">${escapeHtml(item.signal)}</p>
+          <div class="next-action"><strong>下一步：</strong>${escapeHtml(item.action)}</div>
+          <div class="card-actions">
+            <a class="mini-btn" href="${escapeAttr(item.link)}" target="_blank" rel="noopener">打开原文</a>
+            <a class="mini-btn" href="${escapeAttr(item.search)}" target="_blank" rel="noopener">搜索标题</a>
+            <button class="mini-btn" type="button" data-copy="${escapeAttr(item.id)}">复制话术</button>
+          </div>
+        </article>
+      `).join("");
+
+      [...el.leadList.querySelectorAll("[data-select]")].forEach(button => {
+        button.addEventListener("click", () => {
+          state.selectedId = button.getAttribute("data-select");
+          render();
+        });
+      });
+
+      [...el.leadList.querySelectorAll("[data-copy]")].forEach(button => {
+        button.addEventListener("click", () => {
+          const item = leads.find(lead => lead.id === button.getAttribute("data-copy"));
+          navigator.clipboard?.writeText(item.pitch);
+          button.textContent = "已复制";
+          window.setTimeout(() => {
+            button.textContent = "复制话术";
+          }, 1200);
+        });
+      });
+
+      renderDetail(leads.find(item => item.id === state.selectedId));
+    }
+
+    function renderDetail(item) {
+      if (!item) {
+        el.detailPanel.innerHTML = '<div class="empty">请选择一个机会对象。</div>';
+        return;
+      }
+
+      el.detailPanel.innerHTML = `
+        <h3 class="detail-title">${escapeHtml(item.name)}</h3>
+        <div class="detail-sub">${escapeHtml(item.type)} · ${escapeHtml(item.city)} · ${escapeHtml(item.owner)} · ${item.score}分</div>
+        <div class="detail-block">
+          <h4>为什么值得跟</h4>
+          <p>${escapeHtml(item.why)}</p>
+        </div>
+        <div class="detail-block">
+          <h4>推荐跟进对象</h4>
+          <div class="tag-row">${item.objects.map(name => `<span class="tag">${escapeHtml(name)}</span>`).join("")}</div>
+        </div>
+        <div class="detail-block">
+          <h4>近期信号</h4>
+          <div class="timeline">
+            ${item.timeline.map(([date, text]) => `
+              <div class="timeline-item"><time>${escapeHtml(date)}</time><span>${escapeHtml(text)}</span></div>
+            `).join("")}
+          </div>
+        </div>
+        <div class="detail-block">
+          <h4>可用开场</h4>
+          <p>${escapeHtml(item.pitch)}</p>
+        </div>
+        <div class="detail-block owner-row">
+          <h4>销售处理</h4>
+          <div class="owner-chip">
+            <div><strong>${escapeHtml(item.owner)}</strong><span>${escapeHtml(item.stage)}</span></div>
+            <span>${item.reachable ? "来源可打开" : "需人工核查"}</span>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderBrief(items) {
+      const top = [...items].sort((a, b) => b.score - a.score).slice(0, 4);
+      el.briefList.innerHTML = top.map((item, index) => `
+        <div class="brief-item">
+          <strong>${index + 1}. ${escapeHtml(item.city)} · ${escapeHtml(item.name)}</strong>
+          <span>${escapeHtml(item.action)}</span>
+        </div>
+      `).join("") || '<div class="empty">暂无简报。</div>';
+    }
+
+    function typeClass(type) {
+      if (type === "政府单位") return "gov";
+      if (type === "项目") return "project";
+      if (type === "公司") return "company";
+      return "";
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function escapeAttr(value) {
+      return escapeHtml(value || "");
+    }
+
+    function render() {
+      const items = filteredLeads();
+      renderKpis(items);
+      renderRegions();
+      renderLeads(items);
+      renderBrief(items);
+    }
+
+    function bootstrap() {
+      bindEvents();
+      fetch("data.json?t=" + Date.now())
+        .then(response => response.ok ? response.json() : Promise.reject(new Error("data not ready")))
+        .then(data => {
+          leads = normalizeRemoteData(data);
+          state.selectedId = leads[0] ? leads[0].id : "";
+          initFilters();
+          render();
+        })
+        .catch(() => {
+          leads = sampleLeads;
+          state.selectedId = leads[0].id;
+          initFilters();
+          render();
+        });
+    }
+
+    bootstrap();
   </script>
 </body>
 </html>
