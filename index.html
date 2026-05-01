@@ -739,7 +739,7 @@
           <button type="button" data-stage="未分配">未分配 <span class="count" id="navUnassigned">0</span></button>
           <button type="button" data-stage="待跟进">待跟进 <span class="count" id="navPending">0</span></button>
           <button type="button" data-stage="跟进中">跟进中 <span class="count" id="navActive">0</span></button>
-          <button type="button" data-stage="需补链">需补链 <span class="count" id="navNeedsLink">0</span></button>
+          <button type="button" data-stage="待核查">待核查 <span class="count" id="navNeedsLink">0</span></button>
         </nav>
       </div>
 
@@ -778,9 +778,9 @@
           <div class="kpi-note">优先核查预算和联系人</div>
         </div>
         <div class="kpi">
-          <div class="kpi-label">原文可直达</div>
-          <div class="kpi-value" id="kpiReachable">0%</div>
-          <div class="kpi-note">国内官网/招采源优先补链</div>
+          <div class="kpi-label">待核查线索</div>
+          <div class="kpi-value" id="kpiNeedsReview">0</div>
+          <div class="kpi-note">需确认主体、阶段、预算或联系人</div>
         </div>
       </section>
 
@@ -1082,7 +1082,7 @@
       kpiTotal: document.getElementById("kpiTotal"),
       kpiHigh: document.getElementById("kpiHigh"),
       kpiTender: document.getElementById("kpiTender"),
-      kpiReachable: document.getElementById("kpiReachable"),
+      kpiNeedsReview: document.getElementById("kpiNeedsReview"),
       navTotal: document.getElementById("navTotal"),
       navGov: document.getElementById("navGov"),
       navProject: document.getElementById("navProject"),
@@ -1205,7 +1205,7 @@
           && (!state.type || item.type === state.type)
           && (!state.score || item.score >= state.score)
           && (!state.owner || item.owner === state.owner)
-          && (!state.stage || item.stage === state.stage || (state.stage === "需补链" && !item.reachable))
+          && (!state.stage || item.stage === state.stage || (state.stage === "待核查" && item.needsReview))
           && (state.view !== "government" || item.type === "政府单位")
           && (state.view !== "project" || item.type === "项目")
           && (state.view !== "company" || item.type === "公司")
@@ -1217,12 +1217,12 @@
     function renderKpis(items) {
       const high = items.filter(item => item.score >= 4).length;
       const tender = items.filter(item => item.tags.includes("招采")).length;
-      const reachable = items.length ? Math.round(items.filter(item => item.reachable).length / items.length * 100) : 0;
+      const needsReview = items.filter(item => item.needsReview).length;
 
       el.kpiTotal.textContent = items.length;
       el.kpiHigh.textContent = high;
       el.kpiTender.textContent = tender;
-      el.kpiReachable.textContent = `${reachable}%`;
+      el.kpiNeedsReview.textContent = needsReview;
       el.navTotal.textContent = leads.length;
       el.navGov.textContent = leads.filter(item => item.type === "政府单位").length;
       el.navProject.textContent = leads.filter(item => item.type === "项目").length;
@@ -1231,7 +1231,7 @@
       el.navUnassigned.textContent = leads.filter(item => item.stage === "未分配").length;
       el.navPending.textContent = leads.filter(item => item.stage === "待跟进").length;
       el.navActive.textContent = leads.filter(item => item.stage === "跟进中").length;
-      el.navNeedsLink.textContent = leads.filter(item => !item.reachable).length;
+      el.navNeedsLink.textContent = leads.filter(item => item.needsReview).length;
     }
 
     function syncSidebarActive() {
@@ -1292,6 +1292,9 @@
       const reachable = item.source_access === "domestic_direct"
         || item.link_status === "原文可直达"
         || (link && !link.includes("news.google.com"));
+      const needsReview = item.source_access === "google_rss"
+        || item.link_status === "需搜索核查"
+        || !item.original_link;
 
       return {
         id: item.id || `lead-${index}-${hashCode(title)}`,
@@ -1311,9 +1314,10 @@
         link,
         search,
         reachable,
+        needsReview,
         timeline: [
           [formatShortDate(item.date), item.summary || title],
-          ["核查", reachable ? "优先打开原文确认主体和项目阶段" : "Google RSS 或聚合源需用国内搜索补链"],
+          ["原文核查", "用原文、官网或招采平台确认主体、项目阶段、预算和联系人"],
           ["跟进", item.suggested_action || "补齐业主、总包、预算和联系人"]
         ],
         pitch: makePitch(title, city, category, item.business_value)
@@ -1332,7 +1336,6 @@
     function normalizeTags(category, channel, reachable, score) {
       const tags = [category || "行业动态"];
       if (channel) tags.push(channel);
-      tags.push(reachable ? "国内可打开" : "需补链");
       if (score >= 4) tags.push("高价值");
       return [...new Set(tags)];
     }
@@ -1426,7 +1429,7 @@
           <div class="lead-top">
             <div>
               <button class="lead-title" type="button" data-select="${escapeAttr(item.id)}">${escapeHtml(item.name)}</button>
-              <div class="meta-row">${escapeHtml(item.city)} · ${escapeHtml(item.owner)} · ${escapeHtml(item.stage)} · ${item.reachable ? "原文可直达" : "需搜索核查"}</div>
+              <div class="meta-row">${escapeHtml(item.city)} · ${escapeHtml(item.owner)} · ${escapeHtml(item.stage)}</div>
             </div>
             <div class="score">${item.score}</div>
           </div>
@@ -1522,7 +1525,7 @@
           <h4>销售处理</h4>
           <div class="owner-chip">
             <div><strong>${escapeHtml(item.owner)}</strong><span>${escapeHtml(item.stage)}</span></div>
-            <span>${item.reachable ? "来源可打开" : "需人工核查"}</span>
+            <span>${item.needsReview ? "待核查" : "已初筛"}</span>
           </div>
         </div>
       `;
