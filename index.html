@@ -729,6 +729,7 @@
           <button type="button" data-view="government">政府单位 <span class="count" id="navGov">0</span></button>
           <button type="button" data-view="project">项目机会 <span class="count" id="navProject">0</span></button>
           <button type="button" data-view="company">公司动态 <span class="count" id="navCompany">0</span></button>
+          <button type="button" data-view="competitor">竞对动态 <span class="count" id="navCompetitor">0</span></button>
           <button type="button" data-view="brief">今日简报 <span class="count" id="navBrief">0</span></button>
         </nav>
       </div>
@@ -1066,6 +1067,17 @@
     ];
 
     let leads = sampleLeads;
+    const competitorNames = [
+      "博智林",
+      "博匠机器人",
+      "领鹊科技",
+      "德睿途",
+      "建科智能",
+      "河狸智造",
+      "方石科技",
+      "丰坦科技",
+      "南京湃特纳"
+    ];
 
     const state = {
       region: "",
@@ -1087,6 +1099,7 @@
       navGov: document.getElementById("navGov"),
       navProject: document.getElementById("navProject"),
       navCompany: document.getElementById("navCompany"),
+      navCompetitor: document.getElementById("navCompetitor"),
       navBrief: document.getElementById("navBrief"),
       navUnassigned: document.getElementById("navUnassigned"),
       navPending: document.getElementById("navPending"),
@@ -1209,6 +1222,7 @@
           && (state.view !== "government" || item.type === "政府单位")
           && (state.view !== "project" || item.type === "项目")
           && (state.view !== "company" || item.type === "公司")
+          && (state.view !== "competitor" || item.type === "竞对动态")
           && (state.view !== "brief" || item.score >= 4)
           && (!state.query || haystack.includes(state.query));
       }).sort((a, b) => b.score - a.score || a.name.localeCompare(b.name, "zh-CN"));
@@ -1227,6 +1241,7 @@
       el.navGov.textContent = leads.filter(item => item.type === "政府单位").length;
       el.navProject.textContent = leads.filter(item => item.type === "项目").length;
       el.navCompany.textContent = leads.filter(item => item.type === "公司").length;
+      el.navCompetitor.textContent = leads.filter(item => item.type === "竞对动态").length;
       el.navBrief.textContent = leads.filter(item => item.score >= 4).length;
       el.navUnassigned.textContent = leads.filter(item => item.stage === "未分配").length;
       el.navPending.textContent = leads.filter(item => item.stage === "待跟进").length;
@@ -1293,6 +1308,8 @@
       const salesRegion = item.sales_region || inferSalesRegion(city);
       const score = Math.max(1, Math.min(5, Number(item.lead_score || inferScore(title, category))));
       const type = inferObjectType(category, title);
+      const competitorMatch = competitorNames.some(name => title.includes(name) || (Array.isArray(item.entities) && item.entities.some(entity => String(entity).includes(name))));
+      const finalType = competitorMatch ? "竞对动态" : type;
       const link = item.original_link || item.link || "#";
       const search = item.search_link || baiduSearch(title);
       const reachable = item.source_access === "domestic_direct"
@@ -1305,7 +1322,7 @@
       return {
         id: item.id || `lead-${index}-${hashCode(title)}`,
         name: title,
-        type,
+        type: finalType,
         region: salesRegion,
         city,
         owner: item.owner || inferOwner(salesRegion),
@@ -1314,8 +1331,8 @@
         signal: item.summary || item.business_value || title,
         why: item.lead_reason || item.business_value || "该信号与智能建造、智慧工地或建筑数字化相关，值得销售进一步核查。",
         action: item.suggested_action || "核查原文主体、项目阶段、招采窗口和相关承建单位。",
-        objects: normalizeEntities(item.entities, type, city),
-        tags: normalizeTags(category, item.source_channel, reachable, score),
+        objects: normalizeEntities(item.entities, finalType, city),
+        tags: normalizeTags(category, item.source_channel, reachable, score, finalType),
         source: item.source || "行业资讯",
         link,
         search,
@@ -1339,10 +1356,11 @@
       return ["线索主体", "区域销售", "市场团队"];
     }
 
-    function normalizeTags(category, channel, reachable, score) {
+    function normalizeTags(category, channel, reachable, score, type) {
       const tags = [category || "行业动态"];
       if (channel) tags.push(channel);
       if (score >= 4) tags.push("高价值");
+      if (type === "竞对动态") tags.push("竞对");
       return [...new Set(tags)];
     }
 
@@ -1359,6 +1377,7 @@
       if (category === "政策" || /住建|政府|厅|局|委/.test(title)) return "政府单位";
       if (category === "招采" || category === "项目" || /项目|工程|基地|园区|招标|中标/.test(title)) return "项目";
       if (category === "企业" || /集团|公司|股份|科技|建工|中建|中铁|中交/.test(title)) return "公司";
+      if (competitorNames.some(name => title.includes(name))) return "竞对动态";
       return "线索";
     }
 
@@ -1558,6 +1577,7 @@
       if (type === "政府单位") return "gov";
       if (type === "项目") return "project";
       if (type === "公司") return "company";
+      if (type === "竞对动态") return "hot";
       return "";
     }
 
