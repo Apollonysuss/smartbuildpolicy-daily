@@ -376,6 +376,7 @@
       padding: 14px;
       display: grid;
       gap: 12px;
+      cursor: pointer;
     }
 
     .lead-card.selected {
@@ -403,6 +404,11 @@
 
     .lead-title:hover {
       color: var(--brand);
+    }
+
+    .lead-card:hover {
+      border-color: #9bb8b3;
+      box-shadow: 0 8px 24px rgba(20, 31, 38, 0.06);
     }
 
     .score {
@@ -504,6 +510,17 @@
     .detail-panel,
     .briefing {
       padding: 14px;
+    }
+
+    .detail-close {
+      display: none;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+      border-radius: 8px;
+      min-height: 32px;
+      padding: 5px 10px;
+      margin-bottom: 10px;
     }
 
     .detail-title {
@@ -624,6 +641,39 @@
 
       .side-stack {
         position: static;
+      }
+
+      .detail-panel {
+        display: none;
+      }
+
+      body.detail-open::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: rgba(16, 29, 35, 0.38);
+        z-index: 20;
+      }
+
+      body.detail-open .detail-panel {
+        display: block;
+        position: fixed;
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        z-index: 21;
+        max-height: min(72vh, 620px);
+        overflow: auto;
+        box-shadow: var(--shadow);
+      }
+
+      body.detail-open .detail-close {
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .briefing {
+        display: none;
       }
 
       .region-grid {
@@ -1334,7 +1384,7 @@
       }
 
       el.leadList.innerHTML = items.map(item => `
-        <article class="lead-card ${item.id === state.selectedId ? "selected" : ""}">
+        <article class="lead-card ${item.id === state.selectedId ? "selected" : ""}" data-select-card="${escapeAttr(item.id)}" tabindex="0" role="button" aria-label="查看${escapeAttr(item.name)}详情">
           <div class="lead-top">
             <div>
               <button class="lead-title" type="button" data-select="${escapeAttr(item.id)}">${escapeHtml(item.name)}</button>
@@ -1357,10 +1407,23 @@
         </article>
       `).join("");
 
+      [...el.leadList.querySelectorAll("[data-select-card]")].forEach(card => {
+        card.addEventListener("click", event => {
+          if (event.target.closest("a, [data-copy]")) return;
+          selectLead(card.getAttribute("data-select-card"));
+        });
+        card.addEventListener("keydown", event => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            selectLead(card.getAttribute("data-select-card"));
+          }
+        });
+      });
+
       [...el.leadList.querySelectorAll("[data-select]")].forEach(button => {
-        button.addEventListener("click", () => {
-          state.selectedId = button.getAttribute("data-select");
-          render();
+        button.addEventListener("click", event => {
+          event.stopPropagation();
+          selectLead(button.getAttribute("data-select"));
         });
       });
 
@@ -1378,6 +1441,15 @@
       renderDetail(leads.find(item => item.id === state.selectedId));
     }
 
+    function selectLead(id) {
+      if (!id || state.selectedId === id) return;
+      state.selectedId = id;
+      render();
+      if (window.matchMedia("(max-width: 1180px)").matches) {
+        document.body.classList.add("detail-open");
+      }
+    }
+
     function renderDetail(item) {
       if (!item) {
         el.detailPanel.innerHTML = '<div class="empty">请选择一个机会对象。</div>';
@@ -1385,6 +1457,7 @@
       }
 
       el.detailPanel.innerHTML = `
+        <button class="detail-close" type="button" data-close-detail>关闭详情</button>
         <h3 class="detail-title">${escapeHtml(item.name)}</h3>
         <div class="detail-sub">${escapeHtml(item.type)} · ${escapeHtml(item.city)} · ${escapeHtml(item.owner)} · ${item.score}分</div>
         <div class="detail-block">
@@ -1415,6 +1488,13 @@
           </div>
         </div>
       `;
+
+      const close = el.detailPanel.querySelector("[data-close-detail]");
+      if (close) {
+        close.addEventListener("click", () => {
+          document.body.classList.remove("detail-open");
+        });
+      }
     }
 
     function renderBrief(items) {
