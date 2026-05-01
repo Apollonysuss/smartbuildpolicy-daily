@@ -1321,15 +1321,17 @@
       const type = inferObjectType(category, title);
       const competitorMatch = competitorNames.some(name => title.includes(name) || (Array.isArray(item.entities) && item.entities.some(entity => String(entity).includes(name))));
       const finalType = competitorMatch ? "竞对动态" : type;
-      const link = item.original_link || item.link || "#";
       const search = item.search_link || baiduSearch(title);
+      const originalLink = item.original_link || "";
+      const googleLink = item.google_link || (String(item.link || "").includes("news.google.com") ? item.link : "");
+      const sourceLink = originalLink || (googleLink ? search : (item.link || search));
       const reachable = item.source_access === "domestic_direct"
         || item.link_status === "原文可直达"
-        || (link && !link.includes("news.google.com"));
-      const primaryAction = item.original_link ? "打开原文" : "搜索原文";
+        || (sourceLink && !sourceLink.includes("news.google.com"));
+      const primaryAction = originalLink ? "打开原文" : "搜索原文";
       const needsReview = item.source_access === "google_rss"
         || item.link_status === "需搜索核查"
-        || !item.original_link;
+        || !originalLink;
 
       return {
         id: item.id || `lead-${index}-${hashCode(title)}`,
@@ -1346,7 +1348,9 @@
         objects: normalizeEntities(item.entities, finalType, city),
         tags: normalizeTags(category, item.source_channel, reachable, score, finalType),
         source: item.source || "行业资讯",
-        link,
+        link: sourceLink,
+        originalLink,
+        googleLink,
         search,
         primaryAction,
         reachable,
@@ -1553,6 +1557,14 @@
             ${item.timeline.map(([date, text]) => `
               <div class="timeline-item"><time>${escapeHtml(date)}</time><span>${escapeHtml(text)}</span></div>
             `).join("")}
+          </div>
+        </div>
+        <div class="detail-block">
+          <h4>原文链接</h4>
+          <div class="card-actions">
+            <a class="mini-btn" href="${escapeAttr(item.link)}" target="_blank" rel="noopener">${escapeHtml(item.primaryAction || "打开原文")}</a>
+            <a class="mini-btn" href="${escapeAttr(item.search)}" target="_blank" rel="noopener">搜索标题</a>
+            ${item.googleLink ? `<a class="mini-btn" href="${escapeAttr(item.googleLink)}" target="_blank" rel="noopener">Google RSS备份</a>` : ""}
           </div>
         </div>
         <div class="detail-block">
