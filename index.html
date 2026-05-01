@@ -1256,7 +1256,13 @@
       }
       const max = Math.max(...Object.values(counts).map(item => item.total));
 
-      el.regionGrid.innerHTML = Object.entries(counts).map(([region, data]) => `
+      const sortedRegions = Object.entries(counts).sort(([regionA, dataA], [regionB, dataB]) => {
+        if (regionA === "全国") return -1;
+        if (regionB === "全国") return 1;
+        return dataB.total - dataA.total || dataB.high - dataA.high || regionA.localeCompare(regionB, "zh-Hans-CN");
+      });
+
+      el.regionGrid.innerHTML = sortedRegions.map(([region, data]) => `
         <button class="region-tile ${state.region === region ? "active" : ""}" type="button" data-region="${escapeAttr(region)}">
           <div class="region-name">${escapeHtml(region)}</div>
           <div class="heat"><i style="width:${Math.max(18, data.total / max * 100)}%"></i></div>
