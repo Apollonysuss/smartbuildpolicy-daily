@@ -277,6 +277,14 @@
       grid-template-columns: minmax(0, 1fr) 352px;
       gap: 14px;
       align-items: start;
+      min-height: 0;
+    }
+
+    .workspace-main {
+      max-height: calc(100vh - 206px);
+      overflow: auto;
+      padding-right: 2px;
+      scrollbar-gutter: stable;
     }
 
     .region-board,
@@ -509,6 +517,10 @@
       gap: 14px;
       position: sticky;
       top: 14px;
+      max-height: calc(100vh - 28px);
+      overflow: auto;
+      padding-right: 2px;
+      scrollbar-gutter: stable;
     }
 
     .detail-panel,
@@ -643,8 +655,17 @@
         grid-template-columns: 1fr;
       }
 
+      .workspace-main {
+        max-height: none;
+        overflow: visible;
+        padding-right: 0;
+      }
+
       .side-stack {
         position: static;
+        max-height: none;
+        overflow: visible;
+        padding-right: 0;
       }
 
       .detail-panel {
@@ -806,7 +827,7 @@
       </section>
 
       <section class="workspace">
-        <div>
+        <div class="workspace-main">
           <section class="region-board">
             <div class="section-head">
               <h3>区域热度</h3>

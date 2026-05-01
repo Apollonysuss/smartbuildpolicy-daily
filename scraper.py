@@ -12,7 +12,7 @@ import requests
 
 API_KEY = os.environ.get("DEEPSEEK_API_KEY")
 DAILY_LIMIT = 30
-MAX_RECORDS = 1000
+MAX_RECORDS = int(os.environ.get("MAX_RECORDS", "5000"))
 
 SMARTBUILD_TERMS = [
     "智能建造", "智慧工地", "建筑机器人", "装配式建筑", "BIM", "城市更新",
