@@ -728,6 +728,7 @@
           <button class="active" type="button" data-view="all">区域机会 <span class="count" id="navTotal">0</span></button>
           <button type="button" data-view="government">政府单位 <span class="count" id="navGov">0</span></button>
           <button type="button" data-view="project">项目机会 <span class="count" id="navProject">0</span></button>
+          <button type="button" data-view="tender">招采条目 <span class="count" id="navTender">0</span></button>
           <button type="button" data-view="company">公司动态 <span class="count" id="navCompany">0</span></button>
           <button type="button" data-view="competitor">竞对动态 <span class="count" id="navCompetitor">0</span></button>
           <button type="button" data-view="brief">今日简报 <span class="count" id="navBrief">0</span></button>
@@ -1098,6 +1099,7 @@
       navTotal: document.getElementById("navTotal"),
       navGov: document.getElementById("navGov"),
       navProject: document.getElementById("navProject"),
+      navTender: document.getElementById("navTender"),
       navCompany: document.getElementById("navCompany"),
       navCompetitor: document.getElementById("navCompetitor"),
       navBrief: document.getElementById("navBrief"),
@@ -1221,6 +1223,7 @@
           && (!state.stage || item.stage === state.stage || (state.stage === "待核查" && item.needsReview))
           && (state.view !== "government" || item.type === "政府单位")
           && (state.view !== "project" || item.type === "项目")
+          && (state.view !== "tender" || isTenderLead(item))
           && (state.view !== "company" || item.type === "公司")
           && (state.view !== "competitor" || item.type === "竞对动态")
           && (state.view !== "brief" || item.score >= 4)
@@ -1230,7 +1233,7 @@
 
     function renderKpis(items) {
       const high = items.filter(item => item.score >= 4).length;
-      const tender = items.filter(item => item.tags.includes("招采")).length;
+      const tender = items.filter(isTenderLead).length;
       const needsReview = items.filter(item => item.needsReview).length;
 
       el.kpiTotal.textContent = items.length;
@@ -1240,6 +1243,7 @@
       el.navTotal.textContent = leads.length;
       el.navGov.textContent = leads.filter(item => item.type === "政府单位").length;
       el.navProject.textContent = leads.filter(item => item.type === "项目").length;
+      el.navTender.textContent = leads.filter(isTenderLead).length;
       el.navCompany.textContent = leads.filter(item => item.type === "公司").length;
       el.navCompetitor.textContent = leads.filter(item => item.type === "竞对动态").length;
       el.navBrief.textContent = leads.filter(item => item.score >= 4).length;
@@ -1256,6 +1260,13 @@
         const active = (view && state.view === view) || (stage && state.stage === stage);
         button.classList.toggle("active", active);
       });
+    }
+
+    function isTenderLead(item) {
+      return item.tags.includes("招采")
+        || item.category === "招采"
+        || item.tags.some(tag => /招采|采购|公共资源|中标/.test(tag))
+        || /招标|中标|采购|成交|合同|入围|遴选/.test(`${item.name} ${item.signal}`);
     }
 
     function renderRegions() {
