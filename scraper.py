@@ -765,21 +765,123 @@ def detect_category(title, fallback):
 
 
 def score_item(title, category):
-    score = 2
-    if category in ["招采", "政策"]:
-        score += 2
-    elif category in ["项目", "企业"]:
-        score += 1
-    if any(word in title for word in ["招标", "中标", "采购", "入围", "试点", "示范", "专项", "规划"]):
-        score += 1
-    return min(score, 5)
+    return sales_score_factors({"title": title, "category": category})["lead_score"]
+
+
+def factor(value, reason):
+    return {"score": max(0, min(5, int(value))), "reason": reason}
+
+
+def sales_score_factors(item):
+    text = " ".join([
+        item.get("title", ""),
+        item.get("summary", ""),
+        item.get("business_value", ""),
+        " ".join(item.get("entities", []) if isinstance(item.get("entities"), list) else []),
+    ])
+    category = detect_category(text, item.get("category"))
+    region = item.get("sales_region") or detect_sales_region(item.get("region") or detect_region(text))
+    source_access = item.get("source_access", "")
+    link_status = item.get("link_status", "")
+    channel = item.get("source_channel", "")
+    source = item.get("source", "")
+    published_date = item.get("published_date") or item.get("date", "")
+
+    direct_source = source_access == "domestic_direct" or link_status == "原文可直达"
+    official_source = any(name in f"{source} {channel}" for name in ["政府", "住建", "公共资源", "采购网", "官网", "协会"])
+    if direct_source and official_source:
+        source_factor = factor(5, "原文直连且来源为政府/招采/官网/协会等可信渠道")
+    elif direct_source:
+        source_factor = factor(4, "原文可直达，来源可信度较高")
+    elif source_access == "google_rss":
+        source_factor = factor(2, "来自 Google RSS，需要核查原始出处")
+    else:
+        source_factor = factor(3, "来源可用，但仍需核查出处")
+
+    if category == "招采" or any(word in text for word in ["招标", "中标", "采购", "成交", "合同", "入围", "遴选"]):
+        tender_factor = factor(5, "存在招标/中标/采购等明确交易信号")
+    elif any(word in text for word in ["项目", "工程", "示范", "试点"]):
+        tender_factor = factor(3, "存在项目或试点信号，但招采窗口仍需确认")
+    else:
+        tender_factor = factor(1, "暂未看到明确招采信号")
+
+    has_budget = bool(re.search(r"\d+(?:\.\d+)?\s*(?:万|万元|亿|亿元)", text))
+    has_subject = bool(item.get("entities")) or any(word in text for word in ["局", "厅", "委", "集团", "公司", "中心", "平台", "项目", "采购人", "招标人", "中标人"])
+    if has_budget and has_subject:
+        budget_subject_factor = factor(5, "同时出现预算/金额和明确主体")
+    elif has_subject:
+        budget_subject_factor = factor(3, "有明确主体，预算金额待核查")
+    elif has_budget:
+        budget_subject_factor = factor(3, "有金额线索，主体仍需核查")
+    else:
+        budget_subject_factor = factor(1, "预算和主体信息不足")
+
+    if region != "全国":
+        region_factor = factor(4, f"已识别销售区域：{region}")
+    else:
+        region_factor = factor(2, "仅识别为全国机会，需要分派区域")
+
+    days_old = None
+    if published_date:
+        try:
+            days_old = (datetime.date.today() - datetime.datetime.strptime(published_date, "%Y-%m-%d").date()).days
+        except Exception:
+            days_old = None
+    if days_old is None:
+        recency_factor = factor(2, "原文时间待核查")
+    elif days_old <= 14:
+        recency_factor = factor(5, "两周内新信号")
+    elif days_old <= 45:
+        recency_factor = factor(4, "45天内信号")
+    elif days_old <= 120:
+        recency_factor = factor(3, "近四个月内信号")
+    else:
+        recency_factor = factor(1, "时间较久，需要确认是否仍有效")
+
+    product_terms = ["智能建造", "智慧工地", "建筑机器人", "BIM", "好房子", "新型建筑工业化", "数字化施工", "无人施工", "装配式建筑"]
+    matched_terms = [term for term in product_terms if term in text]
+    if len(matched_terms) >= 2:
+        product_factor = factor(5, "高度匹配蔚建智能建造相关场景：" + "、".join(matched_terms[:3]))
+    elif matched_terms:
+        product_factor = factor(4, "匹配蔚建相关场景：" + matched_terms[0])
+    elif category in ["政策", "项目", "招采"]:
+        product_factor = factor(3, "场景相近，可进一步核查蔚建切入点")
+    else:
+        product_factor = factor(1, "与蔚建核心产品匹配度暂不明确")
+
+    factors = {
+        "source_trust": source_factor,
+        "tender_signal": tender_factor,
+        "budget_or_subject": budget_subject_factor,
+        "region_match": region_factor,
+        "recency": recency_factor,
+        "product_fit": product_factor,
+    }
+    weights = {
+        "source_trust": 0.16,
+        "tender_signal": 0.22,
+        "budget_or_subject": 0.18,
+        "region_match": 0.14,
+        "recency": 0.14,
+        "product_fit": 0.16,
+    }
+    weighted = sum(factors[key]["score"] * weight for key, weight in weights.items())
+    lead_score = max(1, min(5, round(weighted)))
+    top_reasons = sorted(factors.values(), key=lambda data: data["score"], reverse=True)[:2]
+
+    return {
+        "lead_score": lead_score,
+        "score_factors": factors,
+        "lead_reason": "；".join(reason["reason"] for reason in top_reasons),
+    }
 
 
 def fallback_insight(item):
     title = item["title"]
     category = detect_category(title, item.get("category"))
     region = detect_region(title)
-    score = score_item(title, category)
+    score_result = sales_score_factors({**item, "category": category, "region": region})
+    score = score_result["lead_score"]
 
     action = "跟进原文主体、所在地住建部门及后续招采/试点名单。"
     if category == "招采":
@@ -798,7 +900,8 @@ def fallback_insight(item):
         "entities": [],
         "business_value": "可作为智能建造、智慧工地、建筑机器人或数字化施工相关市场机会观察点。",
         "lead_score": score,
-        "lead_reason": f"{category}信号明确，可能带来项目、试点或合作机会。",
+        "lead_reason": score_result["lead_reason"],
+        "score_factors": score_result["score_factors"],
         "suggested_action": action,
         "urgency": "中",
     }
@@ -822,6 +925,7 @@ def call_ai_insight(item):
     system_prompt = (
         "你是智能建造领域的商业情报分析师。只基于给定新闻标题和来源做判断，"
         "输出严格 JSON，不要 Markdown。目标是帮助销售、市场和战略团队识别商业 leads。"
+        "机会价值要围绕原文可信度、招采信号、预算/主体、区域匹配、近期程度、蔚建产品匹配度判断。"
     )
     user_prompt = f"""
 新闻标题：{item['title']}
@@ -834,8 +938,8 @@ def call_ai_insight(item):
 - region: 涉及地区，不明确则写 全国
 - entities: 相关机构、企业或项目名称数组
 - business_value: 60字以内，说明对供应商/咨询/系统集成/建筑科技公司的商业价值
-- lead_score: 1-5，5代表很值得马上跟进
-- lead_reason: 50字以内，说明评分原因
+- lead_score: 1-5，5代表很值得马上跟进，需综合原文可信度、招采信号、预算/主体、区域匹配、近期程度、蔚建产品匹配度
+- lead_reason: 50字以内，说明最关键的评分原因
 - suggested_action: 50字以内，给出下一步跟进行动
 - urgency: 高/中/低
 """
@@ -868,11 +972,14 @@ def call_ai_insight(item):
             "region": parsed.get("region") or fallback["region"],
             "entities": parsed.get("entities") if isinstance(parsed.get("entities"), list) else fallback["entities"],
             "business_value": parsed.get("business_value") or fallback["business_value"],
-            "lead_score": int(parsed.get("lead_score") or fallback["lead_score"]),
             "lead_reason": parsed.get("lead_reason") or fallback["lead_reason"],
             "suggested_action": parsed.get("suggested_action") or fallback["suggested_action"],
             "urgency": parsed.get("urgency") or fallback["urgency"],
         })
+        score_result = sales_score_factors({**item, **fallback})
+        fallback["lead_score"] = score_result["lead_score"]
+        fallback["score_factors"] = score_result["score_factors"]
+        fallback["lead_reason"] = score_result["lead_reason"] or fallback["lead_reason"]
         fallback["lead_score"] = max(1, min(5, fallback["lead_score"]))
         return fallback
     except Exception as e:
@@ -920,6 +1027,11 @@ def job():
         item["published_date"] = item.get("published_date") or item.get("source_date") or item.get("date", "")
         item["source_date"] = item.get("source_date") or item.get("published_date", "")
         item["date"] = item.get("published_date", "")
+        if not item.get("score_factors"):
+            score_result = sales_score_factors(item)
+            item["lead_score"] = score_result["lead_score"]
+            item["lead_reason"] = score_result["lead_reason"]
+            item["score_factors"] = score_result["score_factors"]
         item["link_status"] = item.get("link_status") or (
             "原文可直达" if item.get("original_link") else "需搜索核查"
         )
