@@ -15,6 +15,7 @@ DAILY_LIMIT = int(os.environ.get("DAILY_LIMIT", "70"))
 MIN_QUALITY_SCORE = int(os.environ.get("MIN_QUALITY_SCORE", "4"))
 RSS_ITEMS_PER_QUERY = int(os.environ.get("RSS_ITEMS_PER_QUERY", "20"))
 MAX_RECORDS = int(os.environ.get("MAX_RECORDS", "5000"))
+NEWS_ONLY = os.environ.get("NEWS_ONLY", "1") != "0"
 
 SMARTBUILD_TERMS = [
     "智能建造", "智慧工地", "建筑机器人", "装配式建筑", "BIM", "城市更新",
@@ -28,15 +29,15 @@ STRONG_FIT_TERMS = [
 ]
 
 SEARCH_QUERIES = [
-    {"query": "智能建造", "category": "行业动态"},
-    {"query": "智能建造 政策 OR 试点 OR 住建局", "category": "政策"},
-    {"query": "智能建造 招标 OR 中标 OR 采购", "category": "招采"},
-    {"query": "智慧工地 平台 OR 中标 OR 项目", "category": "智慧工地"},
-    {"query": "建筑机器人 采购 OR 应用 OR 项目", "category": "建筑机器人"},
-    {"query": "装配式建筑 智能建造 OR 政策", "category": "装配式建筑"},
-    {"query": "BIM AI 建筑 OR 施工", "category": "BIM+AI"},
-    {"query": "好房子 标准 智能建造", "category": "好房子"},
-    {"query": "城市更新 智能建造", "category": "城市更新"},
+    {"query": "智能建造 新闻 OR 动态 OR 发布", "category": "行业动态"},
+    {"query": "智能建造 政策 OR 试点 OR 住建厅 OR 住建局", "category": "政策"},
+    {"query": "智能建造 招标 OR 中标 OR 采购 OR 合同", "category": "招采"},
+    {"query": "智慧工地 平台 OR 中标 OR 项目 OR 监管", "category": "智慧工地"},
+    {"query": "建筑机器人 采购 OR 应用 OR 项目 OR 施工", "category": "建筑机器人"},
+    {"query": "装配式建筑 智能建造 OR 新型建筑工业化 OR 项目", "category": "装配式建筑"},
+    {"query": "BIM AI 建筑 OR 智慧工地 OR 数字化施工", "category": "BIM+AI"},
+    {"query": "好房子 标准 OR 政策 OR 智能建造", "category": "好房子"},
+    {"query": "城市更新 智能建造 OR 智慧工地 OR 数字化施工", "category": "城市更新"},
 ]
 
 DOMESTIC_LIST_SOURCES = [
@@ -706,23 +707,25 @@ def normalize_google_link(link):
 
 
 def fetch_google_news():
-    print("正在抓取智能建造商业信息...")
+    mode = "新闻搜索模式" if NEWS_ONLY else "全源模式"
+    print(f"正在抓取智能建造商业信息... 当前模式：{mode}")
     items = []
     seen_links = set()
     headers = {"User-Agent": "Mozilla/5.0"}
 
-    domestic_items = (
-        fetch_domestic_lists(headers)
-        + fetch_domestic_searches(headers)
-        + fetch_org_websites(headers)
-        + fetch_wechat_articles(headers)
-    )
-    for item in domestic_items:
-        key = item.get("original_link") or item.get("link") or item["title"]
-        if key in seen_links:
-            continue
-        seen_links.add(key)
-        items.append(item)
+    if not NEWS_ONLY:
+        domestic_items = (
+            fetch_domestic_lists(headers)
+            + fetch_domestic_searches(headers)
+            + fetch_org_websites(headers)
+            + fetch_wechat_articles(headers)
+        )
+        for item in domestic_items:
+            key = item.get("original_link") or item.get("link") or item["title"]
+            if key in seen_links:
+                continue
+            seen_links.add(key)
+            items.append(item)
 
     for config in SEARCH_QUERIES:
         encoded_query = urllib.parse.quote_plus(config["query"])
