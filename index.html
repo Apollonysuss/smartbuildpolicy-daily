@@ -1226,6 +1226,7 @@
       return leads.filter(item => {
         const haystack = [
           item.name,
+          item.date,
           item.type,
           item.region,
           item.city,
@@ -1249,7 +1250,7 @@
           && (state.view !== "competitor" || item.type === "竞对动态")
           && (state.view !== "brief" || item.score >= 4)
           && (!state.query || haystack.includes(state.query));
-      }).sort((a, b) => b.score - a.score || a.name.localeCompare(b.name, "zh-CN"));
+      }).sort((a, b) => b.score - a.score || leadDateTime(b) - leadDateTime(a) || a.name.localeCompare(b.name, "zh-CN"));
     }
 
     function renderKpis(items) {
@@ -1362,6 +1363,7 @@
         city,
         owner: item.owner || inferOwner(salesRegion),
         score,
+        date: item.date || "",
         stage: score >= 4 ? "待跟进" : "未分配",
         signal: item.summary || item.business_value || title,
         why: item.lead_reason || item.business_value || "该信号与智能建造、智慧工地或建筑数字化相关，值得销售进一步核查。",
@@ -1458,6 +1460,18 @@
       return parts.length >= 3 ? `${parts[1]}-${parts[2]}` : value;
     }
 
+    function leadDateLabel(item) {
+      if (item.date) return item.date;
+      if (Array.isArray(item.timeline) && item.timeline[0] && item.timeline[0][0]) return item.timeline[0][0];
+      return "日期待核查";
+    }
+
+    function leadDateTime(item) {
+      if (!item.date) return 0;
+      const time = Date.parse(item.date);
+      return Number.isNaN(time) ? 0 : time;
+    }
+
     function baiduSearch(title) {
       return "https://www.baidu.com/s?wd=" + encodeURIComponent(title);
     }
@@ -1492,7 +1506,7 @@
           <div class="lead-top">
             <div>
               <button class="lead-title" type="button" data-select="${escapeAttr(item.id)}">${escapeHtml(item.name)}</button>
-              <div class="meta-row">${escapeHtml(item.city)} · ${escapeHtml(item.owner)} · ${escapeHtml(item.stage)}</div>
+              <div class="meta-row">${escapeHtml(leadDateLabel(item))} · ${escapeHtml(item.city)} · ${escapeHtml(item.owner)} · ${escapeHtml(item.stage)}</div>
             </div>
             <div class="score">${item.score}</div>
           </div>
@@ -1563,7 +1577,7 @@
       el.detailPanel.innerHTML = `
         <button class="detail-close" type="button" data-close-detail>关闭详情</button>
         <h3 class="detail-title">${escapeHtml(item.name)}</h3>
-        <div class="detail-sub">${escapeHtml(item.type)} · ${escapeHtml(item.city)} · ${escapeHtml(item.owner)} · ${item.score}分</div>
+        <div class="detail-sub">${escapeHtml(leadDateLabel(item))} · ${escapeHtml(item.type)} · ${escapeHtml(item.city)} · ${escapeHtml(item.owner)} · ${item.score}分</div>
         <div class="detail-block">
           <h4>为什么值得跟</h4>
           <p>${escapeHtml(item.why)}</p>
