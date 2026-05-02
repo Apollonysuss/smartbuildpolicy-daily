@@ -1227,6 +1227,8 @@
         const haystack = [
           item.name,
           item.date,
+          item.publishedDate,
+          item.collectedAt,
           item.type,
           item.region,
           item.city,
@@ -1347,6 +1349,8 @@
       const originalLink = item.original_link || "";
       const googleLink = item.google_link || (String(item.link || "").includes("news.google.com") ? item.link : "");
       const sourceLink = originalLink || (googleLink ? search : (item.link || search));
+      const publishedDate = item.published_date || item.source_date || (isLegacySourceDate(item) ? item.date : "");
+      const timelineDate = publishedDate ? formatShortDate(publishedDate) : "待核查";
       const reachable = item.source_access === "domestic_direct"
         || item.link_status === "原文可直达"
         || (sourceLink && !sourceLink.includes("news.google.com"));
@@ -1363,7 +1367,9 @@
         city,
         owner: item.owner || inferOwner(salesRegion),
         score,
-        date: item.date || "",
+        date: publishedDate,
+        publishedDate,
+        collectedAt: item.collected_at || item.updated_at || "",
         stage: score >= 4 ? "待跟进" : "未分配",
         signal: item.summary || item.business_value || title,
         why: item.lead_reason || item.business_value || "该信号与智能建造、智慧工地或建筑数字化相关，值得销售进一步核查。",
@@ -1379,7 +1385,7 @@
         reachable,
         needsReview,
         timeline: [
-          [formatShortDate(item.date), item.summary || title],
+          [timelineDate, item.summary || title],
           ["原文核查", "用原文、官网或招采平台确认主体、项目阶段、预算和联系人"],
           ["跟进", item.suggested_action || "补齐业主、总包、预算和联系人"]
         ],
@@ -1461,14 +1467,19 @@
     }
 
     function leadDateLabel(item) {
-      if (item.date) return item.date;
-      if (Array.isArray(item.timeline) && item.timeline[0] && item.timeline[0][0]) return item.timeline[0][0];
-      return "日期待核查";
+      if (item.publishedDate || item.date) return `原文时间：${item.publishedDate || item.date}`;
+      return "原文时间待核查";
+    }
+
+    function isLegacySourceDate(item) {
+      const channel = item.source_channel || "";
+      return Boolean(item.date) && (/Google News RSS|微信公众号/.test(channel) || item.google_link);
     }
 
     function leadDateTime(item) {
-      if (!item.date) return 0;
-      const time = Date.parse(item.date);
+      const date = item.publishedDate || item.date;
+      if (!date) return 0;
+      const time = Date.parse(date);
       return Number.isNaN(time) ? 0 : time;
     }
 
