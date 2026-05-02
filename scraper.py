@@ -187,18 +187,22 @@ REGION_GROUPS = {
 }
 
 
-def parse_date(pub_date):
+def parse_date(pub_date, default=""):
     if not pub_date:
-        return datetime.date.today().strftime("%Y-%m-%d")
+        return default
     try:
         dt = datetime.datetime.strptime(pub_date[:16], "%a, %d %b %Y")
         return dt.strftime("%Y-%m-%d")
     except Exception:
-        return datetime.date.today().strftime("%Y-%m-%d")
+        return default
 
 
 def today_str():
     return datetime.date.today().strftime("%Y-%m-%d")
+
+
+def now_iso():
+    return datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 def split_title_source(raw_title):
@@ -289,12 +293,16 @@ def make_item(title, link, source, category, date=None, keyword="", channel="国
     region = detect_region(title)
     direct = bool(link and "news.google.com" not in link)
     search_link = source_search_link(source, title)
+    source_date = date or ""
     return {
         "title": title,
         "link": link or search_link,
         "original_link": link if direct else "",
         "search_link": search_link,
-        "date": date or today_str(),
+        "date": source_date,
+        "published_date": source_date,
+        "source_date": source_date,
+        "collected_at": now_iso(),
         "source": source,
         "keyword": keyword,
         "category": detect_category(title, category),
@@ -333,7 +341,7 @@ def extract_page_title(content):
 def parse_sogou_date(value):
     text = clean_title(value)
     if not text:
-        return today_str()
+        return ""
     today = datetime.date.today()
     if "小时前" in text or "分钟前" in text or "今天" in text:
         return today.strftime("%Y-%m-%d")
@@ -347,7 +355,7 @@ def parse_sogou_date(value):
     if match:
         month, day = match.groups()
         return f"{today.year}-{int(month):02d}-{int(day):02d}"
-    return today.strftime("%Y-%m-%d")
+    return ""
 
 
 def sogou_wechat_url(account, term):
@@ -376,7 +384,7 @@ def extract_sogou_wechat_articles(content, base_url):
             "title": title,
             "link": link,
             "account": clean_title(account_match.group(1)) if account_match else "",
-            "date": parse_sogou_date(date_match.group(1)) if date_match else today_str(),
+            "date": parse_sogou_date(date_match.group(1)) if date_match else "",
         })
     return articles
 
@@ -387,6 +395,48 @@ def fetch_html(url, headers):
     if not resp.encoding or resp.encoding.lower() == "iso-8859-1":
         resp.encoding = resp.apparent_encoding
     return resp.text
+
+
+def extract_source_date(content):
+    patterns = [
+        r'<meta[^>]+property=["\']article:published_time["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']article:published_time["\']',
+        r'<meta[^>]+name=["\']pubdate["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+name=["\']publishdate["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+name=["\']date["\'][^>]+content=["\']([^"\']+)["\']',
+        r"发布时间[:：]\s*(\d{4}[-/.年]\d{1,2}[-/.月]\d{1,2})",
+        r"发布日期[:：]\s*(\d{4}[-/.年]\d{1,2}[-/.月]\d{1,2})",
+        r"发文日期[:：]\s*(\d{4}[-/.年]\d{1,2}[-/.月]\d{1,2})",
+        r"公告日期[:：]\s*(\d{4}[-/.年]\d{1,2}[-/.月]\d{1,2})",
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, content, re.I | re.S)
+        if match:
+            return normalize_date_text(match.group(1))
+    return ""
+
+
+def normalize_date_text(value):
+    text = clean_title(value)
+    match = re.search(r"(\d{4})[-/.年](\d{1,2})[-/.月](\d{1,2})", text)
+    if match:
+        year, month, day = match.groups()
+        return f"{int(year):04d}-{int(month):02d}-{int(day):02d}"
+    match = re.search(r"(\d{4})-(\d{1,2})-(\d{1,2})T", text)
+    if match:
+        year, month, day = match.groups()
+        return f"{int(year):04d}-{int(month):02d}-{int(day):02d}"
+    return ""
+
+
+def fetch_source_date(url, headers):
+    if not url or "news.google.com" in url:
+        return ""
+    try:
+        content = fetch_html(url, headers)
+    except Exception:
+        return ""
+    return extract_source_date(content)
 
 
 def fetch_domestic_lists(headers):
@@ -401,11 +451,13 @@ def fetch_domestic_lists(headers):
         for title, link in extract_html_links(content, source["url"]):
             if not is_relevant(title):
                 continue
+            source_date = fetch_source_date(link, headers)
             item = make_item(
                 title=title,
                 link=link,
                 source=source["name"],
                 category=source["category"],
+                date=source_date,
                 keyword="国内直连",
                 channel="国内官网",
             )
@@ -431,11 +483,13 @@ def fetch_domestic_searches(headers):
             for title, link in extract_html_links(content, url):
                 if not is_relevant(title):
                     continue
+                source_date = fetch_source_date(link, headers)
                 item = make_item(
                     title=title,
                     link=link,
                     source=source["name"],
                     category=source["category"],
+                    date=source_date,
                     keyword=query,
                     channel="国内招采搜索",
                 )
@@ -459,11 +513,13 @@ def fetch_org_websites(headers):
         for title, link in extract_html_links(content, source["url"]):
             if not is_relevant(title):
                 continue
+            source_date = fetch_source_date(link, headers)
             item = make_item(
                 title=title,
                 link=link,
                 source=source["name"],
                 category=source["category"],
+                date=source_date,
                 keyword=source["group"],
                 channel=source["group"],
             )
@@ -679,6 +735,9 @@ def fetch_google_news():
                 "google_link": links["google_link"],
                 "search_link": search_link,
                 "date": parse_date(node.findtext("pubDate", default="")),
+                "published_date": parse_date(node.findtext("pubDate", default="")),
+                "source_date": parse_date(node.findtext("pubDate", default="")),
+                "collected_at": now_iso(),
                 "source": source,
                 "keyword": config["query"],
                 "category": config["category"],
@@ -824,7 +883,7 @@ def call_ai_insight(item):
 def rank_candidates(items):
     def rank_key(item):
         insight = fallback_insight(item)
-        return (insight["lead_score"], item["date"])
+        return (insight["lead_score"], item.get("published_date") or item.get("date", ""))
 
     return sorted(items, key=rank_key, reverse=True)
 
@@ -858,10 +917,14 @@ def job():
         item["sales_region"] = item.get("sales_region") or detect_sales_region(item.get("region", "全国"))
         item["owner"] = item.get("owner") or detect_owner(item.get("region", "全国"))
         item["search_link"] = item.get("search_link") or baidu_search_link(item["title"])
+        item["published_date"] = item.get("published_date") or item.get("source_date") or item.get("date", "")
+        item["source_date"] = item.get("source_date") or item.get("published_date", "")
+        item["date"] = item.get("published_date", "")
         item["link_status"] = item.get("link_status") or (
             "原文可直达" if item.get("original_link") else "需搜索核查"
         )
-        item["updated_at"] = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+        item["collected_at"] = item.get("collected_at") or now_iso()
+        item["updated_at"] = now_iso()
         final_data.insert(0, item)
         count += 1
 
@@ -869,7 +932,7 @@ def job():
             break
         time.sleep(0.8)
 
-    final_data = sorted(final_data, key=lambda x: (x.get("date", ""), x.get("lead_score", 0)), reverse=True)
+    final_data = sorted(final_data, key=lambda x: (x.get("published_date") or x.get("date", ""), x.get("lead_score", 0)), reverse=True)
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump(final_data[:MAX_RECORDS], f, ensure_ascii=False, indent=2)
 
