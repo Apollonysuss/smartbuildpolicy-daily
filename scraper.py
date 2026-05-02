@@ -11,12 +11,20 @@ import requests
 
 
 API_KEY = os.environ.get("DEEPSEEK_API_KEY")
-DAILY_LIMIT = 30
+DAILY_LIMIT = int(os.environ.get("DAILY_LIMIT", "70"))
+MIN_QUALITY_SCORE = int(os.environ.get("MIN_QUALITY_SCORE", "4"))
+RSS_ITEMS_PER_QUERY = int(os.environ.get("RSS_ITEMS_PER_QUERY", "20"))
 MAX_RECORDS = int(os.environ.get("MAX_RECORDS", "5000"))
 
 SMARTBUILD_TERMS = [
     "智能建造", "智慧工地", "建筑机器人", "装配式建筑", "BIM", "城市更新",
     "好房子", "新型建筑工业化", "数字化施工", "无人施工",
+]
+
+STRONG_FIT_TERMS = [
+    "智能建造", "智慧工地", "建筑机器人", "BIM", "好房子",
+    "新型建筑工业化", "数字化施工", "无人施工", "装配式建筑",
+    "施工机器人", "智慧建造", "建筑工业化",
 ]
 
 SEARCH_QUERIES = [
@@ -224,6 +232,17 @@ def clean_title(value):
 
 def is_relevant(title):
     return any(term.lower() in title.lower() for term in SMARTBUILD_TERMS)
+
+
+def is_strong_fit(item):
+    text = " ".join([
+        item.get("title", ""),
+        item.get("summary", ""),
+        item.get("business_value", ""),
+        item.get("category", ""),
+        " ".join(item.get("entities", []) if isinstance(item.get("entities"), list) else []),
+    ])
+    return any(term.lower() in text.lower() for term in STRONG_FIT_TERMS)
 
 
 def baidu_search_link(title):
@@ -719,7 +738,7 @@ def fetch_google_news():
             print(f"抓取失败 [{config['query']}]: {e}")
             continue
 
-        for node in root.findall("./channel/item")[:12]:
+        for node in root.findall("./channel/item")[:RSS_ITEMS_PER_QUERY]:
             raw_title = node.findtext("title", default="")
             link = node.findtext("link", default="")
             if not raw_title or not link or link in seen_links:
@@ -1006,6 +1025,10 @@ def load_old_data():
             return []
 
 
+def is_high_quality_lead(item):
+    return int(item.get("lead_score") or 0) >= MIN_QUALITY_SCORE and is_strong_fit(item)
+
+
 def job():
     new_items = fetch_google_news()
     old_data = load_old_data()
@@ -1032,6 +1055,13 @@ def job():
             item["lead_score"] = score_result["lead_score"]
             item["lead_reason"] = score_result["lead_reason"]
             item["score_factors"] = score_result["score_factors"]
+        if not is_high_quality_lead(item):
+            print(
+                "跳过弱相关线索: "
+                f"{item['title'][:24]}... score={item.get('lead_score')} "
+                f"strong_fit={is_strong_fit(item)}"
+            )
+            continue
         item["link_status"] = item.get("link_status") or (
             "原文可直达" if item.get("original_link") else "需搜索核查"
         )
@@ -1048,7 +1078,11 @@ def job():
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump(final_data[:MAX_RECORDS], f, ensure_ascii=False, indent=2)
 
-    print(f"今日更新完成，新增 {count} 条商业线索，当前最多留存 {MAX_RECORDS} 条。")
+    print(
+        f"今日更新完成，新增 {count} 条高质量商业线索，"
+        f"每日上限 {DAILY_LIMIT} 条，最低评分 {MIN_QUALITY_SCORE} 分，"
+        f"当前最多留存 {MAX_RECORDS} 条。"
+    )
 
 
 if __name__ == "__main__":
