@@ -610,6 +610,34 @@
       font-size: 12px;
     }
 
+    .score-factor-grid {
+      display: grid;
+      gap: 8px;
+    }
+
+    .score-factor {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel-2);
+      padding: 9px;
+      display: grid;
+      gap: 5px;
+    }
+
+    .score-factor-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 760;
+    }
+
+    .score-factor p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
     .brief-list {
       display: grid;
       gap: 10px;
@@ -1373,6 +1401,7 @@
         stage: score >= 4 ? "待跟进" : "未分配",
         signal: item.summary || item.business_value || title,
         why: item.lead_reason || item.business_value || "该信号与智能建造、智慧工地或建筑数字化相关，值得销售进一步核查。",
+        scoreFactors: normalizeScoreFactors(item.score_factors),
         action: item.suggested_action || "核查原文主体、项目阶段、招采窗口和相关承建单位。",
         objects: normalizeEntities(item.entities, finalType, city),
         tags: normalizeTags(category, item.source_channel, reachable, score, finalType),
@@ -1400,6 +1429,26 @@
       if (type === "项目") return ["项目业主", "总包单位", "智能建造场景"];
       if (type === "公司") return ["企业主体", "数字化部门", "项目团队"];
       return ["线索主体", "区域销售", "市场团队"];
+    }
+
+    function normalizeScoreFactors(factors) {
+      if (!factors || typeof factors !== "object") return [];
+      const labels = {
+        source_trust: "原文可信度",
+        tender_signal: "招采信号",
+        budget_or_subject: "预算/主体",
+        region_match: "区域匹配",
+        recency: "近期程度",
+        product_fit: "产品匹配"
+      };
+      return Object.entries(labels).map(([key, label]) => {
+        const value = factors[key] || {};
+        return {
+          label,
+          score: Number(value.score || 0),
+          reason: value.reason || "待核查"
+        };
+      });
     }
 
     function normalizeTags(category, channel, reachable, score, type) {
@@ -1593,6 +1642,7 @@
           <h4>为什么值得跟</h4>
           <p>${escapeHtml(item.why)}</p>
         </div>
+        ${renderScoreFactors(item)}
         <div class="detail-block">
           <h4>推荐跟进对象</h4>
           <div class="tag-row">${item.objects.map(name => `<span class="tag">${escapeHtml(name)}</span>`).join("")}</div>
@@ -1642,6 +1692,23 @@
           <span>${escapeHtml(item.action)}</span>
         </div>
       `).join("") || '<div class="empty">暂无简报。</div>';
+    }
+
+    function renderScoreFactors(item) {
+      if (!item.scoreFactors.length) return "";
+      return `
+        <div class="detail-block">
+          <h4>评分依据</h4>
+          <div class="score-factor-grid">
+            ${item.scoreFactors.map(factor => `
+              <div class="score-factor">
+                <div class="score-factor-head"><span>${escapeHtml(factor.label)}</span><span>${factor.score}/5</span></div>
+                <p>${escapeHtml(factor.reason)}</p>
+              </div>
+            `).join("")}
+          </div>
+        </div>
+      `;
     }
 
     function typeClass(type) {
