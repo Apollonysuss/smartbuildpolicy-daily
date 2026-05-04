@@ -8,11 +8,17 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: smartbuild-data-update
+  cancel-in-progress: false
+
 jobs:
   daily-job:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v6
+    - name: 同步最新 main
+      run: git pull --ff-only origin main
     - uses: actions/setup-python@v6
       with:
         python-version: '3.9'
@@ -28,9 +34,9 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add data.json
-        git commit -m "Daily update" || echo "无新数据"
-        
-        # 防冲突关键步骤
-        git pull --rebase
-        
-        git push
+        if git diff --cached --quiet; then
+          echo "无新数据"
+        else
+          git commit -m "Daily update"
+          git push
+        fi
