@@ -19,25 +19,53 @@ NEWS_ONLY = os.environ.get("NEWS_ONLY", "1") != "0"
 
 SMARTBUILD_TERMS = [
     "智能建造", "智慧工地", "建筑机器人", "装配式建筑", "BIM", "城市更新",
-    "好房子", "新型建筑工业化", "数字化施工", "无人施工",
+    "好房子", "新型建筑工业化", "数字化施工", "无人施工", "智慧建造",
+    "施工机器人", "工地监管", "CIM", "BIM审图", "AI质检", "实测实量",
 ]
 
 STRONG_FIT_TERMS = [
     "智能建造", "智慧工地", "建筑机器人", "BIM", "好房子",
     "新型建筑工业化", "数字化施工", "无人施工", "装配式建筑",
-    "施工机器人", "智慧建造", "建筑工业化",
+    "施工机器人", "智慧建造", "建筑工业化", "机器人施工", "工地监管",
+    "BIM审图", "AI质检", "实测实量",
 ]
 
 SEARCH_QUERIES = [
-    {"query": "智能建造 新闻 OR 动态 OR 发布", "category": "行业动态"},
-    {"query": "智能建造 政策 OR 试点 OR 住建厅 OR 住建局", "category": "政策"},
-    {"query": "智能建造 招标 OR 中标 OR 采购 OR 合同", "category": "招采"},
-    {"query": "智慧工地 平台 OR 中标 OR 项目 OR 监管", "category": "智慧工地"},
-    {"query": "建筑机器人 采购 OR 应用 OR 项目 OR 施工", "category": "建筑机器人"},
-    {"query": "装配式建筑 智能建造 OR 新型建筑工业化 OR 项目", "category": "装配式建筑"},
-    {"query": "BIM AI 建筑 OR 智慧工地 OR 数字化施工", "category": "BIM+AI"},
-    {"query": "好房子 标准 OR 政策 OR 智能建造", "category": "好房子"},
-    {"query": "城市更新 智能建造 OR 智慧工地 OR 数字化施工", "category": "城市更新"},
+    {"query": "\"智慧工地\" 招标 OR 中标 OR 成交 OR 采购 OR 合同", "category": "招采", "priority": 5},
+    {"query": "\"智能建造\" 招标 OR 中标 OR 成交 OR 采购 OR 合同", "category": "招采", "priority": 5},
+    {"query": "\"建筑机器人\" 采购 OR 中标 OR 应用 OR 项目 OR 进场", "category": "建筑机器人", "priority": 5},
+    {"query": "\"施工机器人\" 采购 OR 中标 OR 应用 OR 项目", "category": "建筑机器人", "priority": 5},
+    {"query": "\"BIM\" 建筑 招标 OR 中标 OR 采购 OR 审图 OR 施工", "category": "BIM+AI", "priority": 4},
+    {"query": "住建厅 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案", "category": "政策", "priority": 5},
+    {"query": "住建局 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案", "category": "政策", "priority": 5},
+    {"query": "\"智能建造试点\" 项目 OR 名单 OR 公示 OR 示范", "category": "政策", "priority": 5},
+    {"query": "\"好房子\" 智能建造 OR 装配式 OR 建筑机器人 OR 智慧工地", "category": "好房子", "priority": 4},
+    {"query": "\"新型建筑工业化\" 政策 OR 试点 OR 项目 OR 示范", "category": "装配式建筑", "priority": 4},
+    {"query": "\"城市更新\" 智慧工地 OR 智能建造 OR BIM OR 数字化施工", "category": "城市更新", "priority": 3},
+    {"query": "城投 智慧工地 OR 智能建造 OR 数字化施工 OR BIM", "category": "项目", "priority": 4},
+    {"query": "建工集团 智慧工地 OR 建筑机器人 OR 智能建造 OR 数字化施工", "category": "企业", "priority": 4},
+    {"query": "中建 智慧工地 OR 建筑机器人 OR 智能建造 OR 数字化施工", "category": "企业", "priority": 4},
+    {"query": "博智林 OR 博匠机器人 OR 领鹊科技 OR 德睿途 建筑机器人 OR 智能建造", "category": "竞对动态", "priority": 3},
+    {"query": "建科智能 OR 河狸智造 OR 方石科技 OR 丰坦科技 OR 南京湃特纳", "category": "竞对动态", "priority": 3},
+]
+
+OPPORTUNITY_SIGNAL_TERMS = [
+    "招标", "中标", "成交", "采购", "合同", "入围", "遴选", "预算",
+    "试点", "示范", "名单", "公示", "通知", "方案", "规划",
+    "项目", "开工", "建设", "进场", "应用", "落地", "上线",
+    "住建厅", "住建局", "城投", "建工", "中建", "中铁", "中交",
+    "签约", "合作", "发布", "新品", "解决方案", "融资", "获奖", "推广",
+]
+
+LOW_VALUE_TITLE_TERMS = [
+    "论文", "课程", "培训", "招聘", "考试", "真题", "招生", "专业介绍",
+    "股票", "股价", "概念股", "龙头股", "涨停", "研报", "股吧",
+    "排行榜", "十大", "毕业设计", "专利", "下载", "模板",
+]
+
+COMPETITOR_TERMS = [
+    "博智林", "博匠机器人", "领鹊科技", "德睿途", "建科智能",
+    "河狸智造", "方石科技", "丰坦科技", "南京湃特纳",
 ]
 
 DOMESTIC_LIST_SOURCES = [
@@ -153,6 +181,10 @@ REGION_KEYWORDS = [
     "北京", "上海", "深圳", "广州", "江苏", "浙江", "广东", "重庆", "四川",
     "湖北", "湖南", "河南", "山东", "安徽", "陕西", "雄安", "南京", "苏州",
     "杭州", "成都", "武汉", "郑州", "长沙", "合肥", "西安", "厦门",
+    "天津", "河北", "山西", "内蒙古", "辽宁", "吉林", "黑龙江", "福建",
+    "江西", "广西", "海南", "贵州", "云南", "西藏", "甘肃", "青海",
+    "宁夏", "新疆", "佛山", "东莞", "珠海", "青岛", "济南", "宁波",
+    "无锡", "常州", "温州", "南昌", "福州", "昆明", "贵阳", "南宁",
 ]
 
 LEAD_SIGNALS = {
@@ -233,6 +265,30 @@ def clean_title(value):
 
 def is_relevant(title):
     return any(term.lower() in title.lower() for term in SMARTBUILD_TERMS)
+
+
+def is_low_value_title(title):
+    return any(term.lower() in title.lower() for term in LOW_VALUE_TITLE_TERMS)
+
+
+def has_opportunity_signal(title):
+    return any(term.lower() in title.lower() for term in OPPORTUNITY_SIGNAL_TERMS)
+
+
+def has_competitor_signal(title):
+    return any(term.lower() in title.lower() for term in COMPETITOR_TERMS)
+
+
+def is_search_candidate(title, category):
+    if is_low_value_title(title):
+        return False
+    if category == "竞对动态":
+        return has_competitor_signal(title) and (is_relevant(title) or has_opportunity_signal(title))
+    if is_relevant(title) and has_opportunity_signal(title):
+        return True
+    if category in ["招采", "政策", "项目", "竞对动态"] and is_relevant(title):
+        return True
+    return False
 
 
 def is_strong_fit(item):
@@ -748,6 +804,8 @@ def fetch_google_news():
                 continue
             seen_links.add(link)
             title, source = split_title_source(raw_title)
+            if not is_search_candidate(title, config["category"]):
+                continue
             search_link = baidu_search_link(title)
             links = normalize_google_link(link)
             items.append({
@@ -762,6 +820,7 @@ def fetch_google_news():
                 "collected_at": now_iso(),
                 "source": source,
                 "keyword": config["query"],
+                "search_priority": config.get("priority", 3),
                 "category": config["category"],
                 "source_channel": "Google News RSS",
                 "source_access": links["source_access"],
@@ -816,23 +875,26 @@ def sales_score_factors(item):
     elif direct_source:
         source_factor = factor(4, "原文可直达，来源可信度较高")
     elif source_access == "google_rss":
-        source_factor = factor(2, "来自 Google RSS，需要核查原始出处")
+        source_factor = factor(3, "来自 Google RSS，需通过搜索原文核查出处")
     else:
         source_factor = factor(3, "来源可用，但仍需核查出处")
 
     if category == "招采" or any(word in text for word in ["招标", "中标", "采购", "成交", "合同", "入围", "遴选"]):
         tender_factor = factor(5, "存在招标/中标/采购等明确交易信号")
-    elif any(word in text for word in ["项目", "工程", "示范", "试点"]):
-        tender_factor = factor(3, "存在项目或试点信号，但招采窗口仍需确认")
+    elif any(word in text for word in ["项目", "工程", "示范", "试点", "名单", "公示", "方案"]):
+        tender_factor = factor(4, "存在项目、试点或名单信号，可继续确认招采窗口")
     else:
         tender_factor = factor(1, "暂未看到明确招采信号")
 
     has_budget = bool(re.search(r"\d+(?:\.\d+)?\s*(?:万|万元|亿|亿元)", text))
-    has_subject = bool(item.get("entities")) or any(word in text for word in ["局", "厅", "委", "集团", "公司", "中心", "平台", "项目", "采购人", "招标人", "中标人"])
+    has_subject = bool(item.get("entities")) or any(word in text for word in [
+        "局", "厅", "委", "省", "市", "区", "县", "集团", "公司", "中心",
+        "平台", "项目", "采购人", "招标人", "中标人",
+    ])
     if has_budget and has_subject:
         budget_subject_factor = factor(5, "同时出现预算/金额和明确主体")
     elif has_subject:
-        budget_subject_factor = factor(3, "有明确主体，预算金额待核查")
+        budget_subject_factor = factor(4, "有明确主体，预算金额待核查")
     elif has_budget:
         budget_subject_factor = factor(3, "有金额线索，主体仍需核查")
     else:
@@ -1012,7 +1074,11 @@ def call_ai_insight(item):
 def rank_candidates(items):
     def rank_key(item):
         insight = fallback_insight(item)
-        return (insight["lead_score"], item.get("published_date") or item.get("date", ""))
+        return (
+            insight["lead_score"],
+            item.get("search_priority", 3),
+            item.get("published_date") or item.get("date", ""),
+        )
 
     return sorted(items, key=rank_key, reverse=True)
 
@@ -1029,7 +1095,20 @@ def load_old_data():
 
 
 def is_high_quality_lead(item):
-    return int(item.get("lead_score") or 0) >= MIN_QUALITY_SCORE and is_strong_fit(item)
+    title = item.get("title", "")
+    category = item.get("category", "")
+    if is_low_value_title(title):
+        return False
+    if category == "竞对动态":
+        return (
+            int(item.get("lead_score") or 0) >= 2
+            and has_competitor_signal(title)
+            and (is_strong_fit(item) or has_opportunity_signal(title))
+        )
+    has_signal = has_opportunity_signal(title) or (
+        category == "竞对动态" and has_competitor_signal(title)
+    )
+    return int(item.get("lead_score") or 0) >= MIN_QUALITY_SCORE and is_strong_fit(item) and has_signal
 
 
 def job():
