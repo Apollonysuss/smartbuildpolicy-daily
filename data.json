@@ -174,6 +174,63 @@
     "updated_at": "2026-05-09T06:47:04Z"
   },
   {
+    "title": "“好房子”标准宣贯暨标准化住宅项目观摩会在成都举行",
+    "link": "https://www.baidu.com/s?wd=%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E6%A0%87%E5%87%86%E5%AE%A3%E8%B4%AF%E6%9A%A8%E6%A0%87%E5%87%86%E5%8C%96%E4%BD%8F%E5%AE%85%E9%A1%B9%E7%9B%AE%E8%A7%82%E6%91%A9%E4%BC%9A%E5%9C%A8%E6%88%90%E9%83%BD%E4%B8%BE%E8%A1%8C",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1nOFhkVmktN29jNnJJN1kyMVRpSGtuTHlJZnQzRzkzQy1hcnZOMkJWTnNhbExnS0VTanlQMzNCMUljSXNpVHAza05VOGI5LW5Vc0V1OGhCRllJQTdfRVNrX1QzZThyVHlkUlJnMGZ4eWQ?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E6%A0%87%E5%87%86%E5%AE%A3%E8%B4%AF%E6%9A%A8%E6%A0%87%E5%87%86%E5%8C%96%E4%BD%8F%E5%AE%85%E9%A1%B9%E7%9B%AE%E8%A7%82%E6%91%A9%E4%BC%9A%E5%9C%A8%E6%88%90%E9%83%BD%E4%B8%BE%E8%A1%8C",
+    "date": "2026-04-25",
+    "published_date": "2026-04-25",
+    "source_date": "2026-04-25",
+    "collected_at": "2026-05-10T15:59:30Z",
+    "source": "中国科技网",
+    "keyword": "\"好房子\" 智能建造 OR 装配式 OR 建筑机器人 OR 智慧工地",
+    "search_priority": 4,
+    "category": "会议",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "成都举办“好房子”标准宣贯及标准化住宅项目观摩会",
+    "region": "成都",
+    "sales_region": "西南",
+    "owner": "西南销售组",
+    "entities": [
+      "中国科技网"
+    ],
+    "business_value": "展示智能建造与装配式技术应用场景，为建筑科技公司提供市场推广和客户对接机会",
+    "lead_score": 4,
+    "lead_reason": "高度匹配蔚建智能建造相关场景：智能建造、好房子；存在项目、试点或名单信号，可继续确认招采窗口",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：西南"
+      },
+      "recency": {
+        "score": 4,
+        "reason": "45天内信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、好房子"
+      }
+    },
+    "suggested_action": "关注参会企业名单，联系主办方获取项目细节，评估后续合作可能",
+    "urgency": "中",
+    "updated_at": "2026-05-10T15:59:54Z"
+  },
+  {
     "title": "中国施工企业管理协会“好房子”标准宣贯暨标准化住宅项目观摩会走进中铁二局",
     "link": "https://www.baidu.com/s?wd=%E4%B8%AD%E5%9B%BD%E6%96%BD%E5%B7%A5%E4%BC%81%E4%B8%9A%E7%AE%A1%E7%90%86%E5%8D%8F%E4%BC%9A%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E6%A0%87%E5%87%86%E5%AE%A3%E8%B4%AF%E6%9A%A8%E6%A0%87%E5%87%86%E5%8C%96%E4%BD%8F%E5%AE%85%E9%A1%B9%E7%9B%AE%E8%A7%82%E6%91%A9%E4%BC%9A%E8%B5%B0%E8%BF%9B%E4%B8%AD%E9%93%81%E4%BA%8C%E5%B1%80",
     "original_link": "",
@@ -287,6 +344,64 @@
     "suggested_action": "监控后续相关招采公告，暂不主动跟进。",
     "urgency": "低",
     "updated_at": "2026-05-09T06:47:08Z"
+  },
+  {
+    "title": "智能建造“黑科技”助力昆明长水机场T2航站楼优质高效建设",
+    "link": "https://www.baidu.com/s?wd=%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E2%80%9C%E9%BB%91%E7%A7%91%E6%8A%80%E2%80%9D%E5%8A%A9%E5%8A%9B%E6%98%86%E6%98%8E%E9%95%BF%E6%B0%B4%E6%9C%BA%E5%9C%BAT2%E8%88%AA%E7%AB%99%E6%A5%BC%E4%BC%98%E8%B4%A8%E9%AB%98%E6%95%88%E5%BB%BA%E8%AE%BE",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1nSzMwRWdwbXd4Tlc1LUpSX19KZHpPOWVFXzZWTTJ0dDlTdl82dlg0U1M5bWVMSnp0SERDd2tWMFFRcU5nMFlBeTF4LU5DeEhBSXdfaHlScEZTQWpBdkpUTXFzZDBJQlE3RjQtXw?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E2%80%9C%E9%BB%91%E7%A7%91%E6%8A%80%E2%80%9D%E5%8A%A9%E5%8A%9B%E6%98%86%E6%98%8E%E9%95%BF%E6%B0%B4%E6%9C%BA%E5%9C%BAT2%E8%88%AA%E7%AB%99%E6%A5%BC%E4%BC%98%E8%B4%A8%E9%AB%98%E6%95%88%E5%BB%BA%E8%AE%BE",
+    "date": "2026-04-22",
+    "published_date": "2026-04-22",
+    "source_date": "2026-04-22",
+    "collected_at": "2026-05-10T15:59:35Z",
+    "source": "zgjtb.com",
+    "keyword": "中建 智慧工地 OR 建筑机器人 OR 智能建造 OR 数字化施工",
+    "search_priority": 4,
+    "category": "项目",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "智能建造技术应用于昆明长水机场T2航站楼建设，提升效率与质量。",
+    "region": "昆明",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [
+      "昆明长水机场T2航站楼",
+      "中建"
+    ],
+    "business_value": "为建筑科技公司提供大型机场项目智能建造技术应用机会，可切入智慧工地或机器人施工环节。",
+    "lead_score": 4,
+    "lead_reason": "高度匹配蔚建智能建造相关场景：智能建造、智慧工地；存在项目、试点或名单信号，可继续确认招采窗口",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 4,
+        "reason": "45天内信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、智慧工地"
+      }
+    },
+    "suggested_action": "联系中建项目组，了解智能建造具体技术需求及采购计划。",
+    "urgency": "高",
+    "updated_at": "2026-05-10T16:04:10Z"
   },
   {
     "title": "云南省推动智能建造试点扩面提质",
@@ -575,6 +690,178 @@
     "updated_at": "2026-05-09T06:47:15Z"
   },
   {
+    "title": "五合一执行平台×空间大脑丨丰坦四代机P600 Max多功能涂料施工机器人全球发布",
+    "link": "https://www.baidu.com/s?wd=%E4%BA%94%E5%90%88%E4%B8%80%E6%89%A7%E8%A1%8C%E5%B9%B3%E5%8F%B0%C3%97%E7%A9%BA%E9%97%B4%E5%A4%A7%E8%84%91%E4%B8%A8%E4%B8%B0%E5%9D%A6%E5%9B%9B%E4%BB%A3%E6%9C%BAP600+Max%E5%A4%9A%E5%8A%9F%E8%83%BD%E6%B6%82%E6%96%99%E6%96%BD%E5%B7%A5%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%85%A8%E7%90%83%E5%8F%91%E5%B8%83",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5hZV9ZSFdYSEJUSkx1bmM3SVktZi11MGFFX2dDdTQ5bDBHdk1CaExKSEpNNTJaWV85QkFtXzREZGlXd285RFFGLUVNUVlxWnhzQXNMX213NEVMdmx2SjZTcnRUVHdjRE1pSWNqXw?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E4%BA%94%E5%90%88%E4%B8%80%E6%89%A7%E8%A1%8C%E5%B9%B3%E5%8F%B0%C3%97%E7%A9%BA%E9%97%B4%E5%A4%A7%E8%84%91%E4%B8%A8%E4%B8%B0%E5%9D%A6%E5%9B%9B%E4%BB%A3%E6%9C%BAP600+Max%E5%A4%9A%E5%8A%9F%E8%83%BD%E6%B6%82%E6%96%99%E6%96%BD%E5%B7%A5%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%85%A8%E7%90%83%E5%8F%91%E5%B8%83",
+    "date": "2026-04-15",
+    "published_date": "2026-04-15",
+    "source_date": "2026-04-15",
+    "collected_at": "2026-05-10T15:59:25Z",
+    "source": "中华网",
+    "keyword": "\"施工机器人\" 采购 OR 中标 OR 应用 OR 项目",
+    "search_priority": 5,
+    "category": "技术",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "丰坦机器人发布四代机P600 Max多功能涂料施工机器人",
+    "region": "全国",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [
+      "丰坦机器人"
+    ],
+    "business_value": "新产品发布表明施工机器人技术迭代，可能带来设备采购或合作机会，适合供应商和集成商关注",
+    "lead_score": 4,
+    "lead_reason": "存在招标/中标/采购等明确交易信号；有明确主体，预算金额待核查",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 5,
+        "reason": "存在招标/中标/采购等明确交易信号"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 4,
+        "reason": "45天内信号"
+      },
+      "product_fit": {
+        "score": 3,
+        "reason": "场景相近，可进一步核查蔚建切入点"
+      }
+    },
+    "suggested_action": "关注后续市场应用案例和潜在客户反馈，评估产品与蔚建产品匹配度",
+    "urgency": "低",
+    "updated_at": "2026-05-10T16:03:19Z"
+  },
+  {
+    "title": "福建二建集团场景案例入选2026年度省智能建造重点应用场景清单",
+    "link": "https://www.baidu.com/s?wd=%E7%A6%8F%E5%BB%BA%E4%BA%8C%E5%BB%BA%E9%9B%86%E5%9B%A2%E5%9C%BA%E6%99%AF%E6%A1%88%E4%BE%8B%E5%85%A5%E9%80%892026%E5%B9%B4%E5%BA%A6%E7%9C%81%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E9%87%8D%E7%82%B9%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%E6%B8%85%E5%8D%95",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE51NnhvR0xDS3FKenBBUTkyQTVzbDZoS2NUTHNIUFVfOGZoWnFpM3I5WnU0bTBveTdlU2VpYy1BZEc5OHgxYk1kbTR5cWg3SHBRRkVyTDBlX0Q3cllrdHpkZzFiTGc5Nlc2TFlwQQ?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E7%A6%8F%E5%BB%BA%E4%BA%8C%E5%BB%BA%E9%9B%86%E5%9B%A2%E5%9C%BA%E6%99%AF%E6%A1%88%E4%BE%8B%E5%85%A5%E9%80%892026%E5%B9%B4%E5%BA%A6%E7%9C%81%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E9%87%8D%E7%82%B9%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%E6%B8%85%E5%8D%95",
+    "date": "2026-04-15",
+    "published_date": "2026-04-15",
+    "source_date": "2026-04-15",
+    "collected_at": "2026-05-10T15:59:33Z",
+    "source": "东南网",
+    "keyword": "城投 智慧工地 OR 智能建造 OR 数字化施工 OR BIM",
+    "search_priority": 4,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "福建二建集团智能建造场景入选2026年度省重点应用场景清单",
+    "region": "福建",
+    "sales_region": "华南",
+    "owner": "市场线索池",
+    "entities": [
+      "福建二建集团",
+      "福建省住建厅"
+    ],
+    "business_value": "政策背书推动智能建造落地，为智能建造解决方案商提供省级示范项目合作与推广机会",
+    "lead_score": 4,
+    "lead_reason": "存在项目、试点或名单信号，可继续确认招采窗口；有明确主体，预算金额待核查",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华南"
+      },
+      "recency": {
+        "score": 4,
+        "reason": "45天内信号"
+      },
+      "product_fit": {
+        "score": 4,
+        "reason": "匹配蔚建相关场景：智能建造"
+      }
+    },
+    "suggested_action": "联系福建二建集团或省住建厅，了解场景具体需求及供应商准入流程",
+    "urgency": "高",
+    "updated_at": "2026-05-10T16:02:18Z"
+  },
+  {
+    "title": "从“住有所居”迈向“住有优居”：江苏“好房子”建设的产业链协同新路径",
+    "link": "https://www.baidu.com/s?wd=%E4%BB%8E%E2%80%9C%E4%BD%8F%E6%9C%89%E6%89%80%E5%B1%85%E2%80%9D%E8%BF%88%E5%90%91%E2%80%9C%E4%BD%8F%E6%9C%89%E4%BC%98%E5%B1%85%E2%80%9D%EF%BC%9A%E6%B1%9F%E8%8B%8F%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E5%BB%BA%E8%AE%BE%E7%9A%84%E4%BA%A7%E4%B8%9A%E9%93%BE%E5%8D%8F%E5%90%8C%E6%96%B0%E8%B7%AF%E5%BE%84",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1BdXV0b1JFalgxdENHZ2dTU09qU1NQUVU1bmRCNjVHTEhDV1I5UHFMelR3WHgtYXRCOXljMEpzWGxXQkFWaUwyYms0MVV2eWdDRWUtSkxfTkFRYWtKdWdfbUdUZ1BrWG9nSllB?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E4%BB%8E%E2%80%9C%E4%BD%8F%E6%9C%89%E6%89%80%E5%B1%85%E2%80%9D%E8%BF%88%E5%90%91%E2%80%9C%E4%BD%8F%E6%9C%89%E4%BC%98%E5%B1%85%E2%80%9D%EF%BC%9A%E6%B1%9F%E8%8B%8F%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E5%BB%BA%E8%AE%BE%E7%9A%84%E4%BA%A7%E4%B8%9A%E9%93%BE%E5%8D%8F%E5%90%8C%E6%96%B0%E8%B7%AF%E5%BE%84",
+    "date": "2026-04-15",
+    "published_date": "2026-04-15",
+    "source_date": "2026-04-15",
+    "collected_at": "2026-05-10T15:59:27Z",
+    "source": "新华报业网",
+    "keyword": "住建厅 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "江苏探索“好房子”建设产业链协同路径，涉及智能建造与智慧工地。",
+    "region": "江苏",
+    "sales_region": "华东",
+    "owner": "华东销售二组",
+    "entities": [
+      "江苏省住建厅"
+    ],
+    "business_value": "政策导向明确，利好智能建造解决方案供应商，可切入政府试点项目。",
+    "lead_score": 4,
+    "lead_reason": "高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子；存在项目、试点或名单信号，可继续确认招采窗口",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华东"
+      },
+      "recency": {
+        "score": 4,
+        "reason": "45天内信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子"
+      }
+    },
+    "suggested_action": "联系江苏省住建厅，了解试点方案和供应商准入要求。",
+    "urgency": "高",
+    "updated_at": "2026-05-10T16:00:22Z"
+  },
+  {
     "title": "海南发布《好房子技术导则（试行）》 以高标准严要求打造自贸港人居品质",
     "link": "https://www.baidu.com/s?wd=%E6%B5%B7%E5%8D%97%E5%8F%91%E5%B8%83%E3%80%8A%E5%A5%BD%E6%88%BF%E5%AD%90%E6%8A%80%E6%9C%AF%E5%AF%BC%E5%88%99%EF%BC%88%E8%AF%95%E8%A1%8C%EF%BC%89%E3%80%8B+%E4%BB%A5%E9%AB%98%E6%A0%87%E5%87%86%E4%B8%A5%E8%A6%81%E6%B1%82%E6%89%93%E9%80%A0%E8%87%AA%E8%B4%B8%E6%B8%AF%E4%BA%BA%E5%B1%85%E5%93%81%E8%B4%A8",
     "original_link": "",
@@ -630,6 +917,63 @@
     "suggested_action": "联系海南省住建厅，了解试点项目申报细节，准备智能建造解决方案材料。",
     "urgency": "高",
     "updated_at": "2026-05-09T06:47:23Z"
+  },
+  {
+    "title": "一批智能建筑机器人在南山区中医院项目“上岗” 从“人力”向“智造”升级助力项目建设高质量发展",
+    "link": "https://www.baidu.com/s?wd=%E4%B8%80%E6%89%B9%E6%99%BA%E8%83%BD%E5%BB%BA%E7%AD%91%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%9C%A8%E5%8D%97%E5%B1%B1%E5%8C%BA%E4%B8%AD%E5%8C%BB%E9%99%A2%E9%A1%B9%E7%9B%AE%E2%80%9C%E4%B8%8A%E5%B2%97%E2%80%9D+%E4%BB%8E%E2%80%9C%E4%BA%BA%E5%8A%9B%E2%80%9D%E5%90%91%E2%80%9C%E6%99%BA%E9%80%A0%E2%80%9D%E5%8D%87%E7%BA%A7%E5%8A%A9%E5%8A%9B%E9%A1%B9%E7%9B%AE%E5%BB%BA%E8%AE%BE%E9%AB%98%E8%B4%A8%E9%87%8F%E5%8F%91%E5%B1%95",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9QOFFmVHBKMEZDbjI3eFhKTnYxVXB4NkRfMS1neV9MRVRMdW9mVXdnWUkxcDNwejM3S0lUYUlJV0pLX0RDekRBeS1ldXp2Q19qZHc0X3JYem1lZEVjSzJHM3VrM2h0MUo1ZnRJbVI4SldRcld5OWZN?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E4%B8%80%E6%89%B9%E6%99%BA%E8%83%BD%E5%BB%BA%E7%AD%91%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%9C%A8%E5%8D%97%E5%B1%B1%E5%8C%BA%E4%B8%AD%E5%8C%BB%E9%99%A2%E9%A1%B9%E7%9B%AE%E2%80%9C%E4%B8%8A%E5%B2%97%E2%80%9D+%E4%BB%8E%E2%80%9C%E4%BA%BA%E5%8A%9B%E2%80%9D%E5%90%91%E2%80%9C%E6%99%BA%E9%80%A0%E2%80%9D%E5%8D%87%E7%BA%A7%E5%8A%A9%E5%8A%9B%E9%A1%B9%E7%9B%AE%E5%BB%BA%E8%AE%BE%E9%AB%98%E8%B4%A8%E9%87%8F%E5%8F%91%E5%B1%95",
+    "date": "2026-04-14",
+    "published_date": "2026-04-14",
+    "source_date": "2026-04-14",
+    "collected_at": "2026-05-10T15:59:24Z",
+    "source": "sz.gov.cn",
+    "keyword": "\"建筑机器人\" 采购 OR 中标 OR 应用 OR 项目 OR 进场",
+    "search_priority": 5,
+    "category": "项目",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "南山区中医院项目引入智能建筑机器人，推动施工从人力向智造升级。",
+    "region": "深圳",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [
+      "南山区中医院项目"
+    ],
+    "business_value": "表明深圳公立医院项目已实际应用建筑机器人，为同类项目推广和供应商切入提供案例与需求信号。",
+    "lead_score": 4,
+    "lead_reason": "存在项目、试点或名单信号，可继续确认招采窗口；有明确主体，预算金额待核查",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 4,
+        "reason": "45天内信号"
+      },
+      "product_fit": {
+        "score": 4,
+        "reason": "匹配蔚建相关场景：建筑机器人"
+      }
+    },
+    "suggested_action": "联系南山区中医院项目施工方或建设方，了解机器人选型及后续采购计划。",
+    "urgency": "高",
+    "updated_at": "2026-05-10T15:59:44Z"
   },
   {
     "title": "3+9！安徽建工智能建造实力再获认可",
@@ -862,6 +1206,121 @@
     "updated_at": "2026-05-09T06:47:31Z"
   },
   {
+    "title": "佛山首个政企共建好房子试点！三龙湾金茂晓棠以五年质保作答",
+    "link": "https://www.baidu.com/s?wd=%E4%BD%9B%E5%B1%B1%E9%A6%96%E4%B8%AA%E6%94%BF%E4%BC%81%E5%85%B1%E5%BB%BA%E5%A5%BD%E6%88%BF%E5%AD%90%E8%AF%95%E7%82%B9%EF%BC%81%E4%B8%89%E9%BE%99%E6%B9%BE%E9%87%91%E8%8C%82%E6%99%93%E6%A3%A0%E4%BB%A5%E4%BA%94%E5%B9%B4%E8%B4%A8%E4%BF%9D%E4%BD%9C%E7%AD%94",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE84QXdLbUhKMHB0ZTJCaXBqa2M3Si1qNVpMX3d5ZTBxb2FtN29fS2lqMWVKZU5lR3dNeWxIT2s5aFhaY0JqRU1IbHFtbEM5T0dwYllqWXpnOGdVVE15NWdlLW1WVGRMeUw0VlZYWDM2MmhrQ3VfODk0?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E4%BD%9B%E5%B1%B1%E9%A6%96%E4%B8%AA%E6%94%BF%E4%BC%81%E5%85%B1%E5%BB%BA%E5%A5%BD%E6%88%BF%E5%AD%90%E8%AF%95%E7%82%B9%EF%BC%81%E4%B8%89%E9%BE%99%E6%B9%BE%E9%87%91%E8%8C%82%E6%99%93%E6%A3%A0%E4%BB%A5%E4%BA%94%E5%B9%B4%E8%B4%A8%E4%BF%9D%E4%BD%9C%E7%AD%94",
+    "date": "2026-04-01",
+    "published_date": "2026-04-01",
+    "source_date": "2026-04-01",
+    "collected_at": "2026-05-10T15:59:28Z",
+    "source": "content.foshanplus.com",
+    "keyword": "住建局 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "项目",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "佛山首个政企共建好房子试点，三龙湾金茂晓棠项目承诺五年质保。",
+    "region": "佛山",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [
+      "佛山市住建局",
+      "三龙湾金茂晓棠"
+    ],
+    "business_value": "为智能建造解决方案供应商提供政企合作试点机会，可切入好房子标准下的质保与智慧工地需求。",
+    "lead_score": 4,
+    "lead_reason": "高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子；存在项目、试点或名单信号，可继续确认招采窗口",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 4,
+        "reason": "45天内信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子"
+      }
+    },
+    "suggested_action": "联系佛山市住建局或金茂晓棠项目方，了解智能建造及质保相关技术需求。",
+    "urgency": "高",
+    "updated_at": "2026-05-10T16:00:30Z"
+  },
+  {
+    "title": "智能建造赋能上海规模化城市更新，田林路项目将惠及千户居民-腾讯新闻",
+    "link": "https://www.baidu.com/s?wd=%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E8%B5%8B%E8%83%BD%E4%B8%8A%E6%B5%B7%E8%A7%84%E6%A8%A1%E5%8C%96%E5%9F%8E%E5%B8%82%E6%9B%B4%E6%96%B0%EF%BC%8C%E7%94%B0%E6%9E%97%E8%B7%AF%E9%A1%B9%E7%9B%AE%E5%B0%86%E6%83%A0%E5%8F%8A%E5%8D%83%E6%88%B7%E5%B1%85%E6%B0%91-%E8%85%BE%E8%AE%AF%E6%96%B0%E9%97%BB",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE93a2pKUldBdGwweVFKamtGblNOdGJJaG5iT0RrdThVVWJLUU1iZFN1dHI3SHJ6RzFjS0txYXAyUFUwVHlLcGhRTTN4M3ZnV3ZLWnRYb3F3?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E8%B5%8B%E8%83%BD%E4%B8%8A%E6%B5%B7%E8%A7%84%E6%A8%A1%E5%8C%96%E5%9F%8E%E5%B8%82%E6%9B%B4%E6%96%B0%EF%BC%8C%E7%94%B0%E6%9E%97%E8%B7%AF%E9%A1%B9%E7%9B%AE%E5%B0%86%E6%83%A0%E5%8F%8A%E5%8D%83%E6%88%B7%E5%B1%85%E6%B0%91-%E8%85%BE%E8%AE%AF%E6%96%B0%E9%97%BB",
+    "date": "2026-03-23",
+    "published_date": "2026-03-23",
+    "source_date": "2026-03-23",
+    "collected_at": "2026-05-10T15:59:32Z",
+    "source": "xw.qq.com",
+    "keyword": "\"城市更新\" 智慧工地 OR 智能建造 OR BIM OR 数字化施工",
+    "search_priority": 3,
+    "category": "项目",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "上海田林路城市更新项目采用智能建造，惠及千户居民。",
+    "region": "上海",
+    "sales_region": "华东",
+    "owner": "华东销售一组",
+    "entities": [
+      "田林路项目"
+    ],
+    "business_value": "项目涉及智能建造应用，为建筑科技公司提供产品落地和示范机会，可切入智慧工地或数字化施工方案。",
+    "lead_score": 4,
+    "lead_reason": "高度匹配蔚建智能建造相关场景：智能建造、智慧工地、数字化施工；存在项目、试点或名单信号，可继续确认招采窗口",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华东"
+      },
+      "recency": {
+        "score": 3,
+        "reason": "近四个月内信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、智慧工地、数字化施工"
+      }
+    },
+    "suggested_action": "联系项目方或相关建设部门，了解智能建造具体需求和采购计划。",
+    "urgency": "高",
+    "updated_at": "2026-05-10T16:00:07Z"
+  },
+  {
     "title": "智能建造赋能上海规模化城市更新，田林路项目将惠及千户居民",
     "link": "https://www.baidu.com/s?wd=%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E8%B5%8B%E8%83%BD%E4%B8%8A%E6%B5%B7%E8%A7%84%E6%A8%A1%E5%8C%96%E5%9F%8E%E5%B8%82%E6%9B%B4%E6%96%B0%EF%BC%8C%E7%94%B0%E6%9E%97%E8%B7%AF%E9%A1%B9%E7%9B%AE%E5%B0%86%E6%83%A0%E5%8F%8A%E5%8D%83%E6%88%B7%E5%B1%85%E6%B0%91",
     "original_link": "",
@@ -917,6 +1376,122 @@
     "suggested_action": "联系项目方或相关住建部门，了解智能建造技术需求及采购计划。",
     "urgency": "高",
     "updated_at": "2026-05-09T06:47:00Z"
+  },
+  {
+    "title": "城市更新典型案例丨中国二十二冶浭阳锦园项目：破题城市更新 智造“好房子”样板",
+    "link": "https://www.baidu.com/s?wd=%E5%9F%8E%E5%B8%82%E6%9B%B4%E6%96%B0%E5%85%B8%E5%9E%8B%E6%A1%88%E4%BE%8B%E4%B8%A8%E4%B8%AD%E5%9B%BD%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%86%B6%E6%B5%AD%E9%98%B3%E9%94%A6%E5%9B%AD%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A0%B4%E9%A2%98%E5%9F%8E%E5%B8%82%E6%9B%B4%E6%96%B0+%E6%99%BA%E9%80%A0%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E6%A0%B7%E6%9D%BF",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ScVFnLWViYXlCZU9ZMktyWkVDRXBKaVE2OWJ4cjNIbjRvMldMQ2xwb09PWHlmSTgzOXVHVm1FZGJsLTVUaEl0ZGlJaVZUTGJ0d2ZKdDQzTm9hOEVlbnc?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E5%9F%8E%E5%B8%82%E6%9B%B4%E6%96%B0%E5%85%B8%E5%9E%8B%E6%A1%88%E4%BE%8B%E4%B8%A8%E4%B8%AD%E5%9B%BD%E4%BA%8C%E5%8D%81%E4%BA%8C%E5%86%B6%E6%B5%AD%E9%98%B3%E9%94%A6%E5%9B%AD%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A0%B4%E9%A2%98%E5%9F%8E%E5%B8%82%E6%9B%B4%E6%96%B0+%E6%99%BA%E9%80%A0%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E6%A0%B7%E6%9D%BF",
+    "date": "2026-03-13",
+    "published_date": "2026-03-13",
+    "source_date": "2026-03-13",
+    "collected_at": "2026-05-10T15:59:30Z",
+    "source": "thepaper.cn",
+    "keyword": "\"好房子\" 智能建造 OR 装配式 OR 建筑机器人 OR 智慧工地",
+    "search_priority": 4,
+    "category": "项目",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "中国二十二冶浭阳锦园项目作为城市更新典型案例，展示智能建造与装配式技术应用。",
+    "region": "河北唐山",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [
+      "中国二十二冶",
+      "浭阳锦园项目"
+    ],
+    "business_value": "展示智能建造与装配式技术应用，为建筑科技公司提供示范案例和潜在合作机会。",
+    "lead_score": 4,
+    "lead_reason": "高度匹配蔚建智能建造相关场景：智能建造、好房子；存在项目、试点或名单信号，可继续确认招采窗口",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 3,
+        "reason": "近四个月内信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、好房子"
+      }
+    },
+    "suggested_action": "关注中国二十二冶后续项目动态，评估智能建造产品匹配度。",
+    "urgency": "中",
+    "updated_at": "2026-05-10T16:02:29Z"
+  },
+  {
+    "title": "技术出海！智慧工地解决方案将落地中吉乌铁路及坦布铁路一期项目",
+    "link": "https://www.baidu.com/s?wd=%E6%8A%80%E6%9C%AF%E5%87%BA%E6%B5%B7%EF%BC%81%E6%99%BA%E6%85%A7%E5%B7%A5%E5%9C%B0%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%B0%86%E8%90%BD%E5%9C%B0%E4%B8%AD%E5%90%89%E4%B9%8C%E9%93%81%E8%B7%AF%E5%8F%8A%E5%9D%A6%E5%B8%83%E9%93%81%E8%B7%AF%E4%B8%80%E6%9C%9F%E9%A1%B9%E7%9B%AE",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9oNmpTM25NWUIybU8tN1BvcFJuMUxMTGNsaTMwM1pYU2RMbDV4N3JjVjNZTzg4ZDkzR3hpTzhJN3NsV1BtcGFqX2tPaTNqOGc2NTB0T1NB?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E6%8A%80%E6%9C%AF%E5%87%BA%E6%B5%B7%EF%BC%81%E6%99%BA%E6%85%A7%E5%B7%A5%E5%9C%B0%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E5%B0%86%E8%90%BD%E5%9C%B0%E4%B8%AD%E5%90%89%E4%B9%8C%E9%93%81%E8%B7%AF%E5%8F%8A%E5%9D%A6%E5%B8%83%E9%93%81%E8%B7%AF%E4%B8%80%E6%9C%9F%E9%A1%B9%E7%9B%AE",
+    "date": "2026-02-09",
+    "published_date": "2026-02-09",
+    "source_date": "2026-02-09",
+    "collected_at": "2026-05-10T15:59:22Z",
+    "source": "xw.qq.com",
+    "keyword": "\"智慧工地\" 招标 OR 中标 OR 成交 OR 采购 OR 合同",
+    "search_priority": 5,
+    "category": "项目",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "智慧工地解决方案将落地中吉乌铁路及坦布铁路一期项目",
+    "region": "海外（中亚、非洲）",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [
+      "中吉乌铁路",
+      "坦布铁路一期项目"
+    ],
+    "business_value": "为智慧工地解决方案供应商提供海外铁路项目落地机会，需关注具体采购需求及合作伙伴",
+    "lead_score": 4,
+    "lead_reason": "存在招标/中标/采购等明确交易信号；有明确主体，预算金额待核查",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 5,
+        "reason": "存在招标/中标/采购等明确交易信号"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 3,
+        "reason": "近四个月内信号"
+      },
+      "product_fit": {
+        "score": 4,
+        "reason": "匹配蔚建相关场景：智慧工地"
+      }
+    },
+    "suggested_action": "联系项目相关方（如中铁等）获取具体技术需求和采购计划",
+    "urgency": "中",
+    "updated_at": "2026-05-10T16:00:35Z"
   },
   {
     "title": "BIM智慧技术赋能环漕湖一期欣苑路项目明年上半年通车- 苏相合作区",
@@ -1032,6 +1607,63 @@
     "suggested_action": "联系重庆市住建委或项目牵头单位，了解具体项目清单及技术需求。",
     "urgency": "高",
     "updated_at": "2026-05-09T06:50:34Z"
+  },
+  {
+    "title": "推动建筑+光伏一体化应用！广东广州推进“好房子”建设的工作指引（试行）发布",
+    "link": "https://www.baidu.com/s?wd=%E6%8E%A8%E5%8A%A8%E5%BB%BA%E7%AD%91%2B%E5%85%89%E4%BC%8F%E4%B8%80%E4%BD%93%E5%8C%96%E5%BA%94%E7%94%A8%EF%BC%81%E5%B9%BF%E4%B8%9C%E5%B9%BF%E5%B7%9E%E6%8E%A8%E8%BF%9B%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E5%BB%BA%E8%AE%BE%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%8C%87%E5%BC%95%EF%BC%88%E8%AF%95%E8%A1%8C%EF%BC%89%E5%8F%91%E5%B8%83",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE44dVFWd2d0bDY2NFFNbGE4b3VQdGYwMGNkcThfNjAtenBWOUpxbzdTZHd0T0c3YThicWZzSW9YdnIwbDUtMWJERVdFYWNsTWFYckE?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E6%8E%A8%E5%8A%A8%E5%BB%BA%E7%AD%91%2B%E5%85%89%E4%BC%8F%E4%B8%80%E4%BD%93%E5%8C%96%E5%BA%94%E7%94%A8%EF%BC%81%E5%B9%BF%E4%B8%9C%E5%B9%BF%E5%B7%9E%E6%8E%A8%E8%BF%9B%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E5%BB%BA%E8%AE%BE%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%8C%87%E5%BC%95%EF%BC%88%E8%AF%95%E8%A1%8C%EF%BC%89%E5%8F%91%E5%B8%83",
+    "date": "2025-10-28",
+    "published_date": "2025-10-28",
+    "source_date": "2025-10-28",
+    "collected_at": "2026-05-10T15:59:28Z",
+    "source": "gdshe.org",
+    "keyword": "住建局 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "广州发布推动建筑光伏一体化应用的好房子建设指引",
+    "region": "广州",
+    "sales_region": "华南",
+    "owner": "华南销售一组",
+    "entities": [
+      "广州市住建局"
+    ],
+    "business_value": "政策利好建筑光伏一体化，为智能建造与绿色建筑集成商提供市场准入和项目机会。",
+    "lead_score": 4,
+    "lead_reason": "高度匹配蔚建智能建造相关场景：智能建造、好房子；存在项目、试点或名单信号，可继续确认招采窗口",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华南"
+      },
+      "recency": {
+        "score": 1,
+        "reason": "时间较久，需要确认是否仍有效"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、好房子"
+      }
+    },
+    "suggested_action": "研究政策细则，对接广州住建局或相关试点项目，推介光伏+智能建造方案。",
+    "urgency": "高",
+    "updated_at": "2026-05-10T16:03:42Z"
   },
   {
     "title": "总投资375亿元！重庆集中签约31个城市更新项目",
@@ -1551,6 +2183,63 @@
     "updated_at": "2026-05-09T16:02:12Z"
   },
   {
+    "title": "【深化高质量项目推进年活动深化营商环境突破年活动深化干部作风能力提升年活动】拧成一股绳搭起一条“链”——陕西打造智能建造与新型建筑工业化产业链促产业转型发展",
+    "link": "https://www.baidu.com/s?wd=%E3%80%90%E6%B7%B1%E5%8C%96%E9%AB%98%E8%B4%A8%E9%87%8F%E9%A1%B9%E7%9B%AE%E6%8E%A8%E8%BF%9B%E5%B9%B4%E6%B4%BB%E5%8A%A8%E6%B7%B1%E5%8C%96%E8%90%A5%E5%95%86%E7%8E%AF%E5%A2%83%E7%AA%81%E7%A0%B4%E5%B9%B4%E6%B4%BB%E5%8A%A8%E6%B7%B1%E5%8C%96%E5%B9%B2%E9%83%A8%E4%BD%9C%E9%A3%8E%E8%83%BD%E5%8A%9B%E6%8F%90%E5%8D%87%E5%B9%B4%E6%B4%BB%E5%8A%A8%E3%80%91%E6%8B%A7%E6%88%90%E4%B8%80%E8%82%A1%E7%BB%B3%E6%90%AD%E8%B5%B7%E4%B8%80%E6%9D%A1%E2%80%9C%E9%93%BE%E2%80%9D%E2%80%94%E2%80%94%E9%99%95%E8%A5%BF%E6%89%93%E9%80%A0%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E4%B8%8E%E6%96%B0%E5%9E%8B%E5%BB%BA%E7%AD%91%E5%B7%A5%E4%B8%9A%E5%8C%96%E4%BA%A7%E4%B8%9A%E9%93%BE%E4%BF%83%E4%BA%A7%E4%B8%9A%E8%BD%AC%E5%9E%8B%E5%8F%91%E5%B1%95",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1vRUloeVRibW1rZzkyNmdrQTY2NjZxQXZuZndiOXNfUTBDNV9pblBvMFU4dldIQlJSTjVZTWdNc2pkem1mQUxMTkNyV0pVOHQ0ZVVLTWNhTlNLU3RPdDZzMQ?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E3%80%90%E6%B7%B1%E5%8C%96%E9%AB%98%E8%B4%A8%E9%87%8F%E9%A1%B9%E7%9B%AE%E6%8E%A8%E8%BF%9B%E5%B9%B4%E6%B4%BB%E5%8A%A8%E6%B7%B1%E5%8C%96%E8%90%A5%E5%95%86%E7%8E%AF%E5%A2%83%E7%AA%81%E7%A0%B4%E5%B9%B4%E6%B4%BB%E5%8A%A8%E6%B7%B1%E5%8C%96%E5%B9%B2%E9%83%A8%E4%BD%9C%E9%A3%8E%E8%83%BD%E5%8A%9B%E6%8F%90%E5%8D%87%E5%B9%B4%E6%B4%BB%E5%8A%A8%E3%80%91%E6%8B%A7%E6%88%90%E4%B8%80%E8%82%A1%E7%BB%B3%E6%90%AD%E8%B5%B7%E4%B8%80%E6%9D%A1%E2%80%9C%E9%93%BE%E2%80%9D%E2%80%94%E2%80%94%E9%99%95%E8%A5%BF%E6%89%93%E9%80%A0%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E4%B8%8E%E6%96%B0%E5%9E%8B%E5%BB%BA%E7%AD%91%E5%B7%A5%E4%B8%9A%E5%8C%96%E4%BA%A7%E4%B8%9A%E9%93%BE%E4%BF%83%E4%BA%A7%E4%B8%9A%E8%BD%AC%E5%9E%8B%E5%8F%91%E5%B1%95",
+    "date": "2024-12-28",
+    "published_date": "2024-12-28",
+    "source_date": "2024-12-28",
+    "collected_at": "2026-05-10T15:59:31Z",
+    "source": "西部网",
+    "keyword": "\"新型建筑工业化\" 政策 OR 试点 OR 项目 OR 示范",
+    "search_priority": 4,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "陕西打造智能建造与新型建筑工业化产业链，推动产业转型",
+    "region": "陕西",
+    "sales_region": "西北",
+    "owner": "市场线索池",
+    "entities": [
+      "陕西省"
+    ],
+    "business_value": "政策推动产业链形成，为智能建造设备、软件及集成服务商提供市场准入和项目机会",
+    "lead_score": 4,
+    "lead_reason": "高度匹配蔚建智能建造相关场景：智能建造、新型建筑工业化；存在项目、试点或名单信号，可继续确认招采窗口",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：西北"
+      },
+      "recency": {
+        "score": 1,
+        "reason": "时间较久，需要确认是否仍有效"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、新型建筑工业化"
+      }
+    },
+    "suggested_action": "联系陕西省住建厅或产业链牵头单位，了解具体试点项目及企业准入要求",
+    "urgency": "高",
+    "updated_at": "2026-05-10T15:59:58Z"
+  },
+  {
     "title": "深圳市住房和建设局关于《2024-2025年度深圳市建筑信息模型（BIM）试点示范项目技术服务工作》定标结果公示",
     "link": "https://www.baidu.com/s?wd=%E6%B7%B1%E5%9C%B3%E5%B8%82%E4%BD%8F%E6%88%BF%E5%92%8C%E5%BB%BA%E8%AE%BE%E5%B1%80%E5%85%B3%E4%BA%8E%E3%80%8A2024-2025%E5%B9%B4%E5%BA%A6%E6%B7%B1%E5%9C%B3%E5%B8%82%E5%BB%BA%E7%AD%91%E4%BF%A1%E6%81%AF%E6%A8%A1%E5%9E%8B%EF%BC%88BIM%EF%BC%89%E8%AF%95%E7%82%B9%E7%A4%BA%E8%8C%83%E9%A1%B9%E7%9B%AE%E6%8A%80%E6%9C%AF%E6%9C%8D%E5%8A%A1%E5%B7%A5%E4%BD%9C%E3%80%8B%E5%AE%9A%E6%A0%87%E7%BB%93%E6%9E%9C%E5%85%AC%E7%A4%BA",
     "original_link": "",
@@ -1834,6 +2523,64 @@
     "suggested_action": "关注中建三局数字工程公司后续项目公告，主动联系其技术部门了解需求。",
     "urgency": "中",
     "updated_at": "2026-05-09T06:48:53Z"
+  },
+  {
+    "title": "长沙入选国家智能建造试点城市 全力打造国家智能建造和新型建筑工业化典范城市",
+    "link": "https://www.baidu.com/s?wd=%E9%95%BF%E6%B2%99%E5%85%A5%E9%80%89%E5%9B%BD%E5%AE%B6%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E8%AF%95%E7%82%B9%E5%9F%8E%E5%B8%82+%E5%85%A8%E5%8A%9B%E6%89%93%E9%80%A0%E5%9B%BD%E5%AE%B6%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E5%92%8C%E6%96%B0%E5%9E%8B%E5%BB%BA%E7%AD%91%E5%B7%A5%E4%B8%9A%E5%8C%96%E5%85%B8%E8%8C%83%E5%9F%8E%E5%B8%82",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5HQV9vUXo3c1BpMzBfQURfeW9JeEtlR3VQWVptRVo4OWhDZm9iUkJzZ2lTZEMtSTcyRC1TbHczM1hYT25ZVHp6WUg1U1Jxem5LdEJudGVuSWdpcFk0YmNSUl9tYw?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E9%95%BF%E6%B2%99%E5%85%A5%E9%80%89%E5%9B%BD%E5%AE%B6%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E8%AF%95%E7%82%B9%E5%9F%8E%E5%B8%82+%E5%85%A8%E5%8A%9B%E6%89%93%E9%80%A0%E5%9B%BD%E5%AE%B6%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E5%92%8C%E6%96%B0%E5%9E%8B%E5%BB%BA%E7%AD%91%E5%B7%A5%E4%B8%9A%E5%8C%96%E5%85%B8%E8%8C%83%E5%9F%8E%E5%B8%82",
+    "date": "2022-11-10",
+    "published_date": "2022-11-10",
+    "source_date": "2022-11-10",
+    "collected_at": "2026-05-10T15:59:31Z",
+    "source": "湖南频道",
+    "keyword": "\"新型建筑工业化\" 政策 OR 试点 OR 项目 OR 示范",
+    "search_priority": 4,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "长沙入选国家智能建造试点城市，推动新型建筑工业化发展。",
+    "region": "长沙",
+    "sales_region": "华中",
+    "owner": "华中销售组",
+    "entities": [
+      "长沙",
+      "国家智能建造试点城市"
+    ],
+    "business_value": "为智能建造解决方案、机器人及数字化平台供应商提供政策红利下的市场准入和项目机会。",
+    "lead_score": 4,
+    "lead_reason": "高度匹配蔚建智能建造相关场景：智能建造、新型建筑工业化；存在项目、试点或名单信号，可继续确认招采窗口",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华中"
+      },
+      "recency": {
+        "score": 1,
+        "reason": "时间较久，需要确认是否仍有效"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、新型建筑工业化"
+      }
+    },
+    "suggested_action": "关注长沙住建局后续试点方案及示范项目征集，提前对接。",
+    "urgency": "高",
+    "updated_at": "2026-05-10T16:00:02Z"
   },
   {
     "title": "河北建工集团BIM+智慧工地安全管理系统获得国家计算机软件著作权证书",
