@@ -1,5 +1,63 @@
 [
   {
+    "title": "Terafab芯片项目正式启动；三星加速P5工厂建设1c纳米工艺支撑HBM4量产；香港科技大学研发的220磅月球建筑机器人正式亮相",
+    "link": "https://www.baidu.com/s?wd=Terafab%E8%8A%AF%E7%89%87%E9%A1%B9%E7%9B%AE%E6%AD%A3%E5%BC%8F%E5%90%AF%E5%8A%A8%EF%BC%9B%E4%B8%89%E6%98%9F%E5%8A%A0%E9%80%9FP5%E5%B7%A5%E5%8E%82%E5%BB%BA%E8%AE%BE1c%E7%BA%B3%E7%B1%B3%E5%B7%A5%E8%89%BA%E6%94%AF%E6%92%91HBM4%E9%87%8F%E4%BA%A7%EF%BC%9B%E9%A6%99%E6%B8%AF%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6%E7%A0%94%E5%8F%91%E7%9A%84220%E7%A3%85%E6%9C%88%E7%90%83%E5%BB%BA%E7%AD%91%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%AD%A3%E5%BC%8F%E4%BA%AE%E7%9B%B8",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9OOF9nckViMkNkZnlnZm10OTNWU3FnSjRaR002Wl9wU1hBVm1PMWNrSXg0SnpzRUU5d1FiVGVZbkh2dUpldnB1cUJGTmVXaTlrQnpGVGk2NkhGeDNzMUhEaHB2RTBxcVktS3c?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=Terafab%E8%8A%AF%E7%89%87%E9%A1%B9%E7%9B%AE%E6%AD%A3%E5%BC%8F%E5%90%AF%E5%8A%A8%EF%BC%9B%E4%B8%89%E6%98%9F%E5%8A%A0%E9%80%9FP5%E5%B7%A5%E5%8E%82%E5%BB%BA%E8%AE%BE1c%E7%BA%B3%E7%B1%B3%E5%B7%A5%E8%89%BA%E6%94%AF%E6%92%91HBM4%E9%87%8F%E4%BA%A7%EF%BC%9B%E9%A6%99%E6%B8%AF%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6%E7%A0%94%E5%8F%91%E7%9A%84220%E7%A3%85%E6%9C%88%E7%90%83%E5%BB%BA%E7%AD%91%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%AD%A3%E5%BC%8F%E4%BA%AE%E7%9B%B8",
+    "date": "2026-05-11",
+    "published_date": "2026-05-11",
+    "source_date": "2026-05-11",
+    "collected_at": "2026-05-11T17:28:30Z",
+    "source": "blog.csdn.net",
+    "keyword": "\"建筑机器人\" 采购 OR 中标 OR 应用 OR 项目 OR 进场",
+    "search_priority": 5,
+    "category": "技术",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "香港科技大学研发220磅月球建筑机器人亮相，用于月球基建。",
+    "region": "全国",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [
+      "香港科技大学",
+      "月球建筑机器人"
+    ],
+    "business_value": "展示前沿建筑机器人技术，可能推动极端环境施工需求，为建筑科技公司提供技术合作或转化机会。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；存在项目、试点或名单信号，可继续确认招采窗口",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 4,
+        "reason": "匹配蔚建相关场景：建筑机器人"
+      }
+    },
+    "suggested_action": "关注技术进展，评估与极端环境施工相关的潜在合作。",
+    "urgency": "低",
+    "updated_at": "2026-05-11T17:28:45Z"
+  },
+  {
     "title": "涉及“以旧换新”、公积金、城市更新……江苏今年住建工作要点印发",
     "link": "https://www.baidu.com/s?wd=%E6%B6%89%E5%8F%8A%E2%80%9C%E4%BB%A5%E6%97%A7%E6%8D%A2%E6%96%B0%E2%80%9D%E3%80%81%E5%85%AC%E7%A7%AF%E9%87%91%E3%80%81%E5%9F%8E%E5%B8%82%E6%9B%B4%E6%96%B0%E2%80%A6%E2%80%A6%E6%B1%9F%E8%8B%8F%E4%BB%8A%E5%B9%B4%E4%BD%8F%E5%BB%BA%E5%B7%A5%E4%BD%9C%E8%A6%81%E7%82%B9%E5%8D%B0%E5%8F%91",
     "original_link": "",
@@ -2181,6 +2239,63 @@
     "suggested_action": "联系中建五局了解旧改项目需求，推介建筑机器人或智慧工地方案。",
     "urgency": "中",
     "updated_at": "2026-05-11T04:25:42Z"
+  },
+  {
+    "title": "宜昌三峡花苑二期交房 打造城市更新示范社区",
+    "link": "https://www.baidu.com/s?wd=%E5%AE%9C%E6%98%8C%E4%B8%89%E5%B3%A1%E8%8A%B1%E8%8B%91%E4%BA%8C%E6%9C%9F%E4%BA%A4%E6%88%BF+%E6%89%93%E9%80%A0%E5%9F%8E%E5%B8%82%E6%9B%B4%E6%96%B0%E7%A4%BA%E8%8C%83%E7%A4%BE%E5%8C%BA",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0yeF9TelBDSHZsX1MxU0MtbnFrRzVRbmI0blk4cXZJWGRWSzZBdVp2RlZoaVdWNzRYcnplOUFtTVROc2ItUDI2NFFxUkZENUF4RUsyTnFWYUhFMWdEcTl0Q0pBUUtRMnJu?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E5%AE%9C%E6%98%8C%E4%B8%89%E5%B3%A1%E8%8A%B1%E8%8B%91%E4%BA%8C%E6%9C%9F%E4%BA%A4%E6%88%BF+%E6%89%93%E9%80%A0%E5%9F%8E%E5%B8%82%E6%9B%B4%E6%96%B0%E7%A4%BA%E8%8C%83%E7%A4%BE%E5%8C%BA",
+    "date": "2026-04-13",
+    "published_date": "2026-04-13",
+    "source_date": "2026-04-13",
+    "collected_at": "2026-05-11T17:28:37Z",
+    "source": "hb.chinanews.com.cn",
+    "keyword": "\"城市更新\" 智慧工地 OR 智能建造 OR BIM OR 数字化施工",
+    "search_priority": 3,
+    "category": "项目",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "宜昌三峡花苑二期交房，打造城市更新示范社区",
+    "region": "宜昌",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [
+      "宜昌三峡花苑二期"
+    ],
+    "business_value": "项目为城市更新示范，可能涉及智能建造技术应用，为建筑科技公司提供潜在合作机会",
+    "lead_score": 4,
+    "lead_reason": "存在项目、试点或名单信号，可继续确认招采窗口；有明确主体，预算金额待核查",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 4,
+        "reason": "45天内信号"
+      },
+      "product_fit": {
+        "score": 4,
+        "reason": "匹配蔚建相关场景：智能建造"
+      }
+    },
+    "suggested_action": "关注后续城市更新相关招采公告，联系项目方了解技术需求",
+    "urgency": "低",
+    "updated_at": "2026-05-11T17:29:14Z"
   },
   {
     "title": "湖南集中发布装配式建筑标准图集",
