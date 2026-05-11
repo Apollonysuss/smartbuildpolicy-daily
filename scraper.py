@@ -12,9 +12,11 @@ import requests
 
 API_KEY = os.environ.get("DEEPSEEK_API_KEY")
 DAILY_LIMIT = int(os.environ.get("DAILY_LIMIT", "70"))
-MIN_QUALITY_SCORE = int(os.environ.get("MIN_QUALITY_SCORE", "4"))
-RSS_ITEMS_PER_QUERY = int(os.environ.get("RSS_ITEMS_PER_QUERY", "20"))
+MIN_QUALITY_SCORE = int(os.environ.get("MIN_QUALITY_SCORE", "3"))
+RSS_ITEMS_PER_QUERY = int(os.environ.get("RSS_ITEMS_PER_QUERY", "40"))
 MAX_RECORDS = int(os.environ.get("MAX_RECORDS", "5000"))
+MAX_SOURCE_AGE_DAYS = int(os.environ.get("MAX_SOURCE_AGE_DAYS", "180"))
+GOOGLE_NEWS_LOOKBACK_DAYS = int(os.environ.get("GOOGLE_NEWS_LOOKBACK_DAYS", "30"))
 NEWS_ONLY = os.environ.get("NEWS_ONLY", "1") != "0"
 
 SMARTBUILD_TERMS = [
@@ -784,7 +786,9 @@ def fetch_google_news():
             items.append(item)
 
     for config in SEARCH_QUERIES:
-        encoded_query = urllib.parse.quote_plus(config["query"])
+        encoded_query = urllib.parse.quote_plus(
+            f"{config['query']} when:{GOOGLE_NEWS_LOOKBACK_DAYS}d"
+        )
         url = (
             "https://news.google.com/rss/search?"
             f"q={encoded_query}&hl=zh-CN&gl=CN&ceid=CN:zh-CN"
@@ -1094,10 +1098,27 @@ def load_old_data():
             return []
 
 
+def source_age_days(item):
+    date_value = item.get("published_date") or item.get("source_date") or item.get("date", "")
+    if not date_value:
+        return None
+    try:
+        return (datetime.date.today() - datetime.datetime.strptime(date_value, "%Y-%m-%d").date()).days
+    except Exception:
+        return None
+
+
+def is_recent_enough(item):
+    age = source_age_days(item)
+    return age is None or age <= MAX_SOURCE_AGE_DAYS
+
+
 def is_high_quality_lead(item):
     title = item.get("title", "")
     category = item.get("category", "")
     if is_low_value_title(title):
+        return False
+    if not is_recent_enough(item):
         return False
     if category == "竞对动态":
         return (
@@ -1139,9 +1160,10 @@ def job():
             item["score_factors"] = score_result["score_factors"]
         if not is_high_quality_lead(item):
             print(
-                "跳过弱相关线索: "
+                "跳过低价值线索: "
                 f"{item['title'][:24]}... score={item.get('lead_score')} "
-                f"strong_fit={is_strong_fit(item)}"
+                f"strong_fit={is_strong_fit(item)} "
+                f"age_days={source_age_days(item)}"
             )
             continue
         item["link_status"] = item.get("link_status") or (
@@ -1161,9 +1183,10 @@ def job():
         json.dump(final_data[:MAX_RECORDS], f, ensure_ascii=False, indent=2)
 
     print(
-        f"今日更新完成，新增 {count} 条高质量商业线索，"
+        f"今日更新完成，新增 {count} 条可用商业线索，"
         f"每日上限 {DAILY_LIMIT} 条，最低评分 {MIN_QUALITY_SCORE} 分，"
-        f"当前最多留存 {MAX_RECORDS} 条。"
+        f"新闻搜索回看 {GOOGLE_NEWS_LOOKBACK_DAYS} 天，"
+        f"原文最长回看 {MAX_SOURCE_AGE_DAYS} 天，当前最多留存 {MAX_RECORDS} 条。"
     )
 
 
