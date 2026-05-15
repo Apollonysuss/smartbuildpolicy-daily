@@ -1,5 +1,63 @@
 [
   {
+    "title": "国家级认证！欧神诺入选住建部“好房子”建设适用建材产品名录",
+    "link": "https://www.baidu.com/s?wd=%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%AE%A4%E8%AF%81%EF%BC%81%E6%AC%A7%E7%A5%9E%E8%AF%BA%E5%85%A5%E9%80%89%E4%BD%8F%E5%BB%BA%E9%83%A8%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E5%BB%BA%E8%AE%BE%E9%80%82%E7%94%A8%E5%BB%BA%E6%9D%90%E4%BA%A7%E5%93%81%E5%90%8D%E5%BD%95",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBBLW5TZWY4SXBSTGRBTFA5RTZJNk9WRFdKUlpaNF9pWDVlS3NnSFRCcnNtTXd1MkVFeG9vN1FoRnBPbTBRWlVfUnhFY2tqd0FWWFlxZHFXYzkzemFRTHM1TXpJbw?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%AE%A4%E8%AF%81%EF%BC%81%E6%AC%A7%E7%A5%9E%E8%AF%BA%E5%85%A5%E9%80%89%E4%BD%8F%E5%BB%BA%E9%83%A8%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E5%BB%BA%E8%AE%BE%E9%80%82%E7%94%A8%E5%BB%BA%E6%9D%90%E4%BA%A7%E5%93%81%E5%90%8D%E5%BD%95",
+    "date": "2026-05-15",
+    "published_date": "2026-05-15",
+    "source_date": "2026-05-15",
+    "collected_at": "2026-05-15T16:54:25Z",
+    "source": "中华网生活",
+    "keyword": "住建局 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "欧神诺入选住建部“好房子”建设适用建材产品名录",
+    "region": "全国",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [
+      "欧神诺",
+      "住建部"
+    ],
+    "business_value": "政策利好建材供应商，但未涉及智能建造或招采信号，对蔚建产品匹配度低。",
+    "lead_score": 3,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、好房子",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 1,
+        "reason": "暂未看到明确招采信号"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、好房子"
+      }
+    },
+    "suggested_action": "无需跟进，仅作行业动态记录。",
+    "urgency": "低",
+    "updated_at": "2026-05-15T16:54:51Z"
+  },
+  {
     "title": "数字建造，精益筑造：中南建院设计牵头EPC项目——湖北中烟创新中心打造智能建造新典范",
     "link": "https://www.baidu.com/s?wd=%E6%95%B0%E5%AD%97%E5%BB%BA%E9%80%A0%EF%BC%8C%E7%B2%BE%E7%9B%8A%E7%AD%91%E9%80%A0%EF%BC%9A%E4%B8%AD%E5%8D%97%E5%BB%BA%E9%99%A2%E8%AE%BE%E8%AE%A1%E7%89%B5%E5%A4%B4EPC%E9%A1%B9%E7%9B%AE%E2%80%94%E2%80%94%E6%B9%96%E5%8C%97%E4%B8%AD%E7%83%9F%E5%88%9B%E6%96%B0%E4%B8%AD%E5%BF%83%E6%89%93%E9%80%A0%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E6%96%B0%E5%85%B8%E8%8C%83",
     "original_link": "",
