@@ -172,6 +172,64 @@
     "updated_at": "2026-05-17T16:02:30Z"
   },
   {
+    "title": "多地加码金融支持“好房子”建设|重庆市|保险|金融机构|品质|资金_手机新浪网",
+    "link": "https://www.baidu.com/s?wd=%E5%A4%9A%E5%9C%B0%E5%8A%A0%E7%A0%81%E9%87%91%E8%9E%8D%E6%94%AF%E6%8C%81%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E5%BB%BA%E8%AE%BE%7C%E9%87%8D%E5%BA%86%E5%B8%82%7C%E4%BF%9D%E9%99%A9%7C%E9%87%91%E8%9E%8D%E6%9C%BA%E6%9E%84%7C%E5%93%81%E8%B4%A8%7C%E8%B5%84%E9%87%91_%E6%89%8B%E6%9C%BA%E6%96%B0%E6%B5%AA%E7%BD%91",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiywJBVV95cUxQclp2elRKRGxHdlFtbnV0OEJZTk5PN09CdzFvWHNZQlUyelBnbkE5UmNOLTM5SElUMno0UzQyWDk4Y3RSVkphMENZc0JMejdBaWRvN29aNzZpU0xYdml6ZWozMElhUlU1eUt5bWFNM21INXNvOG1BS2N3SW5Db0pZd0V2RXVKMm54bFJKbVllSTgteHd5UDFrLW9aSEhaYjU1S2otTkFCS01zWDdvd2NpbGJEdmxwVm44bzdjQlFNNUQtem1SakRwOHgxQW05c1hmQWNWZUhHLWplNFplQzVzM3dsYUl2SkVWR1VJMG9BeG1hSnpvOEUxVUU3bjgxQ1FZMTlvOHFpd1lpWVhiNDBGXzBaM1M2ZVk0LU5DMHlmaWhCd2lXcUZQUkw5Wms1NndjeVRZeUpCWHdpZEJzZVZwVUdEQzBMdlhyTjYw?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E5%A4%9A%E5%9C%B0%E5%8A%A0%E7%A0%81%E9%87%91%E8%9E%8D%E6%94%AF%E6%8C%81%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E5%BB%BA%E8%AE%BE%7C%E9%87%8D%E5%BA%86%E5%B8%82%7C%E4%BF%9D%E9%99%A9%7C%E9%87%91%E8%9E%8D%E6%9C%BA%E6%9E%84%7C%E5%93%81%E8%B4%A8%7C%E8%B5%84%E9%87%91_%E6%89%8B%E6%9C%BA%E6%96%B0%E6%B5%AA%E7%BD%91",
+    "date": "2026-05-15",
+    "published_date": "2026-05-15",
+    "source_date": "2026-05-15",
+    "collected_at": "2026-05-19T17:40:41Z",
+    "source": "新浪财经",
+    "keyword": "住建局 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "多地金融支持‘好房子’建设，涉及住建局推动智能建造试点",
+    "region": "全国",
+    "sales_region": "西南",
+    "owner": "西南销售组",
+    "entities": [
+      "住建局",
+      "金融机构"
+    ],
+    "business_value": "政策利好智能建造试点，建筑科技公司可对接住建局争取示范项目或金融合作机会",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、好房子",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：西南"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、好房子"
+      }
+    },
+    "suggested_action": "关注各地住建局后续试点通知，准备智能建造解决方案材料",
+    "urgency": "高",
+    "updated_at": "2026-05-19T17:40:53Z"
+  },
+  {
     "title": "广州发布“四好”建设行动方案，2030年新建商品房全面达标“好房子”",
     "link": "https://www.baidu.com/s?wd=%E5%B9%BF%E5%B7%9E%E5%8F%91%E5%B8%83%E2%80%9C%E5%9B%9B%E5%A5%BD%E2%80%9D%E5%BB%BA%E8%AE%BE%E8%A1%8C%E5%8A%A8%E6%96%B9%E6%A1%88%EF%BC%8C2030%E5%B9%B4%E6%96%B0%E5%BB%BA%E5%95%86%E5%93%81%E6%88%BF%E5%85%A8%E9%9D%A2%E8%BE%BE%E6%A0%87%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D",
     "original_link": "",
@@ -2123,6 +2181,64 @@
     "suggested_action": "关注该校后续智能建造相关采购或合作公告，可尝试联系建立初步关系。",
     "urgency": "低",
     "updated_at": "2026-05-13T17:21:22Z"
+  },
+  {
+    "title": "宏盛建业投资集团承建项目荣获重庆市建筑信息模型（BIM）竞赛二等奖",
+    "link": "https://www.baidu.com/s?wd=%E5%AE%8F%E7%9B%9B%E5%BB%BA%E4%B8%9A%E6%8A%95%E8%B5%84%E9%9B%86%E5%9B%A2%E6%89%BF%E5%BB%BA%E9%A1%B9%E7%9B%AE%E8%8D%A3%E8%8E%B7%E9%87%8D%E5%BA%86%E5%B8%82%E5%BB%BA%E7%AD%91%E4%BF%A1%E6%81%AF%E6%A8%A1%E5%9E%8B%EF%BC%88BIM%EF%BC%89%E7%AB%9E%E8%B5%9B%E4%BA%8C%E7%AD%89%E5%A5%96",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5qODhEaUNULW51NFB2QjZyczBMLVBGcnZYTlI5OEpZb0JfZVVuemVMVngzN2pBWEhWVTB5MllpSlgzZXQ5SHdqWmR4Y04xZ2prUmxTNnJ5cHd3M1A5X2dYcDJheE40cWQ2bF9adGpRcTRWMzJlX01V?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E5%AE%8F%E7%9B%9B%E5%BB%BA%E4%B8%9A%E6%8A%95%E8%B5%84%E9%9B%86%E5%9B%A2%E6%89%BF%E5%BB%BA%E9%A1%B9%E7%9B%AE%E8%8D%A3%E8%8E%B7%E9%87%8D%E5%BA%86%E5%B8%82%E5%BB%BA%E7%AD%91%E4%BF%A1%E6%81%AF%E6%A8%A1%E5%9E%8B%EF%BC%88BIM%EF%BC%89%E7%AB%9E%E8%B5%9B%E4%BA%8C%E7%AD%89%E5%A5%96",
+    "date": "2026-04-20",
+    "published_date": "2026-04-20",
+    "source_date": "2026-04-20",
+    "collected_at": "2026-05-19T17:40:39Z",
+    "source": "中华网",
+    "keyword": "\"BIM\" 建筑 招标 OR 中标 OR 采购 OR 审图 OR 施工",
+    "search_priority": 4,
+    "category": "企业",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "宏盛建业投资集团承建项目获重庆市BIM竞赛二等奖",
+    "region": "重庆",
+    "sales_region": "西南",
+    "owner": "西南销售组",
+    "entities": [
+      "宏盛建业投资集团",
+      "重庆市"
+    ],
+    "business_value": "表明宏盛建业在BIM应用上有技术实力，可作为潜在客户或合作伙伴，提供BIM相关产品或服务",
+    "lead_score": 4,
+    "lead_reason": "存在项目、试点或名单信号，可继续确认招采窗口；有明确主体，预算金额待核查",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：西南"
+      },
+      "recency": {
+        "score": 4,
+        "reason": "45天内信号"
+      },
+      "product_fit": {
+        "score": 4,
+        "reason": "匹配蔚建相关场景：BIM"
+      }
+    },
+    "suggested_action": "关注宏盛建业后续项目动态，评估其BIM需求",
+    "urgency": "低",
+    "updated_at": "2026-05-19T17:40:51Z"
   },
   {
     "title": "安徽推进“好房子”建设 绘就宜居生活新图景",
