@@ -1,5 +1,62 @@
 [
   {
+    "title": "2026年海南省建设工程智能建造赋能“好房子”交流会举行",
+    "link": "https://www.baidu.com/s?wd=2026%E5%B9%B4%E6%B5%B7%E5%8D%97%E7%9C%81%E5%BB%BA%E8%AE%BE%E5%B7%A5%E7%A8%8B%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E8%B5%8B%E8%83%BD%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E4%BA%A4%E6%B5%81%E4%BC%9A%E4%B8%BE%E8%A1%8C",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBMZlkteUQwX3FFTE1NYjBmclJLNWtaTHBiSG9rVHpCT0J0ZW94NWhLamg2QzNqTFRzc2haYWpaYThTR3Fxd3J6M1dRbGcwbUhYVy1uUkpCLU9oUFFCNWo5ODJMbw?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=2026%E5%B9%B4%E6%B5%B7%E5%8D%97%E7%9C%81%E5%BB%BA%E8%AE%BE%E5%B7%A5%E7%A8%8B%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E8%B5%8B%E8%83%BD%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E4%BA%A4%E6%B5%81%E4%BC%9A%E4%B8%BE%E8%A1%8C",
+    "date": "2026-05-22",
+    "published_date": "2026-05-22",
+    "source_date": "2026-05-22",
+    "collected_at": "2026-05-22T17:12:24Z",
+    "source": "jingjiribao.cn",
+    "keyword": "住建厅 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "会议",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "海南举办智能建造赋能好房子交流会，推动行业转型。",
+    "region": "海南省",
+    "sales_region": "华南",
+    "owner": "市场线索池",
+    "entities": [
+      "海南省住建厅"
+    ],
+    "business_value": "展示智能建造解决方案，对接海南住建厅及参会企业，获取政策试点合作机会。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、好房子",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华南"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、好房子"
+      }
+    },
+    "suggested_action": "联系主办方获取参会企业名单，准备产品演示材料，主动对接。",
+    "urgency": "高",
+    "updated_at": "2026-05-22T17:12:35Z"
+  },
+  {
     "title": "智能建造赋能“放心好房” 海南安居房建设用上多项新技术",
     "link": "https://www.baidu.com/s?wd=%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E8%B5%8B%E8%83%BD%E2%80%9C%E6%94%BE%E5%BF%83%E5%A5%BD%E6%88%BF%E2%80%9D+%E6%B5%B7%E5%8D%97%E5%AE%89%E5%B1%85%E6%88%BF%E5%BB%BA%E8%AE%BE%E7%94%A8%E4%B8%8A%E5%A4%9A%E9%A1%B9%E6%96%B0%E6%8A%80%E6%9C%AF",
     "original_link": "",
