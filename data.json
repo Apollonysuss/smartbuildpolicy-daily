@@ -1,5 +1,62 @@
 [
   {
+    "title": "智能建造标准宣贯暨项目观摩会在广东东莞召开",
+    "link": "https://www.baidu.com/s?wd=%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E6%A0%87%E5%87%86%E5%AE%A3%E8%B4%AF%E6%9A%A8%E9%A1%B9%E7%9B%AE%E8%A7%82%E6%91%A9%E4%BC%9A%E5%9C%A8%E5%B9%BF%E4%B8%9C%E4%B8%9C%E8%8E%9E%E5%8F%AC%E5%BC%80",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1TMTFQaW1ZZ1lnSGNQaXJrUXdYVnRYSVRWeDJoOUR3U2hnVDducGxzanNEX3NOTkQwUnRpUVFoMFlKNVlTNkd1LXdkeUlUNmphdHJtckxfWkhQWUVwYjVnYWR4ci1aaVgzaEYtLVg0Yjk?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E6%A0%87%E5%87%86%E5%AE%A3%E8%B4%AF%E6%9A%A8%E9%A1%B9%E7%9B%AE%E8%A7%82%E6%91%A9%E4%BC%9A%E5%9C%A8%E5%B9%BF%E4%B8%9C%E4%B8%9C%E8%8E%9E%E5%8F%AC%E5%BC%80",
+    "date": "2026-05-23",
+    "published_date": "2026-05-23",
+    "source_date": "2026-05-23",
+    "collected_at": "2026-05-23T16:05:05Z",
+    "source": "中国科技网",
+    "keyword": "建工集团 智慧工地 OR 建筑机器人 OR 智能建造 OR 数字化施工",
+    "search_priority": 4,
+    "category": "会议",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "智能建造标准宣贯暨项目观摩会在广东东莞召开，聚焦智能建造技术应用。",
+    "region": "广东东莞",
+    "sales_region": "华南",
+    "owner": "华南销售一组",
+    "entities": [
+      "建工集团"
+    ],
+    "business_value": "展示智能建造标准与项目实践，为建筑科技公司提供市场推广和客户对接机会。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；存在项目、试点或名单信号，可继续确认招采窗口",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华南"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 4,
+        "reason": "匹配蔚建相关场景：智能建造"
+      }
+    },
+    "suggested_action": "关注参会企业名单，后续跟进潜在客户需求。",
+    "urgency": "中",
+    "updated_at": "2026-05-23T16:05:10Z"
+  },
+  {
     "title": "2026年海南省建设工程智能建造赋能“好房子”交流会举行",
     "link": "https://www.baidu.com/s?wd=2026%E5%B9%B4%E6%B5%B7%E5%8D%97%E7%9C%81%E5%BB%BA%E8%AE%BE%E5%B7%A5%E7%A8%8B%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E8%B5%8B%E8%83%BD%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E4%BA%A4%E6%B5%81%E4%BC%9A%E4%B8%BE%E8%A1%8C",
     "original_link": "",
