@@ -1,5 +1,63 @@
 [
   {
+    "title": "中建八局“智水泰平”平原水库智能建造体系在鲁发布",
+    "link": "https://www.baidu.com/s?wd=%E4%B8%AD%E5%BB%BA%E5%85%AB%E5%B1%80%E2%80%9C%E6%99%BA%E6%B0%B4%E6%B3%B0%E5%B9%B3%E2%80%9D%E5%B9%B3%E5%8E%9F%E6%B0%B4%E5%BA%93%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E4%BD%93%E7%B3%BB%E5%9C%A8%E9%B2%81%E5%8F%91%E5%B8%83",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNcDA4MkVwNzNsa2FIdmNkMHJiSVZSTHZDWHpkSjRQN2E4RG5nbVJ6M0ZVb3NwQ0dGck8weHdtR18yRWhobkQxZ0cySUN2cFZ3bkVtVUFqcnJLQVdDOVUyZl9ZMndqYnZnUzliMW5VMlUxcU5aOFFudWdyNmpGSnU2clJVOEt5am5IQ3htXw?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E4%B8%AD%E5%BB%BA%E5%85%AB%E5%B1%80%E2%80%9C%E6%99%BA%E6%B0%B4%E6%B3%B0%E5%B9%B3%E2%80%9D%E5%B9%B3%E5%8E%9F%E6%B0%B4%E5%BA%93%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E4%BD%93%E7%B3%BB%E5%9C%A8%E9%B2%81%E5%8F%91%E5%B8%83",
+    "date": "2026-05-25",
+    "published_date": "2026-05-25",
+    "source_date": "2026-05-25",
+    "collected_at": "2026-05-25T17:10:02Z",
+    "source": "搜狐网",
+    "keyword": "中建 智慧工地 OR 建筑机器人 OR 智能建造 OR 数字化施工",
+    "search_priority": 4,
+    "category": "技术",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "中建八局发布平原水库智能建造体系，推动水利工程数字化施工。",
+    "region": "山东",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [
+      "中建八局",
+      "智水泰平"
+    ],
+    "business_value": "展示中建八局在水利智能建造领域的技术方向，为相关系统集成和机器人供应商提供合作切入点。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、数字化施工",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、数字化施工"
+      }
+    },
+    "suggested_action": "关注中建八局后续水利项目招标，主动联系其技术部门推介智能建造产品。",
+    "urgency": "中",
+    "updated_at": "2026-05-25T17:10:14Z"
+  },
+  {
     "title": "智能建造标准宣贯暨项目观摩会在广东东莞召开",
     "link": "https://www.baidu.com/s?wd=%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E6%A0%87%E5%87%86%E5%AE%A3%E8%B4%AF%E6%9A%A8%E9%A1%B9%E7%9B%AE%E8%A7%82%E6%91%A9%E4%BC%9A%E5%9C%A8%E5%B9%BF%E4%B8%9C%E4%B8%9C%E8%8E%9E%E5%8F%AC%E5%BC%80",
     "original_link": "",
@@ -1551,6 +1609,64 @@
     "suggested_action": "联系湖北省住建厅获取试点细则，准备智能建造解决方案推介",
     "urgency": "高",
     "updated_at": "2026-05-09T06:47:04Z"
+  },
+  {
+    "title": "以“好房子”标准体系引领人民城市建设 | 华建集团承担两委调研课题正式启动",
+    "link": "https://www.baidu.com/s?wd=%E4%BB%A5%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E6%A0%87%E5%87%86%E4%BD%93%E7%B3%BB%E5%BC%95%E9%A2%86%E4%BA%BA%E6%B0%91%E5%9F%8E%E5%B8%82%E5%BB%BA%E8%AE%BE+%7C+%E5%8D%8E%E5%BB%BA%E9%9B%86%E5%9B%A2%E6%89%BF%E6%8B%85%E4%B8%A4%E5%A7%94%E8%B0%83%E7%A0%94%E8%AF%BE%E9%A2%98%E6%AD%A3%E5%BC%8F%E5%90%AF%E5%8A%A8",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5HeFVPY1NBODlxbjdyUGZuNno0NmJvc2IzS1N2Yjc4c0h1NVBFWEhBcGZMQWozUHdQT2NTUFU3UFozQ2FoemJ4cVRuelZoNjJZQUF1MWJBNzNTNkxJWUE?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E4%BB%A5%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E6%A0%87%E5%87%86%E4%BD%93%E7%B3%BB%E5%BC%95%E9%A2%86%E4%BA%BA%E6%B0%91%E5%9F%8E%E5%B8%82%E5%BB%BA%E8%AE%BE+%7C+%E5%8D%8E%E5%BB%BA%E9%9B%86%E5%9B%A2%E6%89%BF%E6%8B%85%E4%B8%A4%E5%A7%94%E8%B0%83%E7%A0%94%E8%AF%BE%E9%A2%98%E6%AD%A3%E5%BC%8F%E5%90%AF%E5%8A%A8",
+    "date": "2026-04-30",
+    "published_date": "2026-04-30",
+    "source_date": "2026-04-30",
+    "collected_at": "2026-05-25T17:09:56Z",
+    "source": "thepaper.cn",
+    "keyword": "住建局 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "标准",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "华建集团启动住建局委托的‘好房子’标准体系调研课题",
+    "region": "全国",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [
+      "华建集团",
+      "住建局"
+    ],
+    "business_value": "标准制定将影响智能建造产品准入，蔚建可参与标准研讨，提前布局产品合规与推广",
+    "lead_score": 3,
+    "lead_reason": "高度匹配蔚建智能建造相关场景：智能建造、好房子；有明确主体，预算金额待核查",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 1,
+        "reason": "暂未看到明确招采信号"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 4,
+        "reason": "45天内信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、好房子"
+      }
+    },
+    "suggested_action": "联系华建集团或住建局，了解标准草案内容，评估蔚建产品匹配度",
+    "urgency": "中",
+    "updated_at": "2026-05-25T17:10:11Z"
   },
   {
     "title": "打造行业创新策源地 四川省住房和城乡建设厅城市更新重点实验室成立",
