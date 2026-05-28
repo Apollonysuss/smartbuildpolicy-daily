@@ -115,6 +115,64 @@
     "updated_at": "2026-05-26T17:57:32Z"
   },
   {
+    "title": "第四届长三角区域“上海建工杯”装配式建筑职业技能竞赛筹备全面启动！",
+    "link": "https://www.baidu.com/s?wd=%E7%AC%AC%E5%9B%9B%E5%B1%8A%E9%95%BF%E4%B8%89%E8%A7%92%E5%8C%BA%E5%9F%9F%E2%80%9C%E4%B8%8A%E6%B5%B7%E5%BB%BA%E5%B7%A5%E6%9D%AF%E2%80%9D%E8%A3%85%E9%85%8D%E5%BC%8F%E5%BB%BA%E7%AD%91%E8%81%8C%E4%B8%9A%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B%E7%AD%B9%E5%A4%87%E5%85%A8%E9%9D%A2%E5%90%AF%E5%8A%A8%EF%BC%81",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBxYUJrOElWV1NlU1F1V2RSaFdFRzUxY3gzdHYtWWl5VUlDZ01YZTJNR1FCcVBpOHhlRmxhNFFrUXJTQTcyVkRBRVViREtjQVZoRHVPNUdEZjNoVmhncXFKVmdkdk1RWlZLdF9IcU9lamR1N1B5WHc?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E7%AC%AC%E5%9B%9B%E5%B1%8A%E9%95%BF%E4%B8%89%E8%A7%92%E5%8C%BA%E5%9F%9F%E2%80%9C%E4%B8%8A%E6%B5%B7%E5%BB%BA%E5%B7%A5%E6%9D%AF%E2%80%9D%E8%A3%85%E9%85%8D%E5%BC%8F%E5%BB%BA%E7%AD%91%E8%81%8C%E4%B8%9A%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B%E7%AD%B9%E5%A4%87%E5%85%A8%E9%9D%A2%E5%90%AF%E5%8A%A8%EF%BC%81",
+    "date": "2026-05-25",
+    "published_date": "2026-05-25",
+    "source_date": "2026-05-25",
+    "collected_at": "2026-05-28T18:15:32Z",
+    "source": "新浪财经",
+    "keyword": "\"建筑机器人\" 采购 OR 中标 OR 应用 OR 项目 OR 进场",
+    "search_priority": 5,
+    "category": "会议",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "第四届长三角区域装配式建筑职业技能竞赛筹备启动，涉及建筑机器人应用。",
+    "region": "长三角",
+    "sales_region": "华东",
+    "owner": "华东销售一组",
+    "entities": [
+      "上海建工",
+      "长三角区域"
+    ],
+    "business_value": "竞赛可能推动建筑机器人采购或应用示范，为供应商提供展示和对接机会。",
+    "lead_score": 4,
+    "lead_reason": "存在招标/中标/采购等明确交易信号；两周内新信号",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 5,
+        "reason": "存在招标/中标/采购等明确交易信号"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华东"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：建筑机器人、装配式建筑"
+      }
+    },
+    "suggested_action": "关注竞赛技术要求和参展企业名单，联系主办方了解建筑机器人应用环节。",
+    "urgency": "中",
+    "updated_at": "2026-05-28T18:15:56Z"
+  },
+  {
     "title": "中建八局“智水泰平”平原水库智能建造体系在鲁发布",
     "link": "https://www.baidu.com/s?wd=%E4%B8%AD%E5%BB%BA%E5%85%AB%E5%B1%80%E2%80%9C%E6%99%BA%E6%B0%B4%E6%B3%B0%E5%B9%B3%E2%80%9D%E5%B9%B3%E5%8E%9F%E6%B0%B4%E5%BA%93%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E4%BD%93%E7%B3%BB%E5%9C%A8%E9%B2%81%E5%8F%91%E5%B8%83",
     "original_link": "",
