@@ -1,5 +1,62 @@
 [
   {
+    "title": "让“好房子”从蓝图照进现实——湖北推进高品质住宅建设观察",
+    "link": "https://www.baidu.com/s?wd=%E8%AE%A9%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E4%BB%8E%E8%93%9D%E5%9B%BE%E7%85%A7%E8%BF%9B%E7%8E%B0%E5%AE%9E%E2%80%94%E2%80%94%E6%B9%96%E5%8C%97%E6%8E%A8%E8%BF%9B%E9%AB%98%E5%93%81%E8%B4%A8%E4%BD%8F%E5%AE%85%E5%BB%BA%E8%AE%BE%E8%A7%82%E5%AF%9F",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9NZUxDaG9lb1NEWGt5dzRpbDlRZHNuMVBYUXByT3I2ZlVSSmlmNTEyajh4UDczcHpiM2dXSG1hcE5iVWxOaUcxalAyVWVpdDBGTnNuUElFdjNsWUtXQ2lzVHJNdkYzOXdvVU5YTkFQWUYwLWE3?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E8%AE%A9%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E4%BB%8E%E8%93%9D%E5%9B%BE%E7%85%A7%E8%BF%9B%E7%8E%B0%E5%AE%9E%E2%80%94%E2%80%94%E6%B9%96%E5%8C%97%E6%8E%A8%E8%BF%9B%E9%AB%98%E5%93%81%E8%B4%A8%E4%BD%8F%E5%AE%85%E5%BB%BA%E8%AE%BE%E8%A7%82%E5%AF%9F",
+    "date": "2026-05-27",
+    "published_date": "2026-05-27",
+    "source_date": "2026-05-27",
+    "collected_at": "2026-05-29T18:14:30Z",
+    "source": "新华网",
+    "keyword": "\"智能建造\" 招标 OR 中标 OR 成交 OR 采购 OR 合同",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "湖北推进高品质住宅建设，强调智能建造应用。",
+    "region": "湖北",
+    "sales_region": "华中",
+    "owner": "华中销售组",
+    "entities": [
+      "湖北省"
+    ],
+    "business_value": "政策导向明确，智能建造技术供应商可对接湖北住建部门，参与高品质住宅试点项目。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、好房子",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华中"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、好房子"
+      }
+    },
+    "suggested_action": "关注湖北住建厅后续招标公告，主动联系推介智能建造解决方案。",
+    "urgency": "中",
+    "updated_at": "2026-05-29T18:14:51Z"
+  },
+  {
     "title": "提高居住品质各地推进“好房子”建设|上海市|选房|住宅|楼盘|政策_手机新浪网",
     "link": "https://www.baidu.com/s?wd=%E6%8F%90%E9%AB%98%E5%B1%85%E4%BD%8F%E5%93%81%E8%B4%A8%E5%90%84%E5%9C%B0%E6%8E%A8%E8%BF%9B%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E5%BB%BA%E8%AE%BE%7C%E4%B8%8A%E6%B5%B7%E5%B8%82%7C%E9%80%89%E6%88%BF%7C%E4%BD%8F%E5%AE%85%7C%E6%A5%BC%E7%9B%98%7C%E6%94%BF%E7%AD%96_%E6%89%8B%E6%9C%BA%E6%96%B0%E6%B5%AA%E7%BD%91",
     "original_link": "",
