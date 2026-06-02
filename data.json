@@ -1,5 +1,62 @@
 [
   {
+    "title": "深圳市住房和建设局关于征集建筑机器人成熟产品（第二批）的通知",
+    "link": "https://www.baidu.com/s?wd=%E6%B7%B1%E5%9C%B3%E5%B8%82%E4%BD%8F%E6%88%BF%E5%92%8C%E5%BB%BA%E8%AE%BE%E5%B1%80%E5%85%B3%E4%BA%8E%E5%BE%81%E9%9B%86%E5%BB%BA%E7%AD%91%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%88%90%E7%86%9F%E4%BA%A7%E5%93%81%EF%BC%88%E7%AC%AC%E4%BA%8C%E6%89%B9%EF%BC%89%E7%9A%84%E9%80%9A%E7%9F%A5",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOSFJtWF9DREpFbnF4SWZWbHFSOTRwMzY0dENIVkh1N2dsMlpYX2tzWFJuMVBYM0JSeUVBemtyRkVJY1pMbFZ0eldHSlQwVjl0UEtwTTlCLTdyYS03UzVZSHZBNzIyd2NvMlgwLUxSVWVwMWVqeUl6cGZBOVYzWXRUcU01THA3cXVR?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E6%B7%B1%E5%9C%B3%E5%B8%82%E4%BD%8F%E6%88%BF%E5%92%8C%E5%BB%BA%E8%AE%BE%E5%B1%80%E5%85%B3%E4%BA%8E%E5%BE%81%E9%9B%86%E5%BB%BA%E7%AD%91%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%88%90%E7%86%9F%E4%BA%A7%E5%93%81%EF%BC%88%E7%AC%AC%E4%BA%8C%E6%89%B9%EF%BC%89%E7%9A%84%E9%80%9A%E7%9F%A5",
+    "date": "2026-06-01",
+    "published_date": "2026-06-01",
+    "source_date": "2026-06-01",
+    "collected_at": "2026-06-02T18:45:36Z",
+    "source": "sz.gov.cn",
+    "keyword": "\"建筑机器人\" 采购 OR 中标 OR 应用 OR 项目 OR 进场",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "深圳市住建局征集建筑机器人成熟产品（第二批）",
+    "region": "深圳",
+    "sales_region": "华南",
+    "owner": "华南销售一组",
+    "entities": [
+      "深圳市住房和建设局"
+    ],
+    "business_value": "官方征集为建筑机器人供应商提供直接准入机会，可对接政府项目，抢占深圳市场。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；存在项目、试点或名单信号，可继续确认招采窗口",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华南"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 4,
+        "reason": "匹配蔚建相关场景：建筑机器人"
+      }
+    },
+    "suggested_action": "立即准备产品资料，联系深圳市住建局提交申请，跟进后续评审流程。",
+    "urgency": "高",
+    "updated_at": "2026-06-02T18:45:50Z"
+  },
+  {
     "title": "泰州高铁南站枢纽项目展露智慧建造成果，预计9月主体封顶",
     "link": "https://www.baidu.com/s?wd=%E6%B3%B0%E5%B7%9E%E9%AB%98%E9%93%81%E5%8D%97%E7%AB%99%E6%9E%A2%E7%BA%BD%E9%A1%B9%E7%9B%AE%E5%B1%95%E9%9C%B2%E6%99%BA%E6%85%A7%E5%BB%BA%E9%80%A0%E6%88%90%E6%9E%9C%EF%BC%8C%E9%A2%84%E8%AE%A19%E6%9C%88%E4%B8%BB%E4%BD%93%E5%B0%81%E9%A1%B6",
     "original_link": "",
