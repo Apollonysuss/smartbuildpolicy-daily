@@ -1,5 +1,60 @@
 [
   {
+    "title": "提质增效！BIM技术重塑道路工程建设",
+    "link": "https://www.baidu.com/s?wd=%E6%8F%90%E8%B4%A8%E5%A2%9E%E6%95%88%EF%BC%81BIM%E6%8A%80%E6%9C%AF%E9%87%8D%E5%A1%91%E9%81%93%E8%B7%AF%E5%B7%A5%E7%A8%8B%E5%BB%BA%E8%AE%BE",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5pUmVDSXgtTzJzdWpaTnY3enp6OWxKdGZ5OGQ5cUMxLXliZDdKRFc0SkxEX0tNZDVsUXZnVldBSDJSYjlvc293Sk0taVFHdUFVYU5XWEx1QS1WcG4ySjh4UVdXcUluTElfem5VOFI3Sk4?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E6%8F%90%E8%B4%A8%E5%A2%9E%E6%95%88%EF%BC%81BIM%E6%8A%80%E6%9C%AF%E9%87%8D%E5%A1%91%E9%81%93%E8%B7%AF%E5%B7%A5%E7%A8%8B%E5%BB%BA%E8%AE%BE",
+    "date": "2026-06-07",
+    "published_date": "2026-06-07",
+    "source_date": "2026-06-07",
+    "collected_at": "2026-06-07T16:22:07Z",
+    "source": "中国科技网",
+    "keyword": "\"BIM\" 建筑 招标 OR 中标 OR 采购 OR 审图 OR 施工",
+    "search_priority": 4,
+    "category": "技术",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "BIM技术应用于道路工程建设，提升效率与质量。",
+    "region": "全国",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [],
+    "business_value": "为BIM软件、咨询及施工企业提供技术应用推广机会，潜在项目需求。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；存在项目、试点或名单信号，可继续确认招采窗口",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 4,
+        "reason": "匹配蔚建相关场景：BIM"
+      }
+    },
+    "suggested_action": "关注后续具体项目招标公告，联系相关设计院了解BIM应用需求。",
+    "urgency": "低",
+    "updated_at": "2026-06-07T16:22:28Z"
+  },
+  {
     "title": "建筑业智能建造加速落地 AI驱动行业创新",
     "link": "https://www.baidu.com/s?wd=%E5%BB%BA%E7%AD%91%E4%B8%9A%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E5%8A%A0%E9%80%9F%E8%90%BD%E5%9C%B0+AI%E9%A9%B1%E5%8A%A8%E8%A1%8C%E4%B8%9A%E5%88%9B%E6%96%B0",
     "original_link": "",
