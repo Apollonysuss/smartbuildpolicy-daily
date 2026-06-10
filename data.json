@@ -1,5 +1,62 @@
 [
   {
+    "title": "施工机器人投用 西宁至成都铁路四川段建设进度已超54%",
+    "link": "https://www.baidu.com/s?wd=%E6%96%BD%E5%B7%A5%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8A%95%E7%94%A8+%E8%A5%BF%E5%AE%81%E8%87%B3%E6%88%90%E9%83%BD%E9%93%81%E8%B7%AF%E5%9B%9B%E5%B7%9D%E6%AE%B5%E5%BB%BA%E8%AE%BE%E8%BF%9B%E5%BA%A6%E5%B7%B2%E8%B6%8554%25",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9YX19McTJnSzNEaUo3NlJKU1djNDBwaUtyNV9fcWxlbTRPNFN2UnpmMjRrQUxwNDhxNF9VNXk4R09fbXJ6NkVNajlKQkNMQ0RHeDFiWlVRQzdpZkJRdkk0UmZ0RQ?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E6%96%BD%E5%B7%A5%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8A%95%E7%94%A8+%E8%A5%BF%E5%AE%81%E8%87%B3%E6%88%90%E9%83%BD%E9%93%81%E8%B7%AF%E5%9B%9B%E5%B7%9D%E6%AE%B5%E5%BB%BA%E8%AE%BE%E8%BF%9B%E5%BA%A6%E5%B7%B2%E8%B6%8554%25",
+    "date": "2026-06-10",
+    "published_date": "2026-06-10",
+    "source_date": "2026-06-10",
+    "collected_at": "2026-06-10T18:06:13Z",
+    "source": "四川新闻",
+    "keyword": "\"施工机器人\" 采购 OR 中标 OR 应用 OR 项目",
+    "search_priority": 5,
+    "category": "项目",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "西宁至成都铁路四川段施工机器人投用，进度超54%。",
+    "region": "四川",
+    "sales_region": "西南",
+    "owner": "西南销售组",
+    "entities": [
+      "西宁至成都铁路四川段"
+    ],
+    "business_value": "施工机器人应用案例，可对接项目方推广蔚建机器人产品，切入铁路建设场景。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；存在项目、试点或名单信号，可继续确认招采窗口",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：西南"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 3,
+        "reason": "场景相近，可进一步核查蔚建切入点"
+      }
+    },
+    "suggested_action": "联系项目承建方，了解机器人具体类型及后续采购需求。",
+    "urgency": "中",
+    "updated_at": "2026-06-10T18:06:27Z"
+  },
+  {
     "title": "《BIM应用与发展迈向2.0新阶段》白皮书发布",
     "link": "https://www.baidu.com/s?wd=%E3%80%8ABIM%E5%BA%94%E7%94%A8%E4%B8%8E%E5%8F%91%E5%B1%95%E8%BF%88%E5%90%912.0%E6%96%B0%E9%98%B6%E6%AE%B5%E3%80%8B%E7%99%BD%E7%9A%AE%E4%B9%A6%E5%8F%91%E5%B8%83",
     "original_link": "",
