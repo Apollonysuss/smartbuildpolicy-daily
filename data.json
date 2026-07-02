@@ -1,5 +1,62 @@
 [
   {
+    "title": "幸福快递｜鸡西出台措施高标准推进“好房子”建设",
+    "link": "https://www.baidu.com/s?wd=%E5%B9%B8%E7%A6%8F%E5%BF%AB%E9%80%92%EF%BD%9C%E9%B8%A1%E8%A5%BF%E5%87%BA%E5%8F%B0%E6%8E%AA%E6%96%BD%E9%AB%98%E6%A0%87%E5%87%86%E6%8E%A8%E8%BF%9B%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E5%BB%BA%E8%AE%BE",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1RU09VLTBONFVhM3FDYmlZUmQxLUpyYWMxYXE5aVlMRDRaVUNLOGx6dE9ubHBTeFhGVG9qZnljQkxHeWU2TVJHYkp5M2pWczBTTEY2dlQzNGJGdk54MjVzek91T2ZwUERyVjlSWmZEblExSl9T?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E5%B9%B8%E7%A6%8F%E5%BF%AB%E9%80%92%EF%BD%9C%E9%B8%A1%E8%A5%BF%E5%87%BA%E5%8F%B0%E6%8E%AA%E6%96%BD%E9%AB%98%E6%A0%87%E5%87%86%E6%8E%A8%E8%BF%9B%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E5%BB%BA%E8%AE%BE",
+    "date": "2026-07-02",
+    "published_date": "2026-07-02",
+    "source_date": "2026-07-02",
+    "collected_at": "2026-07-02T16:54:24Z",
+    "source": "黑龙江日报",
+    "keyword": "住建局 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "鸡西市出台措施推进高标准'好房子'建设，涉及智能建造与智慧工地。",
+    "region": "鸡西",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [
+      "鸡西市住建局"
+    ],
+    "business_value": "政策推动智能建造试点，可能催生智慧工地、机器人施工等采购需求，利好建筑科技公司。",
+    "lead_score": 4,
+    "lead_reason": "存在招标/中标/采购等明确交易信号；两周内新信号",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 5,
+        "reason": "存在招标/中标/采购等明确交易信号"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子"
+      }
+    },
+    "suggested_action": "关注后续实施细则，联系鸡西住建局了解试点项目及供应商准入要求。",
+    "urgency": "中",
+    "updated_at": "2026-07-02T16:55:04Z"
+  },
+  {
     "title": "中建海龙1.21亿元竞得广州白云湖地块 拟投7.8亿建智能建造基地",
     "link": "https://www.baidu.com/s?wd=%E4%B8%AD%E5%BB%BA%E6%B5%B7%E9%BE%991.21%E4%BA%BF%E5%85%83%E7%AB%9E%E5%BE%97%E5%B9%BF%E5%B7%9E%E7%99%BD%E4%BA%91%E6%B9%96%E5%9C%B0%E5%9D%97+%E6%8B%9F%E6%8A%957.8%E4%BA%BF%E5%BB%BA%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E5%9F%BA%E5%9C%B0",
     "original_link": "",
@@ -458,6 +515,64 @@
     "suggested_action": "关注文章提及的厂商和案例，评估市场格局，暂不主动跟进。",
     "urgency": "低",
     "updated_at": "2026-06-29T17:43:56Z"
+  },
+  {
+    "title": "前海率先试点香港安全智慧工地系统，深港建设领域规则衔接再迈新步伐",
+    "link": "https://www.baidu.com/s?wd=%E5%89%8D%E6%B5%B7%E7%8E%87%E5%85%88%E8%AF%95%E7%82%B9%E9%A6%99%E6%B8%AF%E5%AE%89%E5%85%A8%E6%99%BA%E6%85%A7%E5%B7%A5%E5%9C%B0%E7%B3%BB%E7%BB%9F%EF%BC%8C%E6%B7%B1%E6%B8%AF%E5%BB%BA%E8%AE%BE%E9%A2%86%E5%9F%9F%E8%A7%84%E5%88%99%E8%A1%94%E6%8E%A5%E5%86%8D%E8%BF%88%E6%96%B0%E6%AD%A5%E4%BC%90",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNOFBhYy1sVmpQUDFIbEY5dV9nT0o0ZHNPY0E0Zk9nYjhOOEVwSXVsMjFpRWZoRHZlb3pBTXE2YUJOTEM3TkpwXzMxR04zaXR2bEJXRkhDUjFKQlhlMDZYa1A4Q1k0U3MzU2dTMlAzYkx0Si1wUVpHb1hLQUtLdHJ5UjFVZDN0STYyNnc?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E5%89%8D%E6%B5%B7%E7%8E%87%E5%85%88%E8%AF%95%E7%82%B9%E9%A6%99%E6%B8%AF%E5%AE%89%E5%85%A8%E6%99%BA%E6%85%A7%E5%B7%A5%E5%9C%B0%E7%B3%BB%E7%BB%9F%EF%BC%8C%E6%B7%B1%E6%B8%AF%E5%BB%BA%E8%AE%BE%E9%A2%86%E5%9F%9F%E8%A7%84%E5%88%99%E8%A1%94%E6%8E%A5%E5%86%8D%E8%BF%88%E6%96%B0%E6%AD%A5%E4%BC%90",
+    "date": "2026-06-27",
+    "published_date": "2026-06-27",
+    "source_date": "2026-06-27",
+    "collected_at": "2026-07-02T16:54:23Z",
+    "source": "广州日报新花城",
+    "keyword": "住建厅 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "前海试点香港安全智慧工地系统，深港建设规则衔接新进展",
+    "region": "深圳前海",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [
+      "前海",
+      "香港"
+    ],
+    "business_value": "为智能建造系统集成商提供深港规则衔接下的试点机会，可切入前海智慧工地项目",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、智慧工地",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、智慧工地"
+      }
+    },
+    "suggested_action": "联系前海管理局或住建部门，了解试点细则及供应商准入要求",
+    "urgency": "高",
+    "updated_at": "2026-07-02T16:54:46Z"
   },
   {
     "title": "锚定宜居民生坐标 高速地产以产品力书写安徽“好房子”建设答卷",
