@@ -1,5 +1,62 @@
 [
   {
+    "title": "12人斩获国赛大奖！湖北城市建设职业技术学院学子赛场尽显智能建造硬核实力",
+    "link": "https://www.baidu.com/s?wd=12%E4%BA%BA%E6%96%A9%E8%8E%B7%E5%9B%BD%E8%B5%9B%E5%A4%A7%E5%A5%96%EF%BC%81%E6%B9%96%E5%8C%97%E5%9F%8E%E5%B8%82%E5%BB%BA%E8%AE%BE%E8%81%8C%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%AD%A6%E9%99%A2%E5%AD%A6%E5%AD%90%E8%B5%9B%E5%9C%BA%E5%B0%BD%E6%98%BE%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E7%A1%AC%E6%A0%B8%E5%AE%9E%E5%8A%9B",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5GYkxkbWJZT01xSDRseEVMUGFvTEhkQ3NHdXBmVFpiQ1JNTTdkTUd5Sjh0X21lRDYxZlNHWjBoN25hZWIwYjEzeThwUTZ6LXRpSFhCMVpvOXJpOVYyaEVXcVFHQk5lZFlP?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=12%E4%BA%BA%E6%96%A9%E8%8E%B7%E5%9B%BD%E8%B5%9B%E5%A4%A7%E5%A5%96%EF%BC%81%E6%B9%96%E5%8C%97%E5%9F%8E%E5%B8%82%E5%BB%BA%E8%AE%BE%E8%81%8C%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%AD%A6%E9%99%A2%E5%AD%A6%E5%AD%90%E8%B5%9B%E5%9C%BA%E5%B0%BD%E6%98%BE%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E7%A1%AC%E6%A0%B8%E5%AE%9E%E5%8A%9B",
+    "date": "2026-07-06",
+    "published_date": "2026-07-06",
+    "source_date": "2026-07-06",
+    "collected_at": "2026-07-06T17:47:38Z",
+    "source": "教育在线",
+    "keyword": "\"BIM\" 建筑 招标 OR 中标 OR 采购 OR 审图 OR 施工",
+    "search_priority": 4,
+    "category": "行业动态",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "湖北城建职院学生获智能建造国赛大奖，展示BIM等技能。",
+    "region": "湖北",
+    "sales_region": "华中",
+    "owner": "华中销售组",
+    "entities": [
+      "湖北城市建设职业技术学院"
+    ],
+    "business_value": "赛事获奖体现院校对智能建造教育的投入，可能带动相关实训设备、软件采购需求。",
+    "lead_score": 4,
+    "lead_reason": "存在招标/中标/采购等明确交易信号；两周内新信号",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 5,
+        "reason": "存在招标/中标/采购等明确交易信号"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华中"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、BIM"
+      }
+    },
+    "suggested_action": "关注该校后续实训室建设或课程合作招标公告。",
+    "urgency": "低",
+    "updated_at": "2026-07-06T17:48:13Z"
+  },
+  {
     "title": "浙江省建设工程安全标准化暨智能建造观摩会在江北顺利举办",
     "link": "https://www.baidu.com/s?wd=%E6%B5%99%E6%B1%9F%E7%9C%81%E5%BB%BA%E8%AE%BE%E5%B7%A5%E7%A8%8B%E5%AE%89%E5%85%A8%E6%A0%87%E5%87%86%E5%8C%96%E6%9A%A8%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E8%A7%82%E6%91%A9%E4%BC%9A%E5%9C%A8%E6%B1%9F%E5%8C%97%E9%A1%BA%E5%88%A9%E4%B8%BE%E5%8A%9E",
     "original_link": "",
