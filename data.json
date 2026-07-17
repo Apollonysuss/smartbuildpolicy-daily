@@ -1,5 +1,761 @@
 [
   {
+    "title": "从“有应用”到“深应用” ，上海BIM应用加速向城市级数字基础设施跃升",
+    "link": "https://www.baidu.com/s?wd=%E4%BB%8E%E2%80%9C%E6%9C%89%E5%BA%94%E7%94%A8%E2%80%9D%E5%88%B0%E2%80%9C%E6%B7%B1%E5%BA%94%E7%94%A8%E2%80%9D+%EF%BC%8C%E4%B8%8A%E6%B5%B7BIM%E5%BA%94%E7%94%A8%E5%8A%A0%E9%80%9F%E5%90%91%E5%9F%8E%E5%B8%82%E7%BA%A7%E6%95%B0%E5%AD%97%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E8%B7%83%E5%8D%87",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPM3lwVmMtcWdHOGhVMWwtd0kxR21qNm82SFY5YUpFZEowem16bVBBSFo1UnVUeWFYa1pMWWdpSzQ3ODFTZW9xTzQ0ZFpubHJHNnpSUTlSc0FzUE5ZQm5HdVZmaDZOUjNtNUVVSW9ybUJ5WkJMYjZITTdKck1nYWQtam9Qbw?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E4%BB%8E%E2%80%9C%E6%9C%89%E5%BA%94%E7%94%A8%E2%80%9D%E5%88%B0%E2%80%9C%E6%B7%B1%E5%BA%94%E7%94%A8%E2%80%9D+%EF%BC%8C%E4%B8%8A%E6%B5%B7BIM%E5%BA%94%E7%94%A8%E5%8A%A0%E9%80%9F%E5%90%91%E5%9F%8E%E5%B8%82%E7%BA%A7%E6%95%B0%E5%AD%97%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E8%B7%83%E5%8D%87",
+    "date": "2026-07-17",
+    "published_date": "2026-07-17",
+    "source_date": "2026-07-17",
+    "collected_at": "2026-07-17T16:19:14Z",
+    "source": "51ldb.com",
+    "keyword": "\"BIM\" 建筑 招标 OR 中标 OR 采购 OR 审图 OR 施工",
+    "search_priority": 4,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "上海BIM应用从项目级向城市级数字基础设施跃升，加速推广。",
+    "region": "上海",
+    "sales_region": "华东",
+    "owner": "华东销售一组",
+    "entities": [
+      "上海"
+    ],
+    "business_value": "BIM城市级应用带来大量平台建设、数据集成和咨询服务需求，利好建筑科技公司。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；存在项目、试点或名单信号，可继续确认招采窗口",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华东"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 4,
+        "reason": "匹配蔚建相关场景：BIM"
+      }
+    },
+    "suggested_action": "关注上海住建委后续BIM相关招标公告，提前准备解决方案。",
+    "urgency": "中",
+    "updated_at": "2026-07-17T16:20:22Z"
+  },
+  {
+    "title": "官宣！广州首批“好房子”名单出炉，越秀地产包揽一半！",
+    "link": "https://www.baidu.com/s?wd=%E5%AE%98%E5%AE%A3%EF%BC%81%E5%B9%BF%E5%B7%9E%E9%A6%96%E6%89%B9%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E5%90%8D%E5%8D%95%E5%87%BA%E7%82%89%EF%BC%8C%E8%B6%8A%E7%A7%80%E5%9C%B0%E4%BA%A7%E5%8C%85%E6%8F%BD%E4%B8%80%E5%8D%8A%EF%BC%81",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBfX3FfZF9hRFlPX0EzNEt6NzFUMFlGTEFIU0VTSWtuTml6SlItN24ybURFNUtDeS1YZzNwQW1vMHdWejJfRjZCLXZibkllSFN2WFFxRG8yMS1ZbTd0OThaWExn?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E5%AE%98%E5%AE%A3%EF%BC%81%E5%B9%BF%E5%B7%9E%E9%A6%96%E6%89%B9%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E5%90%8D%E5%8D%95%E5%87%BA%E7%82%89%EF%BC%8C%E8%B6%8A%E7%A7%80%E5%9C%B0%E4%BA%A7%E5%8C%85%E6%8F%BD%E4%B8%80%E5%8D%8A%EF%BC%81",
+    "date": "2026-07-17",
+    "published_date": "2026-07-17",
+    "source_date": "2026-07-17",
+    "collected_at": "2026-07-17T16:19:16Z",
+    "source": "手机网易网",
+    "keyword": "住建局 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "广州公布首批“好房子”名单，越秀地产占一半。",
+    "region": "广州",
+    "sales_region": "华南",
+    "owner": "华南销售一组",
+    "entities": [
+      "广州市住建局",
+      "越秀地产"
+    ],
+    "business_value": "政策推动“好房子”建设，智能建造和智慧工地需求增加，为建筑科技公司提供项目机会。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华南"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子"
+      }
+    },
+    "suggested_action": "联系越秀地产或住建局，了解智能建造需求。",
+    "urgency": "高",
+    "updated_at": "2026-07-17T16:20:05Z"
+  },
+  {
+    "title": "广州住建公布首批“好房子”，阅璟台、鸿璟台双入选首批名单，越秀地产领跑广州“好房子”建设",
+    "link": "https://www.baidu.com/s?wd=%E5%B9%BF%E5%B7%9E%E4%BD%8F%E5%BB%BA%E5%85%AC%E5%B8%83%E9%A6%96%E6%89%B9%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%EF%BC%8C%E9%98%85%E7%92%9F%E5%8F%B0%E3%80%81%E9%B8%BF%E7%92%9F%E5%8F%B0%E5%8F%8C%E5%85%A5%E9%80%89%E9%A6%96%E6%89%B9%E5%90%8D%E5%8D%95%EF%BC%8C%E8%B6%8A%E7%A7%80%E5%9C%B0%E4%BA%A7%E9%A2%86%E8%B7%91%E5%B9%BF%E5%B7%9E%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E5%BB%BA%E8%AE%BE",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9uV2pMdHc4cTdOVmVuQkJOay1hTkc0WkdhY1dvR0lUTWh6T2E1VlREVmVsVEpLUUNtXzB3SzF6ck1SOHdJWjJ0SlBNbW9hYXNMZXNib1pZMmFQZUhNTEUyYmF3?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E5%B9%BF%E5%B7%9E%E4%BD%8F%E5%BB%BA%E5%85%AC%E5%B8%83%E9%A6%96%E6%89%B9%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%EF%BC%8C%E9%98%85%E7%92%9F%E5%8F%B0%E3%80%81%E9%B8%BF%E7%92%9F%E5%8F%B0%E5%8F%8C%E5%85%A5%E9%80%89%E9%A6%96%E6%89%B9%E5%90%8D%E5%8D%95%EF%BC%8C%E8%B6%8A%E7%A7%80%E5%9C%B0%E4%BA%A7%E9%A2%86%E8%B7%91%E5%B9%BF%E5%B7%9E%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E5%BB%BA%E8%AE%BE",
+    "date": "2026-07-17",
+    "published_date": "2026-07-17",
+    "source_date": "2026-07-17",
+    "collected_at": "2026-07-17T16:19:16Z",
+    "source": "手机网易网",
+    "keyword": "住建局 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "广州住建公布首批“好房子”名单，越秀地产两项目入选。",
+    "region": "广州",
+    "sales_region": "华南",
+    "owner": "华南销售一组",
+    "entities": [
+      "广州住建",
+      "越秀地产",
+      "阅璟台",
+      "鸿璟台"
+    ],
+    "business_value": "为智能建造解决方案商提供政策导向下的项目机会，可对接越秀地产推广智慧工地等技术。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华南"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子"
+      }
+    },
+    "suggested_action": "联系越秀地产项目团队，了解“好房子”标准中智能建造需求。",
+    "urgency": "中",
+    "updated_at": "2026-07-17T16:20:03Z"
+  },
+  {
+    "title": "首批“好房子”试点落地！广州买房，终于有了靠谱参照",
+    "link": "https://www.baidu.com/s?wd=%E9%A6%96%E6%89%B9%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E8%AF%95%E7%82%B9%E8%90%BD%E5%9C%B0%EF%BC%81%E5%B9%BF%E5%B7%9E%E4%B9%B0%E6%88%BF%EF%BC%8C%E7%BB%88%E4%BA%8E%E6%9C%89%E4%BA%86%E9%9D%A0%E8%B0%B1%E5%8F%82%E7%85%A7",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9CMU9FblpPMjdNb3p5R3ZTa3VlNklBQ09EbnRSenhKWnpEMXhTRFBtYkNTVkJEWkwycHQyNnZfZklzTG1Xa3BKeFVlU2psUXhFWGVwNXl0OEtEZWhYZ3l5UkFB?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E9%A6%96%E6%89%B9%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E8%AF%95%E7%82%B9%E8%90%BD%E5%9C%B0%EF%BC%81%E5%B9%BF%E5%B7%9E%E4%B9%B0%E6%88%BF%EF%BC%8C%E7%BB%88%E4%BA%8E%E6%9C%89%E4%BA%86%E9%9D%A0%E8%B0%B1%E5%8F%82%E7%85%A7",
+    "date": "2026-07-17",
+    "published_date": "2026-07-17",
+    "source_date": "2026-07-17",
+    "collected_at": "2026-07-17T16:19:15Z",
+    "source": "手机网易网",
+    "keyword": "住建厅 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "广州首批‘好房子’试点落地，提供住房建设参照标准。",
+    "region": "广州",
+    "sales_region": "华南",
+    "owner": "华南销售一组",
+    "entities": [
+      "广州市住建厅"
+    ],
+    "business_value": "试点项目可能涉及智能建造技术应用，为建筑科技公司提供示范项目机会。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、好房子",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华南"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、好房子"
+      }
+    },
+    "suggested_action": "关注广州市住建厅后续试点项目招标公告，评估智能建造需求。",
+    "urgency": "中",
+    "updated_at": "2026-07-17T16:20:00Z"
+  },
+  {
+    "title": "广州住建公布首批“好房子”，阅璟台、鸿璟台双入选首批名单，越秀地产领跑广州“好房子”建设",
+    "link": "https://www.baidu.com/s?wd=%E5%B9%BF%E5%B7%9E%E4%BD%8F%E5%BB%BA%E5%85%AC%E5%B8%83%E9%A6%96%E6%89%B9%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%EF%BC%8C%E9%98%85%E7%92%9F%E5%8F%B0%E3%80%81%E9%B8%BF%E7%92%9F%E5%8F%B0%E5%8F%8C%E5%85%A5%E9%80%89%E9%A6%96%E6%89%B9%E5%90%8D%E5%8D%95%EF%BC%8C%E8%B6%8A%E7%A7%80%E5%9C%B0%E4%BA%A7%E9%A2%86%E8%B7%91%E5%B9%BF%E5%B7%9E%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E5%BB%BA%E8%AE%BE",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTHA4YTJYai1sRHZHX3ZMS0M4UFowTlhCc094cHBNRTgtT2w5bzhwSkhKNHBVOElzVDJZNk1OVjg5aTh0QTV2aFYzZktfM0UxcDhwZ3NFZmFaNUlyVEV3cTZHNzA3T09wcDNXYTB3WGNXN1lkNnJpWkVvR3VyLTNqS0Z4OFdkMHRpWWJObGRR?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E5%B9%BF%E5%B7%9E%E4%BD%8F%E5%BB%BA%E5%85%AC%E5%B8%83%E9%A6%96%E6%89%B9%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%EF%BC%8C%E9%98%85%E7%92%9F%E5%8F%B0%E3%80%81%E9%B8%BF%E7%92%9F%E5%8F%B0%E5%8F%8C%E5%85%A5%E9%80%89%E9%A6%96%E6%89%B9%E5%90%8D%E5%8D%95%EF%BC%8C%E8%B6%8A%E7%A7%80%E5%9C%B0%E4%BA%A7%E9%A2%86%E8%B7%91%E5%B9%BF%E5%B7%9E%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E5%BB%BA%E8%AE%BE",
+    "date": "2026-07-17",
+    "published_date": "2026-07-17",
+    "source_date": "2026-07-17",
+    "collected_at": "2026-07-17T16:19:15Z",
+    "source": "手机网易网",
+    "keyword": "住建厅 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "广州住建公布首批“好房子”，越秀地产两项目入选。",
+    "region": "广州",
+    "sales_region": "华南",
+    "owner": "华南销售一组",
+    "entities": [
+      "广州住建",
+      "越秀地产",
+      "阅璟台",
+      "鸿璟台"
+    ],
+    "business_value": "政策推动“好房子”建设，可能带动智能建造技术需求，为建筑科技公司提供项目合作机会。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、好房子",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华南"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、好房子"
+      }
+    },
+    "suggested_action": "联系越秀地产或广州住建，了解“好房子”技术标准及智能建造应用需求。",
+    "urgency": "中",
+    "updated_at": "2026-07-17T16:19:57Z"
+  },
+  {
+    "title": "广州跑在前！一线城市首批“好房子”标杆项目出炉，越秀地产占据半数席位",
+    "link": "https://www.baidu.com/s?wd=%E5%B9%BF%E5%B7%9E%E8%B7%91%E5%9C%A8%E5%89%8D%EF%BC%81%E4%B8%80%E7%BA%BF%E5%9F%8E%E5%B8%82%E9%A6%96%E6%89%B9%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E6%A0%87%E6%9D%86%E9%A1%B9%E7%9B%AE%E5%87%BA%E7%82%89%EF%BC%8C%E8%B6%8A%E7%A7%80%E5%9C%B0%E4%BA%A7%E5%8D%A0%E6%8D%AE%E5%8D%8A%E6%95%B0%E5%B8%AD%E4%BD%8D",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE81TGxqcUt0ZnVWdXNEYTBSLVpsa3RQZnFQbk5IaGtVQVBuZXhCc1d0Y2dTWUljdGdlVWJtUjVmV2xRSGdZQlRqSVVPdnNQRjBfVjNXb0xEQlV2NDVhQzN2TnFB?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E5%B9%BF%E5%B7%9E%E8%B7%91%E5%9C%A8%E5%89%8D%EF%BC%81%E4%B8%80%E7%BA%BF%E5%9F%8E%E5%B8%82%E9%A6%96%E6%89%B9%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E6%A0%87%E6%9D%86%E9%A1%B9%E7%9B%AE%E5%87%BA%E7%82%89%EF%BC%8C%E8%B6%8A%E7%A7%80%E5%9C%B0%E4%BA%A7%E5%8D%A0%E6%8D%AE%E5%8D%8A%E6%95%B0%E5%B8%AD%E4%BD%8D",
+    "date": "2026-07-17",
+    "published_date": "2026-07-17",
+    "source_date": "2026-07-17",
+    "collected_at": "2026-07-17T16:19:16Z",
+    "source": "观点网",
+    "keyword": "住建局 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "广州首批‘好房子’标杆项目出炉，越秀地产占半数，涉及智能建造与智慧工地。",
+    "region": "广州",
+    "sales_region": "华南",
+    "owner": "华南销售一组",
+    "entities": [
+      "广州市住建局",
+      "越秀地产"
+    ],
+    "business_value": "标杆项目需配套智能建造技术，为建筑科技公司提供示范项目切入机会，可对接越秀地产及住建局。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华南"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子"
+      }
+    },
+    "suggested_action": "联系越秀地产项目负责人，推介智能建造解决方案，同步关注住建局后续细则。",
+    "urgency": "高",
+    "updated_at": "2026-07-17T16:19:49Z"
+  },
+  {
+    "title": "广州“好房子”评价标准出炉，首批四大项目列为试点",
+    "link": "https://www.baidu.com/s?wd=%E5%B9%BF%E5%B7%9E%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E8%AF%84%E4%BB%B7%E6%A0%87%E5%87%86%E5%87%BA%E7%82%89%EF%BC%8C%E9%A6%96%E6%89%B9%E5%9B%9B%E5%A4%A7%E9%A1%B9%E7%9B%AE%E5%88%97%E4%B8%BA%E8%AF%95%E7%82%B9",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOLWU3d2FWV3pyZU5wSlNqSndRczMxR1VVQU13TVRaMVF4a3JuTlQ3NEtSWlFPSTBDeXFJbDZhWkkyTlNEb0tPLWtsT3dqSllFSXB5WEF1d2ZUZ0dyLVVINzR2X29HTnZfQl9lanBtRERxVmFyYlRtNXozQ0pZMFJKZm96NjBnZXpSZXhQZS05cw?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E5%B9%BF%E5%B7%9E%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E8%AF%84%E4%BB%B7%E6%A0%87%E5%87%86%E5%87%BA%E7%82%89%EF%BC%8C%E9%A6%96%E6%89%B9%E5%9B%9B%E5%A4%A7%E9%A1%B9%E7%9B%AE%E5%88%97%E4%B8%BA%E8%AF%95%E7%82%B9",
+    "date": "2026-07-17",
+    "published_date": "2026-07-17",
+    "source_date": "2026-07-17",
+    "collected_at": "2026-07-17T16:19:16Z",
+    "source": "搜狐网",
+    "keyword": "住建局 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "广州发布‘好房子’评价标准，首批四大项目列为试点。",
+    "region": "广州",
+    "sales_region": "华南",
+    "owner": "华南销售一组",
+    "entities": [
+      "广州市住建局",
+      "四大试点项目"
+    ],
+    "business_value": "政策试点带来智能建造和智慧工地需求，建筑科技公司可对接标准推广和项目落地。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华南"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子"
+      }
+    },
+    "suggested_action": "联系广州市住建局或试点项目方，了解智能建造技术需求及合作机会。",
+    "urgency": "高",
+    "updated_at": "2026-07-17T16:19:46Z"
+  },
+  {
+    "title": "定了！广州官宣首批“好房子”试点项目！",
+    "link": "https://www.baidu.com/s?wd=%E5%AE%9A%E4%BA%86%EF%BC%81%E5%B9%BF%E5%B7%9E%E5%AE%98%E5%AE%A3%E9%A6%96%E6%89%B9%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E8%AF%95%E7%82%B9%E9%A1%B9%E7%9B%AE%EF%BC%81",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9Vc1RYMFZWZENHc3hXYVlOdWNMbFdMVkI4NFBFQjc3TDY2TGxaVGJ4TzFOaElYRHJJbGtoVG1lRlk2RDVVQUV6YXl5cTFQYUZLNnE5SklZWUplc245RVNCaTZR?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E5%AE%9A%E4%BA%86%EF%BC%81%E5%B9%BF%E5%B7%9E%E5%AE%98%E5%AE%A3%E9%A6%96%E6%89%B9%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E8%AF%95%E7%82%B9%E9%A1%B9%E7%9B%AE%EF%BC%81",
+    "date": "2026-07-17",
+    "published_date": "2026-07-17",
+    "source_date": "2026-07-17",
+    "collected_at": "2026-07-17T16:19:16Z",
+    "source": "手机网易网",
+    "keyword": "住建局 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "广州官宣首批“好房子”试点项目，推动智能建造与智慧工地应用。",
+    "region": "广州",
+    "sales_region": "华南",
+    "owner": "华南销售一组",
+    "entities": [
+      "广州市住建局"
+    ],
+    "business_value": "为智能建造、智慧工地解决方案供应商提供试点项目切入机会，可对接住建局获取具体项目清单。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华南"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子"
+      }
+    },
+    "suggested_action": "联系广州市住建局获取试点项目名单及技术需求，准备产品方案。",
+    "urgency": "高",
+    "updated_at": "2026-07-17T16:19:43Z"
+  },
+  {
+    "title": "4个新盘入选广州首批“好房子”试点项目名单，为什么是它们？",
+    "link": "https://www.baidu.com/s?wd=4%E4%B8%AA%E6%96%B0%E7%9B%98%E5%85%A5%E9%80%89%E5%B9%BF%E5%B7%9E%E9%A6%96%E6%89%B9%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E8%AF%95%E7%82%B9%E9%A1%B9%E7%9B%AE%E5%90%8D%E5%8D%95%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E5%AE%83%E4%BB%AC%EF%BC%9F",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPV2gtV19LZnd5cEJoSi00QVpMNndXQk9vVnp4OG5vREhaQjgtUmJtZUR2QlNFM01lR19zNGVCanB5dERCSHhINE5RcDlWSHdaeWZaWVYwSDUyZF9aS3VybkJnd0tZODFnTkpXOXM4eHFjdGI5b0FMYU5mMW8xN1IxbThCenVLM0lHaHRmbQ?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=4%E4%B8%AA%E6%96%B0%E7%9B%98%E5%85%A5%E9%80%89%E5%B9%BF%E5%B7%9E%E9%A6%96%E6%89%B9%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E8%AF%95%E7%82%B9%E9%A1%B9%E7%9B%AE%E5%90%8D%E5%8D%95%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E5%AE%83%E4%BB%AC%EF%BC%9F",
+    "date": "2026-07-17",
+    "published_date": "2026-07-17",
+    "source_date": "2026-07-17",
+    "collected_at": "2026-07-17T16:19:16Z",
+    "source": "搜狐网",
+    "keyword": "住建局 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "广州公布首批4个‘好房子’试点项目名单，推动智能建造与品质住宅建设。",
+    "region": "广州",
+    "sales_region": "华南",
+    "owner": "华南销售一组",
+    "entities": [
+      "广州市住建局",
+      "广州首批‘好房子’试点项目"
+    ],
+    "business_value": "试点项目可能包含智能建造、智慧工地需求，为建筑科技公司提供产品切入和示范案例机会。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华南"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子"
+      }
+    },
+    "suggested_action": "联系广州市住建局或试点项目开发商，了解智能建造具体需求与采购计划。",
+    "urgency": "高",
+    "updated_at": "2026-07-17T16:19:40Z"
+  },
+  {
+    "title": "广州发布“好房子”试点清单 聚龙湾·源舍、保利珠江天悦等四项目入选",
+    "link": "https://www.baidu.com/s?wd=%E5%B9%BF%E5%B7%9E%E5%8F%91%E5%B8%83%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E8%AF%95%E7%82%B9%E6%B8%85%E5%8D%95+%E8%81%9A%E9%BE%99%E6%B9%BE%C2%B7%E6%BA%90%E8%88%8D%E3%80%81%E4%BF%9D%E5%88%A9%E7%8F%A0%E6%B1%9F%E5%A4%A9%E6%82%A6%E7%AD%89%E5%9B%9B%E9%A1%B9%E7%9B%AE%E5%85%A5%E9%80%89",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1EaGczNkZCOHh1Y0x3RWZnTzZJZUV1NUlzQnRON095QlRmRm1FeVBtT05vSUlvY3VKUGNvcjhKNjdDNmJUVHhmQVkxT0ZLdVU2RkVZdFpoRkkxdTVHM0ZVS01B?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E5%B9%BF%E5%B7%9E%E5%8F%91%E5%B8%83%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E8%AF%95%E7%82%B9%E6%B8%85%E5%8D%95+%E8%81%9A%E9%BE%99%E6%B9%BE%C2%B7%E6%BA%90%E8%88%8D%E3%80%81%E4%BF%9D%E5%88%A9%E7%8F%A0%E6%B1%9F%E5%A4%A9%E6%82%A6%E7%AD%89%E5%9B%9B%E9%A1%B9%E7%9B%AE%E5%85%A5%E9%80%89",
+    "date": "2026-07-17",
+    "published_date": "2026-07-17",
+    "source_date": "2026-07-17",
+    "collected_at": "2026-07-17T16:19:16Z",
+    "source": "观点网",
+    "keyword": "住建局 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "广州发布‘好房子’试点清单，含聚龙湾·源舍等四项目入选。",
+    "region": "广州",
+    "sales_region": "华南",
+    "owner": "华南销售一组",
+    "entities": [
+      "广州市住建局",
+      "聚龙湾·源舍",
+      "保利珠江天悦"
+    ],
+    "business_value": "试点项目需智能建造技术支撑，为建筑科技公司提供示范应用和订单机会。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、好房子",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华南"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、好房子"
+      }
+    },
+    "suggested_action": "联系广州市住建局或项目开发商，了解智能建造需求及招标计划。",
+    "urgency": "高",
+    "updated_at": "2026-07-17T16:19:37Z"
+  },
+  {
+    "title": "广州发布“好房子”试点项目名单，四个在建住宅项目入选",
+    "link": "https://www.baidu.com/s?wd=%E5%B9%BF%E5%B7%9E%E5%8F%91%E5%B8%83%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E8%AF%95%E7%82%B9%E9%A1%B9%E7%9B%AE%E5%90%8D%E5%8D%95%EF%BC%8C%E5%9B%9B%E4%B8%AA%E5%9C%A8%E5%BB%BA%E4%BD%8F%E5%AE%85%E9%A1%B9%E7%9B%AE%E5%85%A5%E9%80%89",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOd2VITFhOdVN2aHpadl9JRExVVDhpZWtlSGhfVVdzSWwyRHNuR2xhRkNkalF0NmRDdk8zdmtTVHdGWjdKaWJ4cHRjRzNvSnp5Y0lybUtiZjBaMmVManFKVjJpbnM1M29LS2RNY0dmaXduWjM5b0xNYmhDUi1UMzFMVFo2T0VvZ04wa1E?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E5%B9%BF%E5%B7%9E%E5%8F%91%E5%B8%83%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E8%AF%95%E7%82%B9%E9%A1%B9%E7%9B%AE%E5%90%8D%E5%8D%95%EF%BC%8C%E5%9B%9B%E4%B8%AA%E5%9C%A8%E5%BB%BA%E4%BD%8F%E5%AE%85%E9%A1%B9%E7%9B%AE%E5%85%A5%E9%80%89",
+    "date": "2026-07-17",
+    "published_date": "2026-07-17",
+    "source_date": "2026-07-17",
+    "collected_at": "2026-07-17T16:19:16Z",
+    "source": "广州日报新花城",
+    "keyword": "住建局 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "广州发布四个在建住宅项目入选“好房子”试点名单",
+    "region": "广州",
+    "sales_region": "华南",
+    "owner": "华南销售一组",
+    "entities": [
+      "广州市住建局",
+      "广州日报"
+    ],
+    "business_value": "试点项目可能推动智能建造技术应用，为建筑科技公司提供示范项目合作机会",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、好房子",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华南"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、好房子"
+      }
+    },
+    "suggested_action": "联系广州市住建局或项目开发商，了解试点技术要求和采购计划",
+    "urgency": "高",
+    "updated_at": "2026-07-17T16:19:34Z"
+  },
+  {
+    "title": "广州市住房和城乡建设局公布首批“好房子”试点项目名单 越秀两个楼盘入选",
+    "link": "https://www.baidu.com/s?wd=%E5%B9%BF%E5%B7%9E%E5%B8%82%E4%BD%8F%E6%88%BF%E5%92%8C%E5%9F%8E%E4%B9%A1%E5%BB%BA%E8%AE%BE%E5%B1%80%E5%85%AC%E5%B8%83%E9%A6%96%E6%89%B9%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E8%AF%95%E7%82%B9%E9%A1%B9%E7%9B%AE%E5%90%8D%E5%8D%95+%E8%B6%8A%E7%A7%80%E4%B8%A4%E4%B8%AA%E6%A5%BC%E7%9B%98%E5%85%A5%E9%80%89",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBIckJBTWtXdnFiaTQxWEY3YnR0dzdublMyWWJXYUFvVWFlcFp4ZDU0Q2FvZ2QxQ0RIQ0VSbWJUVGYzT3h2Y2V6UGhVWUdKd1BrZ3ZmYVhCbDBPVE5EaDNlTHNocG5qWkhTMjE1cE1LR0JHMTdpSS1Nd1ZOU2FSWjQ?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E5%B9%BF%E5%B7%9E%E5%B8%82%E4%BD%8F%E6%88%BF%E5%92%8C%E5%9F%8E%E4%B9%A1%E5%BB%BA%E8%AE%BE%E5%B1%80%E5%85%AC%E5%B8%83%E9%A6%96%E6%89%B9%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E8%AF%95%E7%82%B9%E9%A1%B9%E7%9B%AE%E5%90%8D%E5%8D%95+%E8%B6%8A%E7%A7%80%E4%B8%A4%E4%B8%AA%E6%A5%BC%E7%9B%98%E5%85%A5%E9%80%89",
+    "date": "2026-07-17",
+    "published_date": "2026-07-17",
+    "source_date": "2026-07-17",
+    "collected_at": "2026-07-17T16:19:16Z",
+    "source": "新华网",
+    "keyword": "住建局 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "广州住建局公布首批“好房子”试点项目名单，越秀两个楼盘入选",
+    "region": "广州",
+    "sales_region": "华南",
+    "owner": "华南销售一组",
+    "entities": [
+      "广州市住房和城乡建设局",
+      "越秀"
+    ],
+    "business_value": "试点项目可能涉及智能建造技术应用，为建筑科技公司提供产品推广和项目合作机会",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、好房子",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华南"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、好房子"
+      }
+    },
+    "suggested_action": "联系广州市住建局或越秀项目方，了解试点技术需求及供应商准入流程",
+    "urgency": "高",
+    "updated_at": "2026-07-17T16:19:31Z"
+  },
+  {
+    "title": "广州市住房和城乡建设局公布首批“好房子”试点项目名单 越秀两个楼盘入选",
+    "link": "https://www.baidu.com/s?wd=%E5%B9%BF%E5%B7%9E%E5%B8%82%E4%BD%8F%E6%88%BF%E5%92%8C%E5%9F%8E%E4%B9%A1%E5%BB%BA%E8%AE%BE%E5%B1%80%E5%85%AC%E5%B8%83%E9%A6%96%E6%89%B9%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E8%AF%95%E7%82%B9%E9%A1%B9%E7%9B%AE%E5%90%8D%E5%8D%95+%E8%B6%8A%E7%A7%80%E4%B8%A4%E4%B8%AA%E6%A5%BC%E7%9B%98%E5%85%A5%E9%80%89",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNUi1HUXYwbjRmU2lZUl9fNnhqbFNtS1VwYVZ0TjVRTXphSkZtRWF3VlUyUUtrcDZNMlRIT2pDQmNoNF9ELWtKWFVqTmVrTmxjaUJaYy15M0V5azF5RnQ5ZHpCeGs0ZHJmdHhFZHlmNEZyTENRSzNFM2tPRktSMmxHZGpwbk9KQQ?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E5%B9%BF%E5%B7%9E%E5%B8%82%E4%BD%8F%E6%88%BF%E5%92%8C%E5%9F%8E%E4%B9%A1%E5%BB%BA%E8%AE%BE%E5%B1%80%E5%85%AC%E5%B8%83%E9%A6%96%E6%89%B9%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E8%AF%95%E7%82%B9%E9%A1%B9%E7%9B%AE%E5%90%8D%E5%8D%95+%E8%B6%8A%E7%A7%80%E4%B8%A4%E4%B8%AA%E6%A5%BC%E7%9B%98%E5%85%A5%E9%80%89",
+    "date": "2026-07-17",
+    "published_date": "2026-07-17",
+    "source_date": "2026-07-17",
+    "collected_at": "2026-07-17T16:19:15Z",
+    "source": "新华网",
+    "keyword": "住建厅 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "广州市住建局公布首批“好房子”试点项目名单，越秀两个楼盘入选。",
+    "region": "广州",
+    "sales_region": "华南",
+    "owner": "华南销售一组",
+    "entities": [
+      "广州市住房和城乡建设局",
+      "越秀"
+    ],
+    "business_value": "试点项目可能涉及智能建造、智慧工地等新技术应用，为建筑科技公司提供示范项目合作机会。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华南"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子"
+      }
+    },
+    "suggested_action": "联系广州市住建局或越秀项目方，了解试点技术需求及供应商准入流程。",
+    "urgency": "高",
+    "updated_at": "2026-07-17T16:19:28Z"
+  },
+  {
     "title": "山东好房子再落20条！层高不低于3米、车位宽2.5米，213个试点已开建",
     "link": "https://www.baidu.com/s?wd=%E5%B1%B1%E4%B8%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E5%86%8D%E8%90%BD20%E6%9D%A1%EF%BC%81%E5%B1%82%E9%AB%98%E4%B8%8D%E4%BD%8E%E4%BA%8E3%E7%B1%B3%E3%80%81%E8%BD%A6%E4%BD%8D%E5%AE%BD2.5%E7%B1%B3%EF%BC%8C213%E4%B8%AA%E8%AF%95%E7%82%B9%E5%B7%B2%E5%BC%80%E5%BB%BA",
     "original_link": "",
