@@ -860,6 +860,61 @@
     "updated_at": "2026-07-18T16:02:02Z"
   },
   {
+    "title": "广州官宣首批“好房子”试点项目！荔湾两个在建住宅项目入选",
+    "link": "https://www.baidu.com/s?wd=%E5%B9%BF%E5%B7%9E%E5%AE%98%E5%AE%A3%E9%A6%96%E6%89%B9%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E8%AF%95%E7%82%B9%E9%A1%B9%E7%9B%AE%EF%BC%81%E8%8D%94%E6%B9%BE%E4%B8%A4%E4%B8%AA%E5%9C%A8%E5%BB%BA%E4%BD%8F%E5%AE%85%E9%A1%B9%E7%9B%AE%E5%85%A5%E9%80%89",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1QSjNYVXIwWVExUWJMR0JWTmxwMkVfbDV6bnVnenJsWkp5WktFNVFjNVdleFp5Z0xGRVRhVHBsVmUwU0ctbHJZanlhSWNkOHVOMHR2RGN3?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E5%B9%BF%E5%B7%9E%E5%AE%98%E5%AE%A3%E9%A6%96%E6%89%B9%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E8%AF%95%E7%82%B9%E9%A1%B9%E7%9B%AE%EF%BC%81%E8%8D%94%E6%B9%BE%E4%B8%A4%E4%B8%AA%E5%9C%A8%E5%BB%BA%E4%BD%8F%E5%AE%85%E9%A1%B9%E7%9B%AE%E5%85%A5%E9%80%89",
+    "date": "2026-07-17",
+    "published_date": "2026-07-17",
+    "source_date": "2026-07-17",
+    "collected_at": "2026-07-25T16:07:49Z",
+    "source": "QQ News",
+    "keyword": "住建局 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "广州官宣首批“好房子”试点项目！荔湾两个在建住宅项目入选",
+    "region": "广州",
+    "sales_region": "华南",
+    "owner": "华南销售一组",
+    "entities": [],
+    "business_value": "可作为智能建造、智慧工地、建筑机器人或数字化施工相关市场机会观察点。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；存在项目、试点或名单信号，可继续确认招采窗口",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华南"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 4,
+        "reason": "匹配蔚建相关场景：好房子"
+      }
+    },
+    "suggested_action": "跟进政策配套细则、试点申报窗口和重点承接单位。",
+    "urgency": "中",
+    "updated_at": "2026-07-25T16:07:58Z"
+  },
+  {
     "title": "全市仅4盘！广州官宣好房子名单，照着买就对了！",
     "link": "https://www.baidu.com/s?wd=%E5%85%A8%E5%B8%82%E4%BB%854%E7%9B%98%EF%BC%81%E5%B9%BF%E5%B7%9E%E5%AE%98%E5%AE%A3%E5%A5%BD%E6%88%BF%E5%AD%90%E5%90%8D%E5%8D%95%EF%BC%8C%E7%85%A7%E7%9D%80%E4%B9%B0%E5%B0%B1%E5%AF%B9%E4%BA%86%EF%BC%81",
     "original_link": "",
