@@ -3729,6 +3729,64 @@
     "updated_at": "2026-07-04T16:08:23Z"
   },
   {
+    "title": "东土科技荣获中建协《第二届建筑机械智能建造科技（设计）成果应用竞赛》二等奖",
+    "link": "https://www.baidu.com/s?wd=%E4%B8%9C%E5%9C%9F%E7%A7%91%E6%8A%80%E8%8D%A3%E8%8E%B7%E4%B8%AD%E5%BB%BA%E5%8D%8F%E3%80%8A%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%BB%BA%E7%AD%91%E6%9C%BA%E6%A2%B0%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E7%A7%91%E6%8A%80%EF%BC%88%E8%AE%BE%E8%AE%A1%EF%BC%89%E6%88%90%E6%9E%9C%E5%BA%94%E7%94%A8%E7%AB%9E%E8%B5%9B%E3%80%8B%E4%BA%8C%E7%AD%89%E5%A5%96",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1xS0RwSlNsa1ZIcnBFTlBZUkltdEVNTC1TTG5wbVpVRi1VdVEyZTVBckM1a3hETHBjUGFzRXVURUNNR2YzVnlLbUl5azNDYzh3NTUwQ0ZUdnpVaDFocjF0NXNBM3JsbmtwQ213?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E4%B8%9C%E5%9C%9F%E7%A7%91%E6%8A%80%E8%8D%A3%E8%8E%B7%E4%B8%AD%E5%BB%BA%E5%8D%8F%E3%80%8A%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%BB%BA%E7%AD%91%E6%9C%BA%E6%A2%B0%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E7%A7%91%E6%8A%80%EF%BC%88%E8%AE%BE%E8%AE%A1%EF%BC%89%E6%88%90%E6%9E%9C%E5%BA%94%E7%94%A8%E7%AB%9E%E8%B5%9B%E3%80%8B%E4%BA%8C%E7%AD%89%E5%A5%96",
+    "date": "2026-06-30",
+    "published_date": "2026-06-30",
+    "source_date": "2026-06-30",
+    "collected_at": "2026-07-26T16:05:50Z",
+    "source": "财富号",
+    "keyword": "中建 智慧工地 OR 建筑机器人 OR 智能建造 OR 数字化施工",
+    "search_priority": 4,
+    "category": "技术",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "东土科技获中建协建筑机械智能建造竞赛二等奖",
+    "region": "全国",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [
+      "东土科技",
+      "中国建筑业协会"
+    ],
+    "business_value": "显示东土科技在智能建造领域的技术实力，可能带来合作或项目机会，但非直接招采信号",
+    "lead_score": 4,
+    "lead_reason": "存在项目、试点或名单信号，可继续确认招采窗口；有明确主体，预算金额待核查",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 4,
+        "reason": "45天内信号"
+      },
+      "product_fit": {
+        "score": 4,
+        "reason": "匹配蔚建相关场景：智能建造"
+      }
+    },
+    "suggested_action": "关注东土科技后续动态，评估其技术是否与蔚建产品互补",
+    "urgency": "低",
+    "updated_at": "2026-07-26T16:06:14Z"
+  },
+  {
     "title": "中建海龙1.21亿元竞得广州白云湖地块 拟投7.8亿建智能建造基地",
     "link": "https://www.baidu.com/s?wd=%E4%B8%AD%E5%BB%BA%E6%B5%B7%E9%BE%991.21%E4%BA%BF%E5%85%83%E7%AB%9E%E5%BE%97%E5%B9%BF%E5%B7%9E%E7%99%BD%E4%BA%91%E6%B9%96%E5%9C%B0%E5%9D%97+%E6%8B%9F%E6%8A%957.8%E4%BA%BF%E5%BB%BA%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E5%9F%BA%E5%9C%B0",
     "original_link": "",
