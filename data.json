@@ -57,6 +57,63 @@
     "updated_at": "2026-07-31T16:48:54Z"
   },
   {
+    "title": "从源头减少质量缺陷，青岛推进新建房屋质量，保险助力好房子建设",
+    "link": "https://www.baidu.com/s?wd=%E4%BB%8E%E6%BA%90%E5%A4%B4%E5%87%8F%E5%B0%91%E8%B4%A8%E9%87%8F%E7%BC%BA%E9%99%B7%EF%BC%8C%E9%9D%92%E5%B2%9B%E6%8E%A8%E8%BF%9B%E6%96%B0%E5%BB%BA%E6%88%BF%E5%B1%8B%E8%B4%A8%E9%87%8F%EF%BC%8C%E4%BF%9D%E9%99%A9%E5%8A%A9%E5%8A%9B%E5%A5%BD%E6%88%BF%E5%AD%90%E5%BB%BA%E8%AE%BE",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBzNjFiaWhoVENDcVZCTnFRbV9QTU9HLTE1NVJQVFFIZW5SWkNtZWFfaGl0U2pJVFU2N01rVU1WZG9sZnQ2U0Q3M2JUbnRtTlpmcHc5Rk9n?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E4%BB%8E%E6%BA%90%E5%A4%B4%E5%87%8F%E5%B0%91%E8%B4%A8%E9%87%8F%E7%BC%BA%E9%99%B7%EF%BC%8C%E9%9D%92%E5%B2%9B%E6%8E%A8%E8%BF%9B%E6%96%B0%E5%BB%BA%E6%88%BF%E5%B1%8B%E8%B4%A8%E9%87%8F%EF%BC%8C%E4%BF%9D%E9%99%A9%E5%8A%A9%E5%8A%9B%E5%A5%BD%E6%88%BF%E5%AD%90%E5%BB%BA%E8%AE%BE",
+    "date": "2026-07-31",
+    "published_date": "2026-07-31",
+    "source_date": "2026-07-31",
+    "collected_at": "2026-08-02T16:03:50Z",
+    "source": "news.qq.com",
+    "keyword": "住建局 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "青岛推进新建房屋质量保险，从源头减少质量缺陷，助力好房子建设。",
+    "region": "青岛",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [
+      "青岛市住建局"
+    ],
+    "business_value": "政策推动房屋质量提升，可能带动智能建造、智慧工地监测和质量管理系统的需求，适合建筑科技公司对接。",
+    "lead_score": 3,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 1,
+        "reason": "暂未看到明确招采信号"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子"
+      }
+    },
+    "suggested_action": "联系青岛市住建局，了解质量保险试点中是否涉及智能监测或数据平台需求。",
+    "urgency": "中",
+    "updated_at": "2026-08-02T16:04:19Z"
+  },
+  {
     "title": "首个试点项目落地 房屋质量保险为青岛“好房子”再加保障",
     "link": "https://www.baidu.com/s?wd=%E9%A6%96%E4%B8%AA%E8%AF%95%E7%82%B9%E9%A1%B9%E7%9B%AE%E8%90%BD%E5%9C%B0+%E6%88%BF%E5%B1%8B%E8%B4%A8%E9%87%8F%E4%BF%9D%E9%99%A9%E4%B8%BA%E9%9D%92%E5%B2%9B%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E5%86%8D%E5%8A%A0%E4%BF%9D%E9%9A%9C",
     "original_link": "",
