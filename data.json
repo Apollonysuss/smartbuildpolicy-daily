@@ -1,5 +1,62 @@
 [
   {
+    "title": "泰安发布丨我市发布建筑业数智化转型工作方案 构建智能建造发展新生态",
+    "link": "https://www.baidu.com/s?wd=%E6%B3%B0%E5%AE%89%E5%8F%91%E5%B8%83%E4%B8%A8%E6%88%91%E5%B8%82%E5%8F%91%E5%B8%83%E5%BB%BA%E7%AD%91%E4%B8%9A%E6%95%B0%E6%99%BA%E5%8C%96%E8%BD%AC%E5%9E%8B%E5%B7%A5%E4%BD%9C%E6%96%B9%E6%A1%88+%E6%9E%84%E5%BB%BA%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E5%8F%91%E5%B1%95%E6%96%B0%E7%94%9F%E6%80%81",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE8ycjI4bjBleGR0cG9MQUpjekZJa1JtbXpPMmJjVThzeHhjSWJManh4cXFtb1RYRnN0MDZDaFVMZm9wTFNBN2lIWWY1M2lncm1oQV9MWUlkeGFLRXltWXo3WnVyaWJBekkyelZKV3VTVWVjaHI0dTJJbg?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E6%B3%B0%E5%AE%89%E5%8F%91%E5%B8%83%E4%B8%A8%E6%88%91%E5%B8%82%E5%8F%91%E5%B8%83%E5%BB%BA%E7%AD%91%E4%B8%9A%E6%95%B0%E6%99%BA%E5%8C%96%E8%BD%AC%E5%9E%8B%E5%B7%A5%E4%BD%9C%E6%96%B9%E6%A1%88+%E6%9E%84%E5%BB%BA%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E5%8F%91%E5%B1%95%E6%96%B0%E7%94%9F%E6%80%81",
+    "date": "2026-08-29",
+    "published_date": "2026-08-29",
+    "source_date": "2026-08-29",
+    "collected_at": "2026-08-29T18:15:11Z",
+    "source": "新浪财经",
+    "keyword": "\"智能建造试点\" 项目 OR 名单 OR 公示 OR 示范",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "泰安市发布建筑业数智化转型工作方案，推动智能建造试点，构建发展新生态。",
+    "region": "山东泰安",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [
+      "泰安市"
+    ],
+    "business_value": "政策明确数智化转型方向，可能催生智能建造试点项目及配套采购，为建筑科技公司提供市场切入机会。",
+    "lead_score": 4,
+    "lead_reason": "存在招标/中标/采购等明确交易信号；两周内新信号",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 5,
+        "reason": "存在招标/中标/采购等明确交易信号"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 4,
+        "reason": "匹配蔚建相关场景：智能建造"
+      }
+    },
+    "suggested_action": "联系泰安市住建局，获取方案细则及试点项目清单，评估参与可行性。",
+    "urgency": "中",
+    "updated_at": "2026-08-29T18:15:20Z"
+  },
+  {
     "title": "狮城再添标杆！博匠机器人赋能新加坡Aurelle项目，解锁装修自动化新高度",
     "link": "https://www.baidu.com/s?wd=%E7%8B%AE%E5%9F%8E%E5%86%8D%E6%B7%BB%E6%A0%87%E6%9D%86%EF%BC%81%E5%8D%9A%E5%8C%A0%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%B5%8B%E8%83%BD%E6%96%B0%E5%8A%A0%E5%9D%A1Aurelle%E9%A1%B9%E7%9B%AE%EF%BC%8C%E8%A7%A3%E9%94%81%E8%A3%85%E4%BF%AE%E8%87%AA%E5%8A%A8%E5%8C%96%E6%96%B0%E9%AB%98%E5%BA%A6",
     "original_link": "",
