@@ -2490,6 +2490,64 @@
     "updated_at": "2026-08-28T00:19:51Z"
   },
   {
+    "title": "深圳安居集团三项目入选住房城乡建设部首批“好房子”智能建造典型案例，为保障性住房建设提供“深圳样本”",
+    "link": "https://www.baidu.com/s?wd=%E6%B7%B1%E5%9C%B3%E5%AE%89%E5%B1%85%E9%9B%86%E5%9B%A2%E4%B8%89%E9%A1%B9%E7%9B%AE%E5%85%A5%E9%80%89%E4%BD%8F%E6%88%BF%E5%9F%8E%E4%B9%A1%E5%BB%BA%E8%AE%BE%E9%83%A8%E9%A6%96%E6%89%B9%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E5%85%B8%E5%9E%8B%E6%A1%88%E4%BE%8B%EF%BC%8C%E4%B8%BA%E4%BF%9D%E9%9A%9C%E6%80%A7%E4%BD%8F%E6%88%BF%E5%BB%BA%E8%AE%BE%E6%8F%90%E4%BE%9B%E2%80%9C%E6%B7%B1%E5%9C%B3%E6%A0%B7%E6%9C%AC%E2%80%9D",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9teEJ4bm1CSkNreVM0VFZVUGlGS0pnOXNNMk5VWVV5NklFaEVxdHpkc2VRaUxXZUhyZjl0VVlLRFlWVWJCSVcwVDdwdnZ0S09Ma1FJdEQ2cUdYU0hjS1dkQ2l1UFFSUmg5ZDZzVnBwNA?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E6%B7%B1%E5%9C%B3%E5%AE%89%E5%B1%85%E9%9B%86%E5%9B%A2%E4%B8%89%E9%A1%B9%E7%9B%AE%E5%85%A5%E9%80%89%E4%BD%8F%E6%88%BF%E5%9F%8E%E4%B9%A1%E5%BB%BA%E8%AE%BE%E9%83%A8%E9%A6%96%E6%89%B9%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E5%85%B8%E5%9E%8B%E6%A1%88%E4%BE%8B%EF%BC%8C%E4%B8%BA%E4%BF%9D%E9%9A%9C%E6%80%A7%E4%BD%8F%E6%88%BF%E5%BB%BA%E8%AE%BE%E6%8F%90%E4%BE%9B%E2%80%9C%E6%B7%B1%E5%9C%B3%E6%A0%B7%E6%9C%AC%E2%80%9D",
+    "date": "2026-08-24",
+    "published_date": "2026-08-24",
+    "source_date": "2026-08-24",
+    "collected_at": "2026-09-05T17:14:13Z",
+    "source": "content.foshanplus.com",
+    "keyword": "\"好房子\" 智能建造 OR 装配式 OR 建筑机器人 OR 智慧工地",
+    "search_priority": 4,
+    "category": "项目",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "深圳安居集团三个项目入选住建部首批“好房子”智能建造典型案例，为保障房建设提供样本。",
+    "region": "深圳",
+    "sales_region": "华南",
+    "owner": "华南销售一组",
+    "entities": [
+      "深圳安居集团",
+      "住房城乡建设部"
+    ],
+    "business_value": "示范项目带动深圳保障房智能建造需求，建筑机器人、智慧工地等产品或服务可借机切入，树立标杆案例。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、智慧工地、建筑机器人",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华南"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、智慧工地、建筑机器人"
+      }
+    },
+    "suggested_action": "联系深圳安居集团，了解项目技术应用细节，推介建筑机器人及智慧工地解决方案，寻求合作试点。",
+    "urgency": "中",
+    "updated_at": "2026-09-05T17:14:22Z"
+  },
+  {
     "title": "以“机器换人”锻造新质生产力 温医大附一院肿瘤中心项目书写智能建造新答卷",
     "link": "https://www.baidu.com/s?wd=%E4%BB%A5%E2%80%9C%E6%9C%BA%E5%99%A8%E6%8D%A2%E4%BA%BA%E2%80%9D%E9%94%BB%E9%80%A0%E6%96%B0%E8%B4%A8%E7%94%9F%E4%BA%A7%E5%8A%9B+%E6%B8%A9%E5%8C%BB%E5%A4%A7%E9%99%84%E4%B8%80%E9%99%A2%E8%82%BF%E7%98%A4%E4%B8%AD%E5%BF%83%E9%A1%B9%E7%9B%AE%E4%B9%A6%E5%86%99%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E6%96%B0%E7%AD%94%E5%8D%B7",
     "original_link": "",
