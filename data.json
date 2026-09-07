@@ -1,5 +1,355 @@
 [
   {
+    "title": "中建·云启凤华：“好房子”的泉城答案",
+    "link": "https://www.baidu.com/s?wd=%E4%B8%AD%E5%BB%BA%C2%B7%E4%BA%91%E5%90%AF%E5%87%A4%E5%8D%8E%EF%BC%9A%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E7%9A%84%E6%B3%89%E5%9F%8E%E7%AD%94%E6%A1%88",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBuTW1GWEJvQVFmald2RW1ody1IMHB6eTlqcjRMYkctUDRZNDZ0VzZMU3plcjJvT21kRjNWSmdmNXFRZktOd1VUUlhWX1VpMjJQU2xicFIxSXhBQklzNlo2NEN3Wk5YUQ?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E4%B8%AD%E5%BB%BA%C2%B7%E4%BA%91%E5%90%AF%E5%87%A4%E5%8D%8E%EF%BC%9A%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E7%9A%84%E6%B3%89%E5%9F%8E%E7%AD%94%E6%A1%88",
+    "date": "2026-09-07",
+    "published_date": "2026-09-07",
+    "source_date": "2026-09-07",
+    "collected_at": "2026-09-07T19:03:41Z",
+    "source": "泰山财经",
+    "keyword": "住建局 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "项目",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "中建在济南推出云启凤华项目，展示“好房子”建设实践，涉及智能建造与智慧工地应用。",
+    "region": "济南",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [
+      "中建",
+      "云启凤华",
+      "济南"
+    ],
+    "business_value": "项目展示智能建造技术应用，为建筑科技公司提供合作示范案例，可跟进中建在济南的后续项目。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子"
+      }
+    },
+    "suggested_action": "联系中建项目团队，了解技术供应商需求，推介相关智能建造产品。",
+    "urgency": "中",
+    "updated_at": "2026-09-07T19:04:18Z"
+  },
+  {
+    "title": "2026山西“好房子”建设发展论坛即将启幕",
+    "link": "https://www.baidu.com/s?wd=2026%E5%B1%B1%E8%A5%BF%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E5%BB%BA%E8%AE%BE%E5%8F%91%E5%B1%95%E8%AE%BA%E5%9D%9B%E5%8D%B3%E5%B0%86%E5%90%AF%E5%B9%95",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9RYnJmdmctaWxFaEhWSzB3N2RLNUtqYmNWNndVSHpZTVk3eVg3dm5ValNBRm1KbDYwRUs1bUFfcm8tQVZ6SzI0MFk1SVlaZXM?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=2026%E5%B1%B1%E8%A5%BF%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E5%BB%BA%E8%AE%BE%E5%8F%91%E5%B1%95%E8%AE%BA%E5%9D%9B%E5%8D%B3%E5%B0%86%E5%90%AF%E5%B9%95",
+    "date": "2026-09-07",
+    "published_date": "2026-09-07",
+    "source_date": "2026-09-07",
+    "collected_at": "2026-09-07T19:03:41Z",
+    "source": "凤凰网",
+    "keyword": "住建局 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "会议",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "2026年山西将举办“好房子”建设发展论坛，聚焦智能建造与好房子试点。",
+    "region": "山西",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [
+      "山西省住建局",
+      "好房子建设发展论坛"
+    ],
+    "business_value": "论坛提供政策解读和项目对接机会，可展示智能建造产品，接触山西住建部门及开发商，挖掘试点项目合作。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、好房子",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、好房子"
+      }
+    },
+    "suggested_action": "联系主办方获取议程，申请参会或演讲，提前建立山西住建关系。",
+    "urgency": "中",
+    "updated_at": "2026-09-07T19:04:15Z"
+  },
+  {
+    "title": "探访全国“好房子”示范工程：破解保障房居住痛点",
+    "link": "https://www.baidu.com/s?wd=%E6%8E%A2%E8%AE%BF%E5%85%A8%E5%9B%BD%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E7%A4%BA%E8%8C%83%E5%B7%A5%E7%A8%8B%EF%BC%9A%E7%A0%B4%E8%A7%A3%E4%BF%9D%E9%9A%9C%E6%88%BF%E5%B1%85%E4%BD%8F%E7%97%9B%E7%82%B9",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1RMGJoUWM1Q3NMWjBndDBZWi1HcVduQTJ3MVU3RWN5dXBraVFzSmt5SHYxTW10RU5sRl9ibjZqMEdoUzc5WlJ6ZUlaRWp5VFk0Q3BOQ1lIREx2Z3dRVFdKMm45dTFONFVMNzZR?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E6%8E%A2%E8%AE%BF%E5%85%A8%E5%9B%BD%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E7%A4%BA%E8%8C%83%E5%B7%A5%E7%A8%8B%EF%BC%9A%E7%A0%B4%E8%A7%A3%E4%BF%9D%E9%9A%9C%E6%88%BF%E5%B1%85%E4%BD%8F%E7%97%9B%E7%82%B9",
+    "date": "2026-09-07",
+    "published_date": "2026-09-07",
+    "source_date": "2026-09-07",
+    "collected_at": "2026-09-07T19:03:42Z",
+    "source": "gd.chinanews.com.cn",
+    "keyword": "\"智能建造试点\" 项目 OR 名单 OR 公示 OR 示范",
+    "search_priority": 5,
+    "category": "项目",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "探访全国“好房子”示范工程，聚焦保障房居住痛点破解，涉及智能建造试点示范项目。",
+    "region": "全国",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [
+      "全国“好房子”示范工程",
+      "保障房项目"
+    ],
+    "business_value": "示范工程可能带动智能建造技术应用，为建筑科技公司提供产品展示和合作机会，需关注具体项目招采。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、好房子",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、好房子"
+      }
+    },
+    "suggested_action": "联系新闻来源或住建部门，获取示范工程具体名单和参与方式，评估产品匹配度。",
+    "urgency": "中",
+    "updated_at": "2026-09-07T19:03:59Z"
+  },
+  {
+    "title": "玖居地产亮相第十三届转型发展创新大会 分享“好房子”新疆方案",
+    "link": "https://www.baidu.com/s?wd=%E7%8E%96%E5%B1%85%E5%9C%B0%E4%BA%A7%E4%BA%AE%E7%9B%B8%E7%AC%AC%E5%8D%81%E4%B8%89%E5%B1%8A%E8%BD%AC%E5%9E%8B%E5%8F%91%E5%B1%95%E5%88%9B%E6%96%B0%E5%A4%A7%E4%BC%9A+%E5%88%86%E4%BA%AB%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E6%96%B0%E7%96%86%E6%96%B9%E6%A1%88",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPVmxSQVBKR3pqRGRKaERhNHlqLUJYcXgtU0JxQjItdnNDektSd3ZhS1dmT2lGQWRJNTRWaG5fM1QzbHptSGhWSDM2bU1vSWZtZDZXME94Wk9UUVZpMXRnQTU1a0F2VmNTV0drWDRJU3pUQnF6OHV2SzlpRkE1ejZLaF83RQ?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E7%8E%96%E5%B1%85%E5%9C%B0%E4%BA%A7%E4%BA%AE%E7%9B%B8%E7%AC%AC%E5%8D%81%E4%B8%89%E5%B1%8A%E8%BD%AC%E5%9E%8B%E5%8F%91%E5%B1%95%E5%88%9B%E6%96%B0%E5%A4%A7%E4%BC%9A+%E5%88%86%E4%BA%AB%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E6%96%B0%E7%96%86%E6%96%B9%E6%A1%88",
+    "date": "2026-09-07",
+    "published_date": "2026-09-07",
+    "source_date": "2026-09-07",
+    "collected_at": "2026-09-07T19:03:41Z",
+    "source": "xj.chinanews.com.cn",
+    "keyword": "住建局 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "会议",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "玖居地产在转型发展大会上分享新疆“好房子”方案，涉及住建领域。",
+    "region": "新疆",
+    "sales_region": "西北",
+    "owner": "市场线索池",
+    "entities": [
+      "玖居地产",
+      "第十三届转型发展创新大会"
+    ],
+    "business_value": "会议曝光提供接触新疆房企机会，可推广智能建造产品，但无直接采购信号。",
+    "lead_score": 4,
+    "lead_reason": "存在招标/中标/采购等明确交易信号；两周内新信号",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 5,
+        "reason": "存在招标/中标/采购等明确交易信号"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：西北"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、好房子"
+      }
+    },
+    "suggested_action": "关注玖居地产后续项目动态，适时联系推介产品。",
+    "urgency": "低",
+    "updated_at": "2026-09-07T19:03:56Z"
+  },
+  {
+    "title": "2026服贸会｜科技驱动创优，智造好房子—— 北京集成电路产教融合基地项目科创实践",
+    "link": "https://www.baidu.com/s?wd=2026%E6%9C%8D%E8%B4%B8%E4%BC%9A%EF%BD%9C%E7%A7%91%E6%8A%80%E9%A9%B1%E5%8A%A8%E5%88%9B%E4%BC%98%EF%BC%8C%E6%99%BA%E9%80%A0%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%94%E2%80%94+%E5%8C%97%E4%BA%AC%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E4%BA%A7%E6%95%99%E8%9E%8D%E5%90%88%E5%9F%BA%E5%9C%B0%E9%A1%B9%E7%9B%AE%E7%A7%91%E5%88%9B%E5%AE%9E%E8%B7%B5",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSk1XLTFzUlNQMTJNaGlvT3IwTnJPWTNBYzRZbjhkWFZXLVdZZHNtQ080ZHlSN2NxQTY0OTl5YjViVTlWTER6NmlBeWNsOHVHcjRZZ0VTMFQ2QmZQZldUVTdERU5fZzV0dmlzU1Y3TEw0ajgway1MUll3Qm80TVNTRTdQN0pCZ2Q4?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=2026%E6%9C%8D%E8%B4%B8%E4%BC%9A%EF%BD%9C%E7%A7%91%E6%8A%80%E9%A9%B1%E5%8A%A8%E5%88%9B%E4%BC%98%EF%BC%8C%E6%99%BA%E9%80%A0%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%94%E2%80%94+%E5%8C%97%E4%BA%AC%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%E4%BA%A7%E6%95%99%E8%9E%8D%E5%90%88%E5%9F%BA%E5%9C%B0%E9%A1%B9%E7%9B%AE%E7%A7%91%E5%88%9B%E5%AE%9E%E8%B7%B5",
+    "date": "2026-09-07",
+    "published_date": "2026-09-07",
+    "source_date": "2026-09-07",
+    "collected_at": "2026-09-07T19:03:39Z",
+    "source": "Sohu",
+    "keyword": "\"BIM\" 建筑 招标 OR 中标 OR 采购 OR 审图 OR 施工",
+    "search_priority": 4,
+    "category": "项目",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "2026服贸会展示北京集成电路产教融合基地项目，以BIM科技驱动创优智造好房子。",
+    "region": "北京",
+    "sales_region": "华北",
+    "owner": "华北销售组",
+    "entities": [
+      "北京集成电路产教融合基地",
+      "服贸会"
+    ],
+    "business_value": "项目展示BIM应用，可能涉及后续施工或咨询需求，适合建筑科技公司对接合作或推广产品。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：BIM、好房子",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华北"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：BIM、好房子"
+      }
+    },
+    "suggested_action": "联系项目方或服贸会主办方，了解BIM应用细节及后续采购计划。",
+    "urgency": "中",
+    "updated_at": "2026-09-07T19:03:53Z"
+  },
+  {
+    "title": "华营控股携手浙建智造推动智能建造落地香港 混凝土平整机器人助力项目提质增效",
+    "link": "https://www.baidu.com/s?wd=%E5%8D%8E%E8%90%A5%E6%8E%A7%E8%82%A1%E6%90%BA%E6%89%8B%E6%B5%99%E5%BB%BA%E6%99%BA%E9%80%A0%E6%8E%A8%E5%8A%A8%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E8%90%BD%E5%9C%B0%E9%A6%99%E6%B8%AF+%E6%B7%B7%E5%87%9D%E5%9C%9F%E5%B9%B3%E6%95%B4%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8A%A9%E5%8A%9B%E9%A1%B9%E7%9B%AE%E6%8F%90%E8%B4%A8%E5%A2%9E%E6%95%88",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE93bzYtcU9pTHFZei1BMlhPOFNWczVRV2loUWNrOENydEowX0RuVnhickFGaHhUemhJYnhTLXZxb1BRTkxWUFlJMFhuQk9JaWIza0lFUkZYdUdqMW93NzAyWlVUb0tFV0w4RDA2cEFOWTRvYzlWekxFVw?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E5%8D%8E%E8%90%A5%E6%8E%A7%E8%82%A1%E6%90%BA%E6%89%8B%E6%B5%99%E5%BB%BA%E6%99%BA%E9%80%A0%E6%8E%A8%E5%8A%A8%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E8%90%BD%E5%9C%B0%E9%A6%99%E6%B8%AF+%E6%B7%B7%E5%87%9D%E5%9C%9F%E5%B9%B3%E6%95%B4%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8A%A9%E5%8A%9B%E9%A1%B9%E7%9B%AE%E6%8F%90%E8%B4%A8%E5%A2%9E%E6%95%88",
+    "date": "2026-09-07",
+    "published_date": "2026-09-07",
+    "source_date": "2026-09-07",
+    "collected_at": "2026-09-07T19:03:37Z",
+    "source": "新浪财经",
+    "keyword": "\"智能建造\" 招标 OR 中标 OR 成交 OR 采购 OR 合同",
+    "search_priority": 5,
+    "category": "项目",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "华营控股与浙建智造合作，将混凝土平整机器人等智能建造技术引入香港项目，提升效率和质量。",
+    "region": "香港",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [
+      "华营控股",
+      "浙建智造",
+      "混凝土平整机器人"
+    ],
+    "business_value": "为智能建造设备供应商提供香港市场落地案例，可跟进合作方拓展港澳及大湾区项目，或提供配套服务。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；存在项目、试点或名单信号，可继续确认招采窗口",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 4,
+        "reason": "匹配蔚建相关场景：智能建造"
+      }
+    },
+    "suggested_action": "联系华营或浙建智造，了解项目规模及后续设备采购需求，探索合作机会。",
+    "urgency": "中",
+    "updated_at": "2026-09-07T19:03:51Z"
+  },
+  {
     "title": "展示智能建造装备技术 输出城市更新解决方案 服贸会将呈现“中国建造”全链条服务能力",
     "link": "https://www.baidu.com/s?wd=%E5%B1%95%E7%A4%BA%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E8%A3%85%E5%A4%87%E6%8A%80%E6%9C%AF+%E8%BE%93%E5%87%BA%E5%9F%8E%E5%B8%82%E6%9B%B4%E6%96%B0%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88+%E6%9C%8D%E8%B4%B8%E4%BC%9A%E5%B0%86%E5%91%88%E7%8E%B0%E2%80%9C%E4%B8%AD%E5%9B%BD%E5%BB%BA%E9%80%A0%E2%80%9D%E5%85%A8%E9%93%BE%E6%9D%A1%E6%9C%8D%E5%8A%A1%E8%83%BD%E5%8A%9B",
     "original_link": "",
