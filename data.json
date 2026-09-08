@@ -3935,6 +3935,63 @@
     "updated_at": "2026-08-17T15:30:12Z"
   },
   {
+    "title": "林同省正在提升劳动力能力，并推广BIM在建筑投资管理中的应用。",
+    "link": "https://www.baidu.com/s?wd=%E6%9E%97%E5%90%8C%E7%9C%81%E6%AD%A3%E5%9C%A8%E6%8F%90%E5%8D%87%E5%8A%B3%E5%8A%A8%E5%8A%9B%E8%83%BD%E5%8A%9B%EF%BC%8C%E5%B9%B6%E6%8E%A8%E5%B9%BFBIM%E5%9C%A8%E5%BB%BA%E7%AD%91%E6%8A%95%E8%B5%84%E7%AE%A1%E7%90%86%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8%E3%80%82",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbTdDWFpxa29QbmRxSFIzLXFNQk1NemFpR3c0eWlCd0Q2cnBrbzZZdFJHY0dyeWFzcHI0UTl1QnBqRkEydDV0dkVvbGZKbzVVbThTTERsUkRVa1pBNzFtTnh3TmdiVGR5aHRFYXdlNkM2aGNnZTh1aS01STdkOG9YZ3B1d3BRamNLWmVmSWtLNGJWSmFzNEljcE5xVTI5d2xySzlhX3ZabjhWWXdnNW5hMHZMWmNEZw?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E6%9E%97%E5%90%8C%E7%9C%81%E6%AD%A3%E5%9C%A8%E6%8F%90%E5%8D%87%E5%8A%B3%E5%8A%A8%E5%8A%9B%E8%83%BD%E5%8A%9B%EF%BC%8C%E5%B9%B6%E6%8E%A8%E5%B9%BFBIM%E5%9C%A8%E5%BB%BA%E7%AD%91%E6%8A%95%E8%B5%84%E7%AE%A1%E7%90%86%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8%E3%80%82",
+    "date": "2026-08-15",
+    "published_date": "2026-08-15",
+    "source_date": "2026-08-15",
+    "collected_at": "2026-09-08T18:25:19Z",
+    "source": "vietnam.vn",
+    "keyword": "\"BIM\" 建筑 招标 OR 中标 OR 采购 OR 审图 OR 施工",
+    "search_priority": 4,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "越南林同省提升劳动力能力并推广BIM在建筑投资管理中的应用。",
+    "region": "越南林同省",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [
+      "林同省"
+    ],
+    "business_value": "为BIM软件、培训及咨询服务提供商带来市场机会，可参与当地建筑数字化推广项目。",
+    "lead_score": 4,
+    "lead_reason": "存在项目、试点或名单信号，可继续确认招采窗口；有明确主体，预算金额待核查",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 4,
+        "reason": "45天内信号"
+      },
+      "product_fit": {
+        "score": 4,
+        "reason": "匹配蔚建相关场景：BIM"
+      }
+    },
+    "suggested_action": "关注后续具体招标公告，联系当地建设部门了解合作可能。",
+    "urgency": "中",
+    "updated_at": "2026-09-08T18:25:47Z"
+  },
+  {
     "title": "政企学研代表齐聚佛山，共话“好房子”建设路径",
     "link": "https://www.baidu.com/s?wd=%E6%94%BF%E4%BC%81%E5%AD%A6%E7%A0%94%E4%BB%A3%E8%A1%A8%E9%BD%90%E8%81%9A%E4%BD%9B%E5%B1%B1%EF%BC%8C%E5%85%B1%E8%AF%9D%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E5%BB%BA%E8%AE%BE%E8%B7%AF%E5%BE%84",
     "original_link": "",
