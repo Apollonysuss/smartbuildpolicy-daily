@@ -3109,6 +3109,63 @@
     "updated_at": "2026-09-03T18:26:21Z"
   },
   {
+    "title": "降低建筑机器人采用门槛 建设局资助供应商扩大出租机队",
+    "link": "https://www.baidu.com/s?wd=%E9%99%8D%E4%BD%8E%E5%BB%BA%E7%AD%91%E6%9C%BA%E5%99%A8%E4%BA%BA%E9%87%87%E7%94%A8%E9%97%A8%E6%A7%9B+%E5%BB%BA%E8%AE%BE%E5%B1%80%E8%B5%84%E5%8A%A9%E4%BE%9B%E5%BA%94%E5%95%86%E6%89%A9%E5%A4%A7%E5%87%BA%E7%A7%9F%E6%9C%BA%E9%98%9F",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE15Y1pCcnFfTzV6YkFGUjN4V1l2ZjByUlpJS1l0TFVndTdMRFRHOUpDTFM2TmFRaU9VWV9pWGRfeWwxYXI4Z1pUSUE4bjhMVWJJZF9HeVZvN3l0U21rVFFBLU5qajhiSHRObThLSnVqRQ?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E9%99%8D%E4%BD%8E%E5%BB%BA%E7%AD%91%E6%9C%BA%E5%99%A8%E4%BA%BA%E9%87%87%E7%94%A8%E9%97%A8%E6%A7%9B+%E5%BB%BA%E8%AE%BE%E5%B1%80%E8%B5%84%E5%8A%A9%E4%BE%9B%E5%BA%94%E5%95%86%E6%89%A9%E5%A4%A7%E5%87%BA%E7%A7%9F%E6%9C%BA%E9%98%9F",
+    "date": "2026-09-02",
+    "published_date": "2026-09-02",
+    "source_date": "2026-09-02",
+    "collected_at": "2026-09-20T18:08:53Z",
+    "source": "联合早报",
+    "keyword": "\"建筑机器人\" 采购 OR 中标 OR 应用 OR 项目 OR 进场",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "新加坡建设局资助供应商扩大建筑机器人出租机队，降低采用门槛。",
+    "region": "新加坡",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [
+      "新加坡建设局"
+    ],
+    "business_value": "政府补贴租赁模式降低采购门槛，利好建筑机器人厂商与租赁服务商切入新加坡市场。",
+    "lead_score": 4,
+    "lead_reason": "存在招标/中标/采购等明确交易信号；有明确主体，预算金额待核查",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 5,
+        "reason": "存在招标/中标/采购等明确交易信号"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 4,
+        "reason": "45天内信号"
+      },
+      "product_fit": {
+        "score": 4,
+        "reason": "匹配蔚建相关场景：建筑机器人"
+      }
+    },
+    "suggested_action": "联系新加坡建设局及受资助供应商，了解租赁机型与合作机会。",
+    "urgency": "中",
+    "updated_at": "2026-09-20T18:09:17Z"
+  },
+  {
     "title": "官方 | 北辰观澜府售楼处权威发布 - 官网 - 百度百科 - 苏州优选好房子",
     "link": "https://www.baidu.com/s?wd=%E5%AE%98%E6%96%B9+%7C+%E5%8C%97%E8%BE%B0%E8%A7%82%E6%BE%9C%E5%BA%9C%E5%94%AE%E6%A5%BC%E5%A4%84%E6%9D%83%E5%A8%81%E5%8F%91%E5%B8%83+-+%E5%AE%98%E7%BD%91+-+%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91+-+%E8%8B%8F%E5%B7%9E%E4%BC%98%E9%80%89%E5%A5%BD%E6%88%BF%E5%AD%90",
     "original_link": "",
