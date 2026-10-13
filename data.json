@@ -1,5 +1,63 @@
 [
   {
+    "title": "南京15个项目入选省级智能建造试点",
+    "link": "https://www.baidu.com/s?wd=%E5%8D%97%E4%BA%AC15%E4%B8%AA%E9%A1%B9%E7%9B%AE%E5%85%A5%E9%80%89%E7%9C%81%E7%BA%A7%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E8%AF%95%E7%82%B9",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5DajFxMW5WRGZsNVNDWGJpWjBlSGlPb2JqRzJPd0czYXhqLWhMMVpRWTJnOTdNWmN2RHV5LUl6akpnREoyYTU0ajVCLXdoZlJqSDd2d2c5bFVOZlpSenlxSkdVWkJRZw?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E5%8D%97%E4%BA%AC15%E4%B8%AA%E9%A1%B9%E7%9B%AE%E5%85%A5%E9%80%89%E7%9C%81%E7%BA%A7%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E8%AF%95%E7%82%B9",
+    "date": "2026-10-13",
+    "published_date": "2026-10-13",
+    "source_date": "2026-10-13",
+    "collected_at": "2026-10-13T20:33:51Z",
+    "source": "南京广播电视台",
+    "keyword": "\"建筑机器人\" 采购 OR 中标 OR 应用 OR 项目 OR 进场",
+    "search_priority": 5,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "南京15个项目入选省级智能建造试点，涉及建筑机器人应用。",
+    "region": "南京",
+    "sales_region": "华东",
+    "owner": "华东销售二组",
+    "entities": [
+      "南京广播电视台",
+      "南京15个省级智能建造试点项目"
+    ],
+    "business_value": "省级试点释放建筑机器人应用与采购信号，南京区域项目可跟进对接。",
+    "lead_score": 4,
+    "lead_reason": "存在招标/中标/采购等明确交易信号；两周内新信号",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 5,
+        "reason": "存在招标/中标/采购等明确交易信号"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华东"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、建筑机器人"
+      }
+    },
+    "suggested_action": "联系南京市住建部门获取15个项目清单，筛选建筑机器人应用场景。",
+    "urgency": "中",
+    "updated_at": "2026-10-13T20:34:04Z"
+  },
+  {
     "title": "从欧洲架构到中国方案，恒洁N系列获“好房子优选产品”认证",
     "link": "https://www.baidu.com/s?wd=%E4%BB%8E%E6%AC%A7%E6%B4%B2%E6%9E%B6%E6%9E%84%E5%88%B0%E4%B8%AD%E5%9B%BD%E6%96%B9%E6%A1%88%EF%BC%8C%E6%81%92%E6%B4%81N%E7%B3%BB%E5%88%97%E8%8E%B7%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E4%BC%98%E9%80%89%E4%BA%A7%E5%93%81%E2%80%9D%E8%AE%A4%E8%AF%81",
     "original_link": "",
@@ -2181,6 +2239,63 @@
     "suggested_action": "联系丰台区住建局获取试点项目清单，筛选匹配项目并接触承建方",
     "urgency": "中",
     "updated_at": "2026-09-23T18:56:26Z"
+  },
+  {
+    "title": "GS建設建立建筑机器人性能验证中心，确保现场应用前的性能检查",
+    "link": "https://www.baidu.com/s?wd=GS%E5%BB%BA%E8%A8%AD%E5%BB%BA%E7%AB%8B%E5%BB%BA%E7%AD%91%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%80%A7%E8%83%BD%E9%AA%8C%E8%AF%81%E4%B8%AD%E5%BF%83%EF%BC%8C%E7%A1%AE%E4%BF%9D%E7%8E%B0%E5%9C%BA%E5%BA%94%E7%94%A8%E5%89%8D%E7%9A%84%E6%80%A7%E8%83%BD%E6%A3%80%E6%9F%A5",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBmVG9kY09BTi1iNkpLQUlEY1dTdlhlYnNMSzRQSFRsNzQ1czJESEZVYjJiQVpPMzFnRzdINXp3Z1BzRUV5ZFRQcHZvQnBqU0VUYW1fc3BZb2dRZmc?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=GS%E5%BB%BA%E8%A8%AD%E5%BB%BA%E7%AB%8B%E5%BB%BA%E7%AD%91%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%80%A7%E8%83%BD%E9%AA%8C%E8%AF%81%E4%B8%AD%E5%BF%83%EF%BC%8C%E7%A1%AE%E4%BF%9D%E7%8E%B0%E5%9C%BA%E5%BA%94%E7%94%A8%E5%89%8D%E7%9A%84%E6%80%A7%E8%83%BD%E6%A3%80%E6%9F%A5",
+    "date": "2026-09-22",
+    "published_date": "2026-09-22",
+    "source_date": "2026-09-22",
+    "collected_at": "2026-10-13T20:33:51Z",
+    "source": "亚洲日报",
+    "keyword": "\"建筑机器人\" 采购 OR 中标 OR 应用 OR 项目 OR 进场",
+    "search_priority": 5,
+    "category": "企业",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "GS建设建立建筑机器人性能验证中心，确保现场应用前性能检查。",
+    "region": "全国",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [
+      "GS建设"
+    ],
+    "business_value": "验证中心需测试设备与方案，为机器人厂商提供进场前性能验证合作机会。",
+    "lead_score": 4,
+    "lead_reason": "存在项目、试点或名单信号，可继续确认招采窗口；有明确主体，预算金额待核查",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 4,
+        "reason": "45天内信号"
+      },
+      "product_fit": {
+        "score": 4,
+        "reason": "匹配蔚建相关场景：建筑机器人"
+      }
+    },
+    "suggested_action": "联系GS建设了解验证中心设备需求，推介蔚建机器人测试与集成方案。",
+    "urgency": "中",
+    "updated_at": "2026-10-13T20:34:11Z"
   },
   {
     "title": "远洋小筑“好房子”研发基地开工，以产业化回应存量时代定制住宅新需求",
