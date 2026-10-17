@@ -1,5 +1,62 @@
 [
   {
+    "title": "绿色建造驱动“好房子”建设",
+    "link": "https://www.baidu.com/s?wd=%E7%BB%BF%E8%89%B2%E5%BB%BA%E9%80%A0%E9%A9%B1%E5%8A%A8%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E5%BB%BA%E8%AE%BE",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1EaWtST0FDcTBBOWsxRmMwOEVzOXpHOWV3c0dKUGRybi1aZkZ6SVgxc0dnTFdfVmZYNlU1MG9XTHZhY21kc2t0YVBnbGJMVmFuY2h0aFlmbGp3cUlpYXRka2VnaWNVdnE4MUFsMjdwOGE?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E7%BB%BF%E8%89%B2%E5%BB%BA%E9%80%A0%E9%A9%B1%E5%8A%A8%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E5%BB%BA%E8%AE%BE",
+    "date": "2026-10-17",
+    "published_date": "2026-10-17",
+    "source_date": "2026-10-17",
+    "collected_at": "2026-10-17T17:48:34Z",
+    "source": "中国科技网",
+    "keyword": "\"BIM\" 建筑 招标 OR 中标 OR 采购 OR 审图 OR 施工",
+    "search_priority": 4,
+    "category": "行业动态",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "绿色建造推动好房子建设，涉及BIM与建筑施工。",
+    "region": "全国",
+    "sales_region": "全国",
+    "owner": "市场线索池",
+    "entities": [
+      "中国科技网"
+    ],
+    "business_value": "绿色建造与BIM结合趋势明确，可关注建筑科技、BIM咨询及智能建造系统集成机会。",
+    "lead_score": 3,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、BIM、好房子",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 1,
+        "reason": "暂未看到明确招采信号"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 2,
+        "reason": "仅识别为全国机会，需要分派区域"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、BIM、好房子"
+      }
+    },
+    "suggested_action": "持续监测绿色建造与BIM相关政策及后续项目招采信息。",
+    "urgency": "低",
+    "updated_at": "2026-10-17T17:49:01Z"
+  },
+  {
     "title": "湖北召开新闻发布会介绍2026国际（武汉）智能建造产业博览会相关安排",
     "link": "https://www.baidu.com/s?wd=%E6%B9%96%E5%8C%97%E5%8F%AC%E5%BC%80%E6%96%B0%E9%97%BB%E5%8F%91%E5%B8%83%E4%BC%9A%E4%BB%8B%E7%BB%8D2026%E5%9B%BD%E9%99%85%EF%BC%88%E6%AD%A6%E6%B1%89%EF%BC%89%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E4%BA%A7%E4%B8%9A%E5%8D%9A%E8%A7%88%E4%BC%9A%E7%9B%B8%E5%85%B3%E5%AE%89%E6%8E%92",
     "original_link": "",
@@ -172,6 +229,64 @@
     "suggested_action": "跟踪山东各地市城市更新配套招标，联系住建部门与本地集成商。",
     "urgency": "中",
     "updated_at": "2026-10-15T18:58:40Z"
+  },
+  {
+    "title": "山东省城市更新“十五五”规划发布，涉及“好房子”、老旧小区改造等",
+    "link": "https://www.baidu.com/s?wd=%E5%B1%B1%E4%B8%9C%E7%9C%81%E5%9F%8E%E5%B8%82%E6%9B%B4%E6%96%B0%E2%80%9C%E5%8D%81%E4%BA%94%E4%BA%94%E2%80%9D%E8%A7%84%E5%88%92%E5%8F%91%E5%B8%83%EF%BC%8C%E6%B6%89%E5%8F%8A%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E3%80%81%E8%80%81%E6%97%A7%E5%B0%8F%E5%8C%BA%E6%94%B9%E9%80%A0%E7%AD%89",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1Eb1l4cmdBazJmU0xzdDl0Y1ROcXNZMVYtTk80My1lS1dKZHFkZllQZGg1bE9WZVQ1TUFPRWJ2MlVoREE1VTd4Vk1aVS1MXzEtOEtPS2FObEI5VENuUE1BenVVdW15U1M2blE?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E5%B1%B1%E4%B8%9C%E7%9C%81%E5%9F%8E%E5%B8%82%E6%9B%B4%E6%96%B0%E2%80%9C%E5%8D%81%E4%BA%94%E4%BA%94%E2%80%9D%E8%A7%84%E5%88%92%E5%8F%91%E5%B8%83%EF%BC%8C%E6%B6%89%E5%8F%8A%E2%80%9C%E5%A5%BD%E6%88%BF%E5%AD%90%E2%80%9D%E3%80%81%E8%80%81%E6%97%A7%E5%B0%8F%E5%8C%BA%E6%94%B9%E9%80%A0%E7%AD%89",
+    "date": "2026-10-14",
+    "published_date": "2026-10-14",
+    "source_date": "2026-10-14",
+    "collected_at": "2026-10-17T17:48:39Z",
+    "source": "人民网",
+    "keyword": "\"城市更新\" 智慧工地 OR 智能建造 OR BIM OR 数字化施工",
+    "search_priority": 3,
+    "category": "政策",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "山东发布城市更新十五五规划，涵盖好房子与老旧小区改造",
+    "region": "山东省",
+    "sales_region": "华东",
+    "owner": "市场线索池",
+    "entities": [
+      "山东省",
+      "人民网"
+    ],
+    "business_value": "省级规划释放城市更新与智能建造需求，利好智慧工地、BIM及数字化施工供应商切入山东市场",
+    "lead_score": 3,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、智慧工地、BIM",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 1,
+        "reason": "暂未看到明确招采信号"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华东"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、智慧工地、BIM"
+      }
+    },
+    "suggested_action": "跟踪山东各地市城市更新项目清单与招标公告，联系住建部门及本地总包",
+    "urgency": "中",
+    "updated_at": "2026-10-17T17:48:57Z"
   },
   {
     "title": "靶向治理质量通病 扎实推进青岛“好房子”建设实践",
