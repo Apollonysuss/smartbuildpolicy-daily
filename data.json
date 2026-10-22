@@ -1,5 +1,63 @@
 [
   {
+    "title": "广州“十五五”谋划储备城市更新项目超2300个丨找场景·来广州",
+    "link": "https://www.baidu.com/s?wd=%E5%B9%BF%E5%B7%9E%E2%80%9C%E5%8D%81%E4%BA%94%E4%BA%94%E2%80%9D%E8%B0%8B%E5%88%92%E5%82%A8%E5%A4%87%E5%9F%8E%E5%B8%82%E6%9B%B4%E6%96%B0%E9%A1%B9%E7%9B%AE%E8%B6%852300%E4%B8%AA%E4%B8%A8%E6%89%BE%E5%9C%BA%E6%99%AF%C2%B7%E6%9D%A5%E5%B9%BF%E5%B7%9E",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPc0l4SDVZS1hWY2huX2paV3FTZ0hULXhvdTAwSjE3SWhqWXpyYndyWHhybEhUZzNFbV9pMGN0b19FS2pkdnh6dEpLaUNXanZ6bjAxcHBLOWxYcGZ1RG84Y3JZb2R2c0xrZURNckZ4eF9pQjg0TWdJSGtjODJBaEZ6SVhTQ0Y1NWNUZnc?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E5%B9%BF%E5%B7%9E%E2%80%9C%E5%8D%81%E4%BA%94%E4%BA%94%E2%80%9D%E8%B0%8B%E5%88%92%E5%82%A8%E5%A4%87%E5%9F%8E%E5%B8%82%E6%9B%B4%E6%96%B0%E9%A1%B9%E7%9B%AE%E8%B6%852300%E4%B8%AA%E4%B8%A8%E6%89%BE%E5%9C%BA%E6%99%AF%C2%B7%E6%9D%A5%E5%B9%BF%E5%B7%9E",
+    "date": "2026-10-22",
+    "published_date": "2026-10-22",
+    "source_date": "2026-10-22",
+    "collected_at": "2026-10-22T19:05:54Z",
+    "source": "广州日报新花城",
+    "keyword": "住建局 智能建造 OR 智慧工地 OR 好房子 试点 OR 通知 OR 方案",
+    "search_priority": 5,
+    "category": "项目",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "广州谋划储备超2300个城市更新项目，面向十五五。",
+    "region": "广州",
+    "sales_region": "华南",
+    "owner": "华南销售一组",
+    "entities": [
+      "广州住建局",
+      "广州日报新花城"
+    ],
+    "business_value": "大规模城市更新储备释放智能建造、智慧工地与好房子试点场景，利于建筑科技供应商提前卡位。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华南"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、智慧工地、好房子"
+      }
+    },
+    "suggested_action": "对接广州住建部门及区级更新主体，梳理项目清单并提交智能建造场景方案。",
+    "urgency": "中",
+    "updated_at": "2026-10-22T19:06:04Z"
+  },
+  {
     "title": "“十五五”山东将打造400个以上智能建造试点 施工作业机器人替代率瞄准60%",
     "link": "https://www.baidu.com/s?wd=%E2%80%9C%E5%8D%81%E4%BA%94%E4%BA%94%E2%80%9D%E5%B1%B1%E4%B8%9C%E5%B0%86%E6%89%93%E9%80%A0400%E4%B8%AA%E4%BB%A5%E4%B8%8A%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E8%AF%95%E7%82%B9+%E6%96%BD%E5%B7%A5%E4%BD%9C%E4%B8%9A%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%9B%BF%E4%BB%A3%E7%8E%87%E7%9E%84%E5%87%8660%25",
     "original_link": "",
@@ -1558,6 +1616,63 @@
     "suggested_action": "关注该学院后续教学资源库招标公告，评估教育类产品合作可能",
     "urgency": "低",
     "updated_at": "2026-10-09T20:03:02Z"
+  },
+  {
+    "title": "杭州：未来谷竣工备案 智能建造“黑科技”落地",
+    "link": "https://www.baidu.com/s?wd=%E6%9D%AD%E5%B7%9E%EF%BC%9A%E6%9C%AA%E6%9D%A5%E8%B0%B7%E7%AB%A3%E5%B7%A5%E5%A4%87%E6%A1%88+%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E2%80%9C%E9%BB%91%E7%A7%91%E6%8A%80%E2%80%9D%E8%90%BD%E5%9C%B0",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9sdXVCekNLM051M2VWamhQbUlfTldVS0xpcXZRTFc0Q3JnRGFUcEs0SFlIeENCUS10SjhqUW9jMmM0RkdmelQ3eEY4aFE?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E6%9D%AD%E5%B7%9E%EF%BC%9A%E6%9C%AA%E6%9D%A5%E8%B0%B7%E7%AB%A3%E5%B7%A5%E5%A4%87%E6%A1%88+%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E2%80%9C%E9%BB%91%E7%A7%91%E6%8A%80%E2%80%9D%E8%90%BD%E5%9C%B0",
+    "date": "2026-10-08",
+    "published_date": "2026-10-08",
+    "source_date": "2026-10-08",
+    "collected_at": "2026-10-22T19:05:55Z",
+    "source": "凤凰网",
+    "keyword": "\"智能建造试点\" 项目 OR 名单 OR 公示 OR 示范",
+    "search_priority": 5,
+    "category": "项目",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "杭州未来谷项目完成竣工备案，智能建造黑科技落地应用。",
+    "region": "杭州",
+    "sales_region": "华东",
+    "owner": "华东销售二组",
+    "entities": [
+      "杭州未来谷"
+    ],
+    "business_value": "竣工项目展示智能建造技术落地场景，可作为标杆案例挖掘后续运维或复制项目机会。",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；存在项目、试点或名单信号，可继续确认招采窗口",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华东"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 4,
+        "reason": "匹配蔚建相关场景：智能建造"
+      }
+    },
+    "suggested_action": "联系项目方了解技术供应商与实施效果，挖掘后续复制或运维需求。",
+    "urgency": "中",
+    "updated_at": "2026-10-22T19:06:19Z"
   },
   {
     "title": "智能建造“黑科技”如何落地？",
