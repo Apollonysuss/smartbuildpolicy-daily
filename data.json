@@ -1,5 +1,63 @@
 [
   {
+    "title": "安徽建工建筑工业化智能建造集团有限公司到访土木与水利工程学院开展座谈交流",
+    "link": "https://www.baidu.com/s?wd=%E5%AE%89%E5%BE%BD%E5%BB%BA%E5%B7%A5%E5%BB%BA%E7%AD%91%E5%B7%A5%E4%B8%9A%E5%8C%96%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E9%9B%86%E5%9B%A2%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%88%B0%E8%AE%BF%E5%9C%9F%E6%9C%A8%E4%B8%8E%E6%B0%B4%E5%88%A9%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2%E5%BC%80%E5%B1%95%E5%BA%A7%E8%B0%88%E4%BA%A4%E6%B5%81",
+    "original_link": "",
+    "google_link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1xYzBiamF0Y3VBYVZJbW1tZkhvVFZiNG5XX3dfVGFFOWx5VHJsY0tHSEgxa08xOXJXQldseGFUMi0wQVA0clF0YWdna2Q3Q201YU1rZmJfMA?oc=5",
+    "search_link": "https://www.baidu.com/s?wd=%E5%AE%89%E5%BE%BD%E5%BB%BA%E5%B7%A5%E5%BB%BA%E7%AD%91%E5%B7%A5%E4%B8%9A%E5%8C%96%E6%99%BA%E8%83%BD%E5%BB%BA%E9%80%A0%E9%9B%86%E5%9B%A2%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%88%B0%E8%AE%BF%E5%9C%9F%E6%9C%A8%E4%B8%8E%E6%B0%B4%E5%88%A9%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2%E5%BC%80%E5%B1%95%E5%BA%A7%E8%B0%88%E4%BA%A4%E6%B5%81",
+    "date": "2026-10-26",
+    "published_date": "2026-10-26",
+    "source_date": "2026-10-26",
+    "collected_at": "2026-10-26T20:22:38Z",
+    "source": "合肥工业大学新闻网",
+    "keyword": "建工集团 智慧工地 OR 建筑机器人 OR 智能建造 OR 数字化施工",
+    "search_priority": 4,
+    "category": "会议",
+    "source_channel": "Google News RSS",
+    "source_access": "google_rss",
+    "link_status": "需搜索核查",
+    "summary": "安徽建工智能建造集团到访合肥工业大学土木学院座谈交流",
+    "region": "安徽",
+    "sales_region": "华东",
+    "owner": "市场线索池",
+    "entities": [
+      "安徽建工建筑工业化智能建造集团有限公司",
+      "合肥工业大学土木与水利工程学院"
+    ],
+    "business_value": "校企座谈释放智能建造合作意向，可切入建筑机器人、智慧工地等技术对接",
+    "lead_score": 4,
+    "lead_reason": "两周内新信号；高度匹配蔚建智能建造相关场景：智能建造、智慧工地、建筑机器人",
+    "score_factors": {
+      "source_trust": {
+        "score": 3,
+        "reason": "来自 Google RSS，需通过搜索原文核查出处"
+      },
+      "tender_signal": {
+        "score": 4,
+        "reason": "存在项目、试点或名单信号，可继续确认招采窗口"
+      },
+      "budget_or_subject": {
+        "score": 4,
+        "reason": "有明确主体，预算金额待核查"
+      },
+      "region_match": {
+        "score": 4,
+        "reason": "已识别销售区域：华东"
+      },
+      "recency": {
+        "score": 5,
+        "reason": "两周内新信号"
+      },
+      "product_fit": {
+        "score": 5,
+        "reason": "高度匹配蔚建智能建造相关场景：智能建造、智慧工地、建筑机器人"
+      }
+    },
+    "suggested_action": "联系校方或企业方了解座谈议题，探寻技术合作与试点项目机会",
+    "urgency": "中",
+    "updated_at": "2026-10-26T20:22:44Z"
+  },
+  {
     "title": "武汉举行2026年度国产BIM软件应用技能大赛",
     "link": "https://www.baidu.com/s?wd=%E6%AD%A6%E6%B1%89%E4%B8%BE%E8%A1%8C2026%E5%B9%B4%E5%BA%A6%E5%9B%BD%E4%BA%A7BIM%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8%E6%8A%80%E8%83%BD%E5%A4%A7%E8%B5%9B",
     "original_link": "",
